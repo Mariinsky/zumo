@@ -1,0 +1,6 @@
+C:\Users\enarm\OneDrive\robootti\clooni\Zumo\ZumoBot.cydsn\ZumoBot.cyprj|dd57cbb6-2372-4e34-a56c-87a625ede063
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|db324d9d-03dc-41a3-96fd-64dfb5755d46
+C:\Users\enarm\OneDrive\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|cb3ab426-6465-441f-85cc-8dba28a15cef
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|056ffd13-c581-4743-808f-bfa34544b3cc
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|ee5f6a71-c4a8-4559-9147-b8dc684a6bd4
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|d95051cb-cbad-4afc-8903-989220a36de0

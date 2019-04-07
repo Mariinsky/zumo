@@ -1,0 +1,1732 @@
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"func.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.startBlink,"ax",%progbits
+  20              		.align	2
+  21              		.global	startBlink
+  22              		.thumb
+  23              		.thumb_func
+  24              		.type	startBlink, %function
+  25              	startBlink:
+  26              	.LFB85:
+  27              		.file 1 "func.c"
+   1:func.c        **** #include <project.h>
+   2:func.c        **** #include <stdio.h>
+   3:func.c        **** #include "FreeRTOS.h"
+   4:func.c        **** #include "task.h"
+   5:func.c        **** #include "Motor.h"
+   6:func.c        **** #include "Ultra.h"
+   7:func.c        **** #include "Nunchuk.h"
+   8:func.c        **** #include "Reflectance.h"
+   9:func.c        **** #include "Gyro.h"
+  10:func.c        **** #include "Accel_magnet.h"
+  11:func.c        **** #include "LSM303D.h"
+  12:func.c        **** #include "IR.h"
+  13:func.c        **** #include "Beep.h"
+  14:func.c        **** #include "mqtt_sender.h"
+  15:func.c        **** #include <time.h>
+  16:func.c        **** #include <sys/time.h>
+  17:func.c        **** #include "serial1.h"
+  18:func.c        **** #include <unistd.h>
+  19:func.c        **** 
+  20:func.c        **** void startBlink (int ammount, int onTimeMs,int offTimeMs);
+  21:func.c        **** /**Starts to blink the blue led on Zumo. Takes in ammount of blinks,
+  22:func.c        **** time of led on in ms and delay while the led is swithced off
+  23:func.c        **** */
+  24:func.c        **** void startBlink (int ammount, int onTimeMs,int offTimeMs) {
+  28              		.loc 1 24 0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              	.LVL0:
+  33 0000 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 2
+
+
+  34              		.cfi_def_cfa_offset 24
+  35              		.cfi_offset 3, -24
+  36              		.cfi_offset 4, -20
+  37              		.cfi_offset 5, -16
+  38              		.cfi_offset 6, -12
+  39              		.cfi_offset 7, -8
+  40              		.cfi_offset 14, -4
+  41 0002 0546     		mov	r5, r0
+  42 0004 0F46     		mov	r7, r1
+  43 0006 1646     		mov	r6, r2
+  44              	.LVL1:
+  45              	.LBB2:
+  25:func.c        ****     for (int i = 0; i < ammount; i++){
+  46              		.loc 1 25 0
+  47 0008 0024     		movs	r4, #0
+  48 000a 0CE0     		b	.L2
+  49              	.LVL2:
+  50              	.L3:
+  26:func.c        ****         BatteryLed_Write(1);
+  51              		.loc 1 26 0 discriminator 3
+  52 000c 0120     		movs	r0, #1
+  53 000e FFF7FEFF 		bl	BatteryLed_Write
+  54              	.LVL3:
+  27:func.c        ****         vTaskDelay(onTimeMs);
+  55              		.loc 1 27 0 discriminator 3
+  56 0012 3846     		mov	r0, r7
+  57 0014 FFF7FEFF 		bl	vTaskDelay
+  58              	.LVL4:
+  28:func.c        ****         BatteryLed_Write(0);
+  59              		.loc 1 28 0 discriminator 3
+  60 0018 0020     		movs	r0, #0
+  61 001a FFF7FEFF 		bl	BatteryLed_Write
+  62              	.LVL5:
+  29:func.c        ****         vTaskDelay(offTimeMs);
+  63              		.loc 1 29 0 discriminator 3
+  64 001e 3046     		mov	r0, r6
+  65 0020 FFF7FEFF 		bl	vTaskDelay
+  66              	.LVL6:
+  25:func.c        ****         BatteryLed_Write(1);
+  67              		.loc 1 25 0 discriminator 3
+  68 0024 0134     		adds	r4, r4, #1
+  69              	.LVL7:
+  70              	.L2:
+  25:func.c        ****         BatteryLed_Write(1);
+  71              		.loc 1 25 0 is_stmt 0 discriminator 1
+  72 0026 AC42     		cmp	r4, r5
+  73 0028 F0DB     		blt	.L3
+  74              	.LBE2:
+  30:func.c        ****     }
+  31:func.c        **** } 
+  75              		.loc 1 31 0 is_stmt 1
+  76 002a F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+  77              		.cfi_endproc
+  78              	.LFE85:
+  79              		.size	startBlink, .-startBlink
+  80              		.global	__aeabi_i2d
+  81              		.global	__aeabi_dmul
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 3
+
+
+  82              		.global	__aeabi_d2f
+  83              		.global	__aeabi_f2d
+  84              		.section	.text.getBatterVoltage,"ax",%progbits
+  85              		.align	2
+  86              		.global	getBatterVoltage
+  87              		.thumb
+  88              		.thumb_func
+  89              		.type	getBatterVoltage, %function
+  90              	getBatterVoltage:
+  91              	.LFB86:
+  32:func.c        **** 
+  33:func.c        **** //battery level//
+  34:func.c        **** float getBatterVoltage()
+  35:func.c        **** {
+  92              		.loc 1 35 0
+  93              		.cfi_startproc
+  94              		@ args = 0, pretend = 0, frame = 0
+  95              		@ frame_needed = 0, uses_anonymous_args = 0
+  96 0000 10B5     		push	{r4, lr}
+  97              		.cfi_def_cfa_offset 8
+  98              		.cfi_offset 4, -8
+  99              		.cfi_offset 14, -4
+  36:func.c        ****     ADC_Battery_Start();        
+ 100              		.loc 1 36 0
+ 101 0002 FFF7FEFF 		bl	ADC_Battery_Start
+ 102              	.LVL8:
+  37:func.c        ****     int16 adcresult = 0;
+  38:func.c        ****     float volts = 0.0;
+  39:func.c        ****     
+  40:func.c        ****     ADC_Battery_StartConvert(); // start sampling
+ 103              		.loc 1 40 0
+ 104 0006 FFF7FEFF 		bl	ADC_Battery_StartConvert
+ 105              	.LVL9:
+  41:func.c        ****         if(ADC_Battery_IsEndConversion(ADC_Battery_WAIT_FOR_RESULT)) {   // wait for ADC converted 
+ 106              		.loc 1 41 0
+ 107 000a 0020     		movs	r0, #0
+ 108 000c FFF7FEFF 		bl	ADC_Battery_IsEndConversion
+ 109              	.LVL10:
+ 110 0010 C0B1     		cbz	r0, .L7
+  42:func.c        ****             adcresult = ADC_Battery_GetResult16(); // get the ADC value (0 - 4095)
+ 111              		.loc 1 42 0
+ 112 0012 FFF7FEFF 		bl	ADC_Battery_GetResult16
+ 113              	.LVL11:
+  43:func.c        ****             // convert value to Volts
+  44:func.c        ****             // you need to implement the conversion
+  45:func.c        ****             volts = 4095/adcresult*4.8;
+ 114              		.loc 1 45 0
+ 115 0016 40F6FF73 		movw	r3, #4095
+ 116 001a 93FBF0F0 		sdiv	r0, r3, r0
+ 117              	.LVL12:
+ 118 001e FFF7FEFF 		bl	__aeabi_i2d
+ 119              	.LVL13:
+ 120 0022 09A3     		adr	r3, .L9
+ 121 0024 D3E90023 		ldrd	r2, [r3]
+ 122 0028 FFF7FEFF 		bl	__aeabi_dmul
+ 123              	.LVL14:
+ 124 002c FFF7FEFF 		bl	__aeabi_d2f
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 4
+
+
+ 125              	.LVL15:
+ 126 0030 0446     		mov	r4, r0
+ 127              	.LVL16:
+  46:func.c        ****             printf("battery volate is: %.2f", volts);
+ 128              		.loc 1 46 0
+ 129 0032 FFF7FEFF 		bl	__aeabi_f2d
+ 130              	.LVL17:
+ 131 0036 0246     		mov	r2, r0
+ 132 0038 0B46     		mov	r3, r1
+ 133 003a 0548     		ldr	r0, .L9+8
+ 134 003c FFF7FEFF 		bl	printf
+ 135              	.LVL18:
+  47:func.c        ****             return volts;    
+ 136              		.loc 1 47 0
+ 137 0040 2046     		mov	r0, r4
+ 138 0042 10BD     		pop	{r4, pc}
+ 139              	.LVL19:
+ 140              	.L7:
+  48:func.c        ****         }
+  49:func.c        ****         
+  50:func.c        ****         return 0.0;
+ 141              		.loc 1 50 0
+ 142 0044 0020     		movs	r0, #0
+  51:func.c        ****  }   
+ 143              		.loc 1 51 0
+ 144 0046 10BD     		pop	{r4, pc}
+ 145              	.L10:
+ 146              		.align	3
+ 147              	.L9:
+ 148 0048 33333333 		.word	858993459
+ 149 004c 33331340 		.word	1075000115
+ 150 0050 00000000 		.word	.LC0
+ 151              		.cfi_endproc
+ 152              	.LFE86:
+ 153              		.size	getBatterVoltage, .-getBatterVoltage
+ 154              		.section	.text.askAge,"ax",%progbits
+ 155              		.align	2
+ 156              		.global	askAge
+ 157              		.thumb
+ 158              		.thumb_func
+ 159              		.type	askAge, %function
+ 160              	askAge:
+ 161              	.LFB87:
+  52:func.c        **** 
+  53:func.c        **** // Weeek 2 assignment 2
+  54:func.c        **** void askAge() {
+ 162              		.loc 1 54 0
+ 163              		.cfi_startproc
+ 164              		@ args = 0, pretend = 0, frame = 8
+ 165              		@ frame_needed = 0, uses_anonymous_args = 0
+ 166 0000 10B5     		push	{r4, lr}
+ 167              		.cfi_def_cfa_offset 8
+ 168              		.cfi_offset 4, -8
+ 169              		.cfi_offset 14, -4
+ 170 0002 82B0     		sub	sp, sp, #8
+ 171              		.cfi_def_cfa_offset 16
+  55:func.c        ****     TickType_t xStart, xEnd, xResult;
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 5
+
+
+  56:func.c        ****     int age;
+  57:func.c        ****     printf("What is your age?");
+ 172              		.loc 1 57 0
+ 173 0004 2448     		ldr	r0, .L22
+ 174 0006 FFF7FEFF 		bl	printf
+ 175              	.LVL20:
+  58:func.c        ****     xStart = xTaskGetTickCount();
+ 176              		.loc 1 58 0
+ 177 000a FFF7FEFF 		bl	xTaskGetTickCount
+ 178              	.LVL21:
+ 179 000e 0446     		mov	r4, r0
+ 180              	.LVL22:
+  59:func.c        ****     scanf("%d", &age);
+ 181              		.loc 1 59 0
+ 182 0010 01A9     		add	r1, sp, #4
+ 183 0012 2248     		ldr	r0, .L22+4
+ 184              	.LVL23:
+ 185 0014 FFF7FEFF 		bl	scanf
+ 186              	.LVL24:
+  60:func.c        ****     xEnd = xTaskGetTickCount();
+ 187              		.loc 1 60 0
+ 188 0018 FFF7FEFF 		bl	xTaskGetTickCount
+ 189              	.LVL25:
+  61:func.c        ****     xResult = xEnd - xStart;
+ 190              		.loc 1 61 0
+ 191 001c 001B     		subs	r0, r0, r4
+ 192              	.LVL26:
+  62:func.c        ****     //printf("It took you %d", xResult);
+  63:func.c        ****     if (xResult <= 3000) {
+ 193              		.loc 1 63 0
+ 194 001e 40F6B833 		movw	r3, #3000
+ 195 0022 9842     		cmp	r0, r3
+ 196 0024 10D8     		bhi	.L12
+  64:func.c        ****         if(age < 22) {
+ 197              		.loc 1 64 0
+ 198 0026 019B     		ldr	r3, [sp, #4]
+ 199 0028 152B     		cmp	r3, #21
+ 200 002a 03DC     		bgt	.L13
+  65:func.c        ****             printf("Super fast dude!");
+ 201              		.loc 1 65 0
+ 202 002c 1C48     		ldr	r0, .L22+8
+ 203              	.LVL27:
+ 204 002e FFF7FEFF 		bl	printf
+ 205              	.LVL28:
+ 206 0032 2EE0     		b	.L11
+ 207              	.LVL29:
+ 208              	.L13:
+  66:func.c        ****         }
+  67:func.c        ****         else if(age < 51) {
+ 209              		.loc 1 67 0
+ 210 0034 322B     		cmp	r3, #50
+ 211 0036 03DC     		bgt	.L15
+  68:func.c        ****             printf("be quick or be dead");
+ 212              		.loc 1 68 0
+ 213 0038 1A48     		ldr	r0, .L22+12
+ 214              	.LVL30:
+ 215 003a FFF7FEFF 		bl	printf
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 6
+
+
+ 216              	.LVL31:
+ 217 003e 28E0     		b	.L11
+ 218              	.LVL32:
+ 219              	.L15:
+  69:func.c        ****         }
+  70:func.c        ****          else{
+  71:func.c        ****             printf("Still going strong");
+ 220              		.loc 1 71 0
+ 221 0040 1948     		ldr	r0, .L22+16
+ 222              	.LVL33:
+ 223 0042 FFF7FEFF 		bl	printf
+ 224              	.LVL34:
+ 225 0046 24E0     		b	.L11
+ 226              	.LVL35:
+ 227              	.L12:
+  72:func.c        ****         }
+  73:func.c        ****     } else if (xResult <= 5000) {
+ 228              		.loc 1 73 0
+ 229 0048 41F28833 		movw	r3, #5000
+ 230 004c 9842     		cmp	r0, r3
+ 231 004e 10D8     		bhi	.L16
+  74:func.c        ****         if(age < 22) {
+ 232              		.loc 1 74 0
+ 233 0050 019B     		ldr	r3, [sp, #4]
+ 234 0052 152B     		cmp	r3, #21
+ 235 0054 03DC     		bgt	.L17
+  75:func.c        ****             printf("Se mdeiocre.");
+ 236              		.loc 1 75 0
+ 237 0056 1548     		ldr	r0, .L22+20
+ 238              	.LVL36:
+ 239 0058 FFF7FEFF 		bl	printf
+ 240              	.LVL37:
+ 241 005c 19E0     		b	.L11
+ 242              	.LVL38:
+ 243              	.L17:
+  76:func.c        ****         }
+  77:func.c        ****         else if(age < 51) {
+ 244              		.loc 1 77 0
+ 245 005e 322B     		cmp	r3, #50
+ 246 0060 03DC     		bgt	.L18
+  78:func.c        ****             printf("you\'re so average.");
+ 247              		.loc 1 78 0
+ 248 0062 1348     		ldr	r0, .L22+24
+ 249              	.LVL39:
+ 250 0064 FFF7FEFF 		bl	printf
+ 251              	.LVL40:
+ 252 0068 13E0     		b	.L11
+ 253              	.LVL41:
+ 254              	.L18:
+  79:func.c        ****         }
+  80:func.c        ****          else{
+  81:func.c        ****             printf("You are doing ok for your age.");
+ 255              		.loc 1 81 0
+ 256 006a 1248     		ldr	r0, .L22+28
+ 257              	.LVL42:
+ 258 006c FFF7FEFF 		bl	printf
+ 259              	.LVL43:
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 7
+
+
+ 260 0070 0FE0     		b	.L11
+ 261              	.LVL44:
+ 262              	.L16:
+  82:func.c        ****         }
+  83:func.c        ****     } else {
+  84:func.c        ****         if(age < 22) {
+ 263              		.loc 1 84 0
+ 264 0072 019B     		ldr	r3, [sp, #4]
+ 265 0074 152B     		cmp	r3, #21
+ 266 0076 03DC     		bgt	.L19
+  85:func.c        ****             printf("My granny is faster than you!");
+ 267              		.loc 1 85 0
+ 268 0078 0F48     		ldr	r0, .L22+32
+ 269              	.LVL45:
+ 270 007a FFF7FEFF 		bl	printf
+ 271              	.LVL46:
+ 272 007e 08E0     		b	.L11
+ 273              	.LVL47:
+ 274              	.L19:
+  86:func.c        ****         }
+  87:func.c        ****         else if(age < 51) {
+ 275              		.loc 1 87 0
+ 276 0080 322B     		cmp	r3, #50
+ 277 0082 03DC     		bgt	.L20
+  88:func.c        ****             printf("Have you been smoking something illegal?");
+ 278              		.loc 1 88 0
+ 279 0084 0D48     		ldr	r0, .L22+36
+ 280              	.LVL48:
+ 281 0086 FFF7FEFF 		bl	printf
+ 282              	.LVL49:
+ 283 008a 02E0     		b	.L11
+ 284              	.LVL50:
+ 285              	.L20:
+  89:func.c        ****         }
+  90:func.c        ****          else{
+  91:func.c        ****             printf("Do they still allow you to drive?");
+ 286              		.loc 1 91 0
+ 287 008c 0C48     		ldr	r0, .L22+40
+ 288              	.LVL51:
+ 289 008e FFF7FEFF 		bl	printf
+ 290              	.LVL52:
+ 291              	.L11:
+  92:func.c        ****         }
+  93:func.c        ****     }
+  94:func.c        **** }...
+ 292              		.loc 1 94 0
+ 293 0092 02B0     		add	sp, sp, #8
+ 294              		.cfi_def_cfa_offset 8
+ 295              		@ sp needed
+ 296 0094 10BD     		pop	{r4, pc}
+ 297              	.LVL53:
+ 298              	.L23:
+ 299 0096 00BF     		.align	2
+ 300              	.L22:
+ 301 0098 18000000 		.word	.LC1
+ 302 009c 2C000000 		.word	.LC2
+ 303 00a0 30000000 		.word	.LC3
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 8
+
+
+ 304 00a4 44000000 		.word	.LC4
+ 305 00a8 58000000 		.word	.LC5
+ 306 00ac 6C000000 		.word	.LC6
+ 307 00b0 7C000000 		.word	.LC7
+ 308 00b4 90000000 		.word	.LC8
+ 309 00b8 B0000000 		.word	.LC9
+ 310 00bc D0000000 		.word	.LC10
+ 311 00c0 FC000000 		.word	.LC11
+ 312              		.cfi_endproc
+ 313              	.LFE87:
+ 314              		.size	askAge, .-askAge
+ 315              		.section	.rodata.str1.4,"aMS",%progbits,1
+ 316              		.align	2
+ 317              	.LC0:
+ 318 0000 62617474 		.ascii	"battery volate is: %.2f\000"
+ 318      65727920 
+ 318      766F6C61 
+ 318      74652069 
+ 318      733A2025 
+ 319              	.LC1:
+ 320 0018 57686174 		.ascii	"What is your age?\000"
+ 320      20697320 
+ 320      796F7572 
+ 320      20616765 
+ 320      3F00
+ 321 002a 0000     		.space	2
+ 322              	.LC2:
+ 323 002c 256400   		.ascii	"%d\000"
+ 324 002f 00       		.space	1
+ 325              	.LC3:
+ 326 0030 53757065 		.ascii	"Super fast dude!\000"
+ 326      72206661 
+ 326      73742064 
+ 326      75646521 
+ 326      00
+ 327 0041 000000   		.space	3
+ 328              	.LC4:
+ 329 0044 62652071 		.ascii	"be quick or be dead\000"
+ 329      7569636B 
+ 329      206F7220 
+ 329      62652064 
+ 329      65616400 
+ 330              	.LC5:
+ 331 0058 5374696C 		.ascii	"Still going strong\000"
+ 331      6C20676F 
+ 331      696E6720 
+ 331      7374726F 
+ 331      6E6700
+ 332 006b 00       		.space	1
+ 333              	.LC6:
+ 334 006c 5365206D 		.ascii	"Se mdeiocre.\000"
+ 334      6465696F 
+ 334      6372652E 
+ 334      00
+ 335 0079 000000   		.space	3
+ 336              	.LC7:
+ 337 007c 796F7527 		.ascii	"you're so average.\000"
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 9
+
+
+ 337      72652073 
+ 337      6F206176 
+ 337      65726167 
+ 337      652E00
+ 338 008f 00       		.space	1
+ 339              	.LC8:
+ 340 0090 596F7520 		.ascii	"You are doing ok for your age.\000"
+ 340      61726520 
+ 340      646F696E 
+ 340      67206F6B 
+ 340      20666F72 
+ 341 00af 00       		.space	1
+ 342              	.LC9:
+ 343 00b0 4D792067 		.ascii	"My granny is faster than you!\000"
+ 343      72616E6E 
+ 343      79206973 
+ 343      20666173 
+ 343      74657220 
+ 344 00ce 0000     		.space	2
+ 345              	.LC10:
+ 346 00d0 48617665 		.ascii	"Have you been smoking something illegal?\000"
+ 346      20796F75 
+ 346      20626565 
+ 346      6E20736D 
+ 346      6F6B696E 
+ 347 00f9 000000   		.space	3
+ 348              	.LC11:
+ 349 00fc 446F2074 		.ascii	"Do they still allow you to drive?\000"
+ 349      68657920 
+ 349      7374696C 
+ 349      6C20616C 
+ 349      6C6F7720 
+ 350              		.text
+ 351              	.Letext0:
+ 352              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 353              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 354              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 355              		.file 5 "..\\FreeRTOS\\Source\\portable\\GCC\\ARM_CM3/portmacro.h"
+ 356              		.file 6 "Generated_Source\\PSoC5/BatteryLed.h"
+ 357              		.file 7 "..\\FreeRTOS\\Source\\include/task.h"
+ 358              		.file 8 "Generated_Source\\PSoC5/ADC_Battery.h"
+ 359              		.file 9 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+ 360              		.file 10 "Generated_Source\\PSoC5/core_cm3.h"
+ 361              		.section	.debug_info,"",%progbits
+ 362              	.Ldebug_info0:
+ 363 0000 C3030000 		.4byte	0x3c3
+ 364 0004 0400     		.2byte	0x4
+ 365 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 366 000a 04       		.byte	0x4
+ 367 000b 01       		.uleb128 0x1
+ 368 000c A1000000 		.4byte	.LASF39
+ 369 0010 0C       		.byte	0xc
+ 370 0011 D1010000 		.4byte	.LASF40
+ 371 0015 3B000000 		.4byte	.LASF41
+ 372 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 373 001d 00000000 		.4byte	0
+ 374 0021 00000000 		.4byte	.Ldebug_line0
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 10
+
+
+ 375 0025 02       		.uleb128 0x2
+ 376 0026 01       		.byte	0x1
+ 377 0027 06       		.byte	0x6
+ 378 0028 83020000 		.4byte	.LASF0
+ 379 002c 02       		.uleb128 0x2
+ 380 002d 01       		.byte	0x1
+ 381 002e 08       		.byte	0x8
+ 382 002f 93000000 		.4byte	.LASF1
+ 383 0033 02       		.uleb128 0x2
+ 384 0034 02       		.byte	0x2
+ 385 0035 05       		.byte	0x5
+ 386 0036 35020000 		.4byte	.LASF2
+ 387 003a 02       		.uleb128 0x2
+ 388 003b 02       		.byte	0x2
+ 389 003c 07       		.byte	0x7
+ 390 003d 47010000 		.4byte	.LASF3
+ 391 0041 03       		.uleb128 0x3
+ 392 0042 1F000000 		.4byte	.LASF5
+ 393 0046 02       		.byte	0x2
+ 394 0047 3F       		.byte	0x3f
+ 395 0048 4C000000 		.4byte	0x4c
+ 396 004c 02       		.uleb128 0x2
+ 397 004d 04       		.byte	0x4
+ 398 004e 05       		.byte	0x5
+ 399 004f 75000000 		.4byte	.LASF4
+ 400 0053 03       		.uleb128 0x3
+ 401 0054 78010000 		.4byte	.LASF6
+ 402 0058 02       		.byte	0x2
+ 403 0059 41       		.byte	0x41
+ 404 005a 5E000000 		.4byte	0x5e
+ 405 005e 02       		.uleb128 0x2
+ 406 005f 04       		.byte	0x4
+ 407 0060 07       		.byte	0x7
+ 408 0061 35010000 		.4byte	.LASF7
+ 409 0065 02       		.uleb128 0x2
+ 410 0066 08       		.byte	0x8
+ 411 0067 05       		.byte	0x5
+ 412 0068 00020000 		.4byte	.LASF8
+ 413 006c 02       		.uleb128 0x2
+ 414 006d 08       		.byte	0x8
+ 415 006e 07       		.byte	0x7
+ 416 006f BA010000 		.4byte	.LASF9
+ 417 0073 04       		.uleb128 0x4
+ 418 0074 04       		.byte	0x4
+ 419 0075 05       		.byte	0x5
+ 420 0076 696E7400 		.ascii	"int\000"
+ 421 007a 02       		.uleb128 0x2
+ 422 007b 04       		.byte	0x4
+ 423 007c 07       		.byte	0x7
+ 424 007d 95010000 		.4byte	.LASF10
+ 425 0081 03       		.uleb128 0x3
+ 426 0082 DE010000 		.4byte	.LASF11
+ 427 0086 03       		.byte	0x3
+ 428 0087 2C       		.byte	0x2c
+ 429 0088 41000000 		.4byte	0x41
+ 430 008c 03       		.uleb128 0x3
+ 431 008d 5B020000 		.4byte	.LASF12
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 11
+
+
+ 432 0091 03       		.byte	0x3
+ 433 0092 30       		.byte	0x30
+ 434 0093 53000000 		.4byte	0x53
+ 435 0097 05       		.uleb128 0x5
+ 436 0098 2F010000 		.4byte	.LASF13
+ 437 009c 04       		.byte	0x4
+ 438 009d E801     		.2byte	0x1e8
+ 439 009f 33000000 		.4byte	0x33
+ 440 00a3 02       		.uleb128 0x2
+ 441 00a4 04       		.byte	0x4
+ 442 00a5 04       		.byte	0x4
+ 443 00a6 86000000 		.4byte	.LASF14
+ 444 00aa 02       		.uleb128 0x2
+ 445 00ab 08       		.byte	0x8
+ 446 00ac 04       		.byte	0x4
+ 447 00ad 71010000 		.4byte	.LASF15
+ 448 00b1 02       		.uleb128 0x2
+ 449 00b2 01       		.byte	0x1
+ 450 00b3 08       		.byte	0x8
+ 451 00b4 1F020000 		.4byte	.LASF16
+ 452 00b8 02       		.uleb128 0x2
+ 453 00b9 08       		.byte	0x8
+ 454 00ba 04       		.byte	0x4
+ 455 00bb 77020000 		.4byte	.LASF17
+ 456 00bf 02       		.uleb128 0x2
+ 457 00c0 04       		.byte	0x4
+ 458 00c1 07       		.byte	0x7
+ 459 00c2 E6010000 		.4byte	.LASF18
+ 460 00c6 03       		.uleb128 0x3
+ 461 00c7 09000000 		.4byte	.LASF19
+ 462 00cb 05       		.byte	0x5
+ 463 00cc 3F       		.byte	0x3f
+ 464 00cd 8C000000 		.4byte	0x8c
+ 465 00d1 06       		.uleb128 0x6
+ 466 00d2 14000000 		.4byte	.LASF23
+ 467 00d6 01       		.byte	0x1
+ 468 00d7 18       		.byte	0x18
+ 469 00d8 00000000 		.4byte	.LFB85
+ 470 00dc 2C000000 		.4byte	.LFE85-.LFB85
+ 471 00e0 01       		.uleb128 0x1
+ 472 00e1 9C       		.byte	0x9c
+ 473 00e2 75010000 		.4byte	0x175
+ 474 00e6 07       		.uleb128 0x7
+ 475 00e7 64020000 		.4byte	.LASF20
+ 476 00eb 01       		.byte	0x1
+ 477 00ec 18       		.byte	0x18
+ 478 00ed 73000000 		.4byte	0x73
+ 479 00f1 00000000 		.4byte	.LLST0
+ 480 00f5 07       		.uleb128 0x7
+ 481 00f6 00000000 		.4byte	.LASF21
+ 482 00fa 01       		.byte	0x1
+ 483 00fb 18       		.byte	0x18
+ 484 00fc 73000000 		.4byte	0x73
+ 485 0100 1E000000 		.4byte	.LLST1
+ 486 0104 07       		.uleb128 0x7
+ 487 0105 5A010000 		.4byte	.LASF22
+ 488 0109 01       		.byte	0x1
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 12
+
+
+ 489 010a 18       		.byte	0x18
+ 490 010b 73000000 		.4byte	0x73
+ 491 010f 3C000000 		.4byte	.LLST2
+ 492 0113 08       		.uleb128 0x8
+ 493 0114 08000000 		.4byte	.LBB2
+ 494 0118 22000000 		.4byte	.LBE2-.LBB2
+ 495 011c 09       		.uleb128 0x9
+ 496 011d 6900     		.ascii	"i\000"
+ 497 011f 01       		.byte	0x1
+ 498 0120 19       		.byte	0x19
+ 499 0121 73000000 		.4byte	0x73
+ 500 0125 5A000000 		.4byte	.LLST3
+ 501 0129 0A       		.uleb128 0xa
+ 502 012a 12000000 		.4byte	.LVL3
+ 503 012e 61030000 		.4byte	0x361
+ 504 0132 3C010000 		.4byte	0x13c
+ 505 0136 0B       		.uleb128 0xb
+ 506 0137 01       		.uleb128 0x1
+ 507 0138 50       		.byte	0x50
+ 508 0139 01       		.uleb128 0x1
+ 509 013a 31       		.byte	0x31
+ 510 013b 00       		.byte	0
+ 511 013c 0A       		.uleb128 0xa
+ 512 013d 18000000 		.4byte	.LVL4
+ 513 0141 6C030000 		.4byte	0x36c
+ 514 0145 50010000 		.4byte	0x150
+ 515 0149 0B       		.uleb128 0xb
+ 516 014a 01       		.uleb128 0x1
+ 517 014b 50       		.byte	0x50
+ 518 014c 02       		.uleb128 0x2
+ 519 014d 77       		.byte	0x77
+ 520 014e 00       		.sleb128 0
+ 521 014f 00       		.byte	0
+ 522 0150 0A       		.uleb128 0xa
+ 523 0151 1E000000 		.4byte	.LVL5
+ 524 0155 61030000 		.4byte	0x361
+ 525 0159 63010000 		.4byte	0x163
+ 526 015d 0B       		.uleb128 0xb
+ 527 015e 01       		.uleb128 0x1
+ 528 015f 50       		.byte	0x50
+ 529 0160 01       		.uleb128 0x1
+ 530 0161 30       		.byte	0x30
+ 531 0162 00       		.byte	0
+ 532 0163 0C       		.uleb128 0xc
+ 533 0164 24000000 		.4byte	.LVL6
+ 534 0168 6C030000 		.4byte	0x36c
+ 535 016c 0B       		.uleb128 0xb
+ 536 016d 01       		.uleb128 0x1
+ 537 016e 50       		.byte	0x50
+ 538 016f 02       		.uleb128 0x2
+ 539 0170 76       		.byte	0x76
+ 540 0171 00       		.sleb128 0
+ 541 0172 00       		.byte	0
+ 542 0173 00       		.byte	0
+ 543 0174 00       		.byte	0
+ 544 0175 0D       		.uleb128 0xd
+ 545 0176 EF010000 		.4byte	.LASF24
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 13
+
+
+ 546 017a 01       		.byte	0x1
+ 547 017b 22       		.byte	0x22
+ 548 017c A3000000 		.4byte	0xa3
+ 549 0180 00000000 		.4byte	.LFB86
+ 550 0184 54000000 		.4byte	.LFE86-.LFB86
+ 551 0188 01       		.uleb128 0x1
+ 552 0189 9C       		.byte	0x9c
+ 553 018a EE010000 		.4byte	0x1ee
+ 554 018e 0E       		.uleb128 0xe
+ 555 018f 24020000 		.4byte	.LASF25
+ 556 0193 01       		.byte	0x1
+ 557 0194 25       		.byte	0x25
+ 558 0195 97000000 		.4byte	0x97
+ 559 0199 79000000 		.4byte	.LLST4
+ 560 019d 0E       		.uleb128 0xe
+ 561 019e D8010000 		.4byte	.LASF26
+ 562 01a2 01       		.byte	0x1
+ 563 01a3 26       		.byte	0x26
+ 564 01a4 A3000000 		.4byte	0xa3
+ 565 01a8 A4000000 		.4byte	.LLST5
+ 566 01ac 0F       		.uleb128 0xf
+ 567 01ad 06000000 		.4byte	.LVL8
+ 568 01b1 78030000 		.4byte	0x378
+ 569 01b5 0F       		.uleb128 0xf
+ 570 01b6 0A000000 		.4byte	.LVL9
+ 571 01ba 83030000 		.4byte	0x383
+ 572 01be 0A       		.uleb128 0xa
+ 573 01bf 10000000 		.4byte	.LVL10
+ 574 01c3 8E030000 		.4byte	0x38e
+ 575 01c7 D1010000 		.4byte	0x1d1
+ 576 01cb 0B       		.uleb128 0xb
+ 577 01cc 01       		.uleb128 0x1
+ 578 01cd 50       		.byte	0x50
+ 579 01ce 01       		.uleb128 0x1
+ 580 01cf 30       		.byte	0x30
+ 581 01d0 00       		.byte	0
+ 582 01d1 0F       		.uleb128 0xf
+ 583 01d2 16000000 		.4byte	.LVL11
+ 584 01d6 99030000 		.4byte	0x399
+ 585 01da 0C       		.uleb128 0xc
+ 586 01db 40000000 		.4byte	.LVL18
+ 587 01df A4030000 		.4byte	0x3a4
+ 588 01e3 0B       		.uleb128 0xb
+ 589 01e4 01       		.uleb128 0x1
+ 590 01e5 50       		.byte	0x50
+ 591 01e6 05       		.uleb128 0x5
+ 592 01e7 03       		.byte	0x3
+ 593 01e8 00000000 		.4byte	.LC0
+ 594 01ec 00       		.byte	0
+ 595 01ed 00       		.byte	0
+ 596 01ee 10       		.uleb128 0x10
+ 597 01ef 8C000000 		.4byte	.LASF42
+ 598 01f3 01       		.byte	0x1
+ 599 01f4 36       		.byte	0x36
+ 600 01f5 00000000 		.4byte	.LFB87
+ 601 01f9 C4000000 		.4byte	.LFE87-.LFB87
+ 602 01fd 01       		.uleb128 0x1
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 14
+
+
+ 603 01fe 9C       		.byte	0x9c
+ 604 01ff 50030000 		.4byte	0x350
+ 605 0203 0E       		.uleb128 0xe
+ 606 0204 89010000 		.4byte	.LASF27
+ 607 0208 01       		.byte	0x1
+ 608 0209 37       		.byte	0x37
+ 609 020a C6000000 		.4byte	0xc6
+ 610 020e E2000000 		.4byte	.LLST6
+ 611 0212 0E       		.uleb128 0xe
+ 612 0213 90010000 		.4byte	.LASF28
+ 613 0217 01       		.byte	0x1
+ 614 0218 37       		.byte	0x37
+ 615 0219 C6000000 		.4byte	0xc6
+ 616 021d 00010000 		.4byte	.LLST7
+ 617 0221 0E       		.uleb128 0xe
+ 618 0222 7E000000 		.4byte	.LASF29
+ 619 0226 01       		.byte	0x1
+ 620 0227 37       		.byte	0x37
+ 621 0228 C6000000 		.4byte	0xc6
+ 622 022c 13010000 		.4byte	.LLST8
+ 623 0230 11       		.uleb128 0x11
+ 624 0231 61676500 		.ascii	"age\000"
+ 625 0235 01       		.byte	0x1
+ 626 0236 38       		.byte	0x38
+ 627 0237 73000000 		.4byte	0x73
+ 628 023b 02       		.uleb128 0x2
+ 629 023c 91       		.byte	0x91
+ 630 023d 74       		.sleb128 -12
+ 631 023e 0A       		.uleb128 0xa
+ 632 023f 0A000000 		.4byte	.LVL20
+ 633 0243 A4030000 		.4byte	0x3a4
+ 634 0247 55020000 		.4byte	0x255
+ 635 024b 0B       		.uleb128 0xb
+ 636 024c 01       		.uleb128 0x1
+ 637 024d 50       		.byte	0x50
+ 638 024e 05       		.uleb128 0x5
+ 639 024f 03       		.byte	0x3
+ 640 0250 18000000 		.4byte	.LC1
+ 641 0254 00       		.byte	0
+ 642 0255 0F       		.uleb128 0xf
+ 643 0256 0E000000 		.4byte	.LVL21
+ 644 025a AF030000 		.4byte	0x3af
+ 645 025e 0A       		.uleb128 0xa
+ 646 025f 18000000 		.4byte	.LVL24
+ 647 0263 BB030000 		.4byte	0x3bb
+ 648 0267 7B020000 		.4byte	0x27b
+ 649 026b 0B       		.uleb128 0xb
+ 650 026c 01       		.uleb128 0x1
+ 651 026d 50       		.byte	0x50
+ 652 026e 05       		.uleb128 0x5
+ 653 026f 03       		.byte	0x3
+ 654 0270 2C000000 		.4byte	.LC2
+ 655 0274 0B       		.uleb128 0xb
+ 656 0275 01       		.uleb128 0x1
+ 657 0276 51       		.byte	0x51
+ 658 0277 02       		.uleb128 0x2
+ 659 0278 91       		.byte	0x91
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 15
+
+
+ 660 0279 74       		.sleb128 -12
+ 661 027a 00       		.byte	0
+ 662 027b 0F       		.uleb128 0xf
+ 663 027c 1C000000 		.4byte	.LVL25
+ 664 0280 AF030000 		.4byte	0x3af
+ 665 0284 0A       		.uleb128 0xa
+ 666 0285 32000000 		.4byte	.LVL28
+ 667 0289 A4030000 		.4byte	0x3a4
+ 668 028d 9B020000 		.4byte	0x29b
+ 669 0291 0B       		.uleb128 0xb
+ 670 0292 01       		.uleb128 0x1
+ 671 0293 50       		.byte	0x50
+ 672 0294 05       		.uleb128 0x5
+ 673 0295 03       		.byte	0x3
+ 674 0296 30000000 		.4byte	.LC3
+ 675 029a 00       		.byte	0
+ 676 029b 0A       		.uleb128 0xa
+ 677 029c 3E000000 		.4byte	.LVL31
+ 678 02a0 A4030000 		.4byte	0x3a4
+ 679 02a4 B2020000 		.4byte	0x2b2
+ 680 02a8 0B       		.uleb128 0xb
+ 681 02a9 01       		.uleb128 0x1
+ 682 02aa 50       		.byte	0x50
+ 683 02ab 05       		.uleb128 0x5
+ 684 02ac 03       		.byte	0x3
+ 685 02ad 44000000 		.4byte	.LC4
+ 686 02b1 00       		.byte	0
+ 687 02b2 0A       		.uleb128 0xa
+ 688 02b3 46000000 		.4byte	.LVL34
+ 689 02b7 A4030000 		.4byte	0x3a4
+ 690 02bb C9020000 		.4byte	0x2c9
+ 691 02bf 0B       		.uleb128 0xb
+ 692 02c0 01       		.uleb128 0x1
+ 693 02c1 50       		.byte	0x50
+ 694 02c2 05       		.uleb128 0x5
+ 695 02c3 03       		.byte	0x3
+ 696 02c4 58000000 		.4byte	.LC5
+ 697 02c8 00       		.byte	0
+ 698 02c9 0A       		.uleb128 0xa
+ 699 02ca 5C000000 		.4byte	.LVL37
+ 700 02ce A4030000 		.4byte	0x3a4
+ 701 02d2 E0020000 		.4byte	0x2e0
+ 702 02d6 0B       		.uleb128 0xb
+ 703 02d7 01       		.uleb128 0x1
+ 704 02d8 50       		.byte	0x50
+ 705 02d9 05       		.uleb128 0x5
+ 706 02da 03       		.byte	0x3
+ 707 02db 6C000000 		.4byte	.LC6
+ 708 02df 00       		.byte	0
+ 709 02e0 0A       		.uleb128 0xa
+ 710 02e1 68000000 		.4byte	.LVL40
+ 711 02e5 A4030000 		.4byte	0x3a4
+ 712 02e9 F7020000 		.4byte	0x2f7
+ 713 02ed 0B       		.uleb128 0xb
+ 714 02ee 01       		.uleb128 0x1
+ 715 02ef 50       		.byte	0x50
+ 716 02f0 05       		.uleb128 0x5
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 16
+
+
+ 717 02f1 03       		.byte	0x3
+ 718 02f2 7C000000 		.4byte	.LC7
+ 719 02f6 00       		.byte	0
+ 720 02f7 0A       		.uleb128 0xa
+ 721 02f8 70000000 		.4byte	.LVL43
+ 722 02fc A4030000 		.4byte	0x3a4
+ 723 0300 0E030000 		.4byte	0x30e
+ 724 0304 0B       		.uleb128 0xb
+ 725 0305 01       		.uleb128 0x1
+ 726 0306 50       		.byte	0x50
+ 727 0307 05       		.uleb128 0x5
+ 728 0308 03       		.byte	0x3
+ 729 0309 90000000 		.4byte	.LC8
+ 730 030d 00       		.byte	0
+ 731 030e 0A       		.uleb128 0xa
+ 732 030f 7E000000 		.4byte	.LVL46
+ 733 0313 A4030000 		.4byte	0x3a4
+ 734 0317 25030000 		.4byte	0x325
+ 735 031b 0B       		.uleb128 0xb
+ 736 031c 01       		.uleb128 0x1
+ 737 031d 50       		.byte	0x50
+ 738 031e 05       		.uleb128 0x5
+ 739 031f 03       		.byte	0x3
+ 740 0320 B0000000 		.4byte	.LC9
+ 741 0324 00       		.byte	0
+ 742 0325 0A       		.uleb128 0xa
+ 743 0326 8A000000 		.4byte	.LVL49
+ 744 032a A4030000 		.4byte	0x3a4
+ 745 032e 3C030000 		.4byte	0x33c
+ 746 0332 0B       		.uleb128 0xb
+ 747 0333 01       		.uleb128 0x1
+ 748 0334 50       		.byte	0x50
+ 749 0335 05       		.uleb128 0x5
+ 750 0336 03       		.byte	0x3
+ 751 0337 D0000000 		.4byte	.LC10
+ 752 033b 00       		.byte	0
+ 753 033c 0C       		.uleb128 0xc
+ 754 033d 92000000 		.4byte	.LVL52
+ 755 0341 A4030000 		.4byte	0x3a4
+ 756 0345 0B       		.uleb128 0xb
+ 757 0346 01       		.uleb128 0x1
+ 758 0347 50       		.byte	0x50
+ 759 0348 05       		.uleb128 0x5
+ 760 0349 03       		.byte	0x3
+ 761 034a FC000000 		.4byte	.LC11
+ 762 034e 00       		.byte	0
+ 763 034f 00       		.byte	0
+ 764 0350 12       		.uleb128 0x12
+ 765 0351 64010000 		.4byte	.LASF43
+ 766 0355 0A       		.byte	0xa
+ 767 0356 1207     		.2byte	0x712
+ 768 0358 5C030000 		.4byte	0x35c
+ 769 035c 13       		.uleb128 0x13
+ 770 035d 81000000 		.4byte	0x81
+ 771 0361 14       		.uleb128 0x14
+ 772 0362 0E020000 		.4byte	.LASF30
+ 773 0366 0E020000 		.4byte	.LASF30
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 17
+
+
+ 774 036a 06       		.byte	0x6
+ 775 036b 26       		.byte	0x26
+ 776 036c 15       		.uleb128 0x15
+ 777 036d 6C020000 		.4byte	.LASF31
+ 778 0371 6C020000 		.4byte	.LASF31
+ 779 0375 07       		.byte	0x7
+ 780 0376 ED02     		.2byte	0x2ed
+ 781 0378 14       		.uleb128 0x14
+ 782 0379 29000000 		.4byte	.LASF32
+ 783 037d 29000000 		.4byte	.LASF32
+ 784 0381 08       		.byte	0x8
+ 785 0382 34       		.byte	0x34
+ 786 0383 14       		.uleb128 0x14
+ 787 0384 8F020000 		.4byte	.LASF33
+ 788 0388 8F020000 		.4byte	.LASF33
+ 789 038c 08       		.byte	0x8
+ 790 038d D1       		.byte	0xd1
+ 791 038e 14       		.uleb128 0x14
+ 792 038f 3F020000 		.4byte	.LASF34
+ 793 0393 3F020000 		.4byte	.LASF34
+ 794 0397 08       		.byte	0x8
+ 795 0398 39       		.byte	0x39
+ 796 0399 14       		.uleb128 0x14
+ 797 039a A2010000 		.4byte	.LASF35
+ 798 039e A2010000 		.4byte	.LASF35
+ 799 03a2 08       		.byte	0x8
+ 800 03a3 3B       		.byte	0x3b
+ 801 03a4 14       		.uleb128 0x14
+ 802 03a5 2E020000 		.4byte	.LASF36
+ 803 03a9 2E020000 		.4byte	.LASF36
+ 804 03ad 09       		.byte	0x9
+ 805 03ae BB       		.byte	0xbb
+ 806 03af 15       		.uleb128 0x15
+ 807 03b0 A8020000 		.4byte	.LASF37
+ 808 03b4 A8020000 		.4byte	.LASF37
+ 809 03b8 07       		.byte	0x7
+ 810 03b9 3E05     		.2byte	0x53e
+ 811 03bb 14       		.uleb128 0x14
+ 812 03bc 83010000 		.4byte	.LASF38
+ 813 03c0 83010000 		.4byte	.LASF38
+ 814 03c4 09       		.byte	0x9
+ 815 03c5 BD       		.byte	0xbd
+ 816 03c6 00       		.byte	0
+ 817              		.section	.debug_abbrev,"",%progbits
+ 818              	.Ldebug_abbrev0:
+ 819 0000 01       		.uleb128 0x1
+ 820 0001 11       		.uleb128 0x11
+ 821 0002 01       		.byte	0x1
+ 822 0003 25       		.uleb128 0x25
+ 823 0004 0E       		.uleb128 0xe
+ 824 0005 13       		.uleb128 0x13
+ 825 0006 0B       		.uleb128 0xb
+ 826 0007 03       		.uleb128 0x3
+ 827 0008 0E       		.uleb128 0xe
+ 828 0009 1B       		.uleb128 0x1b
+ 829 000a 0E       		.uleb128 0xe
+ 830 000b 55       		.uleb128 0x55
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 18
+
+
+ 831 000c 17       		.uleb128 0x17
+ 832 000d 11       		.uleb128 0x11
+ 833 000e 01       		.uleb128 0x1
+ 834 000f 10       		.uleb128 0x10
+ 835 0010 17       		.uleb128 0x17
+ 836 0011 00       		.byte	0
+ 837 0012 00       		.byte	0
+ 838 0013 02       		.uleb128 0x2
+ 839 0014 24       		.uleb128 0x24
+ 840 0015 00       		.byte	0
+ 841 0016 0B       		.uleb128 0xb
+ 842 0017 0B       		.uleb128 0xb
+ 843 0018 3E       		.uleb128 0x3e
+ 844 0019 0B       		.uleb128 0xb
+ 845 001a 03       		.uleb128 0x3
+ 846 001b 0E       		.uleb128 0xe
+ 847 001c 00       		.byte	0
+ 848 001d 00       		.byte	0
+ 849 001e 03       		.uleb128 0x3
+ 850 001f 16       		.uleb128 0x16
+ 851 0020 00       		.byte	0
+ 852 0021 03       		.uleb128 0x3
+ 853 0022 0E       		.uleb128 0xe
+ 854 0023 3A       		.uleb128 0x3a
+ 855 0024 0B       		.uleb128 0xb
+ 856 0025 3B       		.uleb128 0x3b
+ 857 0026 0B       		.uleb128 0xb
+ 858 0027 49       		.uleb128 0x49
+ 859 0028 13       		.uleb128 0x13
+ 860 0029 00       		.byte	0
+ 861 002a 00       		.byte	0
+ 862 002b 04       		.uleb128 0x4
+ 863 002c 24       		.uleb128 0x24
+ 864 002d 00       		.byte	0
+ 865 002e 0B       		.uleb128 0xb
+ 866 002f 0B       		.uleb128 0xb
+ 867 0030 3E       		.uleb128 0x3e
+ 868 0031 0B       		.uleb128 0xb
+ 869 0032 03       		.uleb128 0x3
+ 870 0033 08       		.uleb128 0x8
+ 871 0034 00       		.byte	0
+ 872 0035 00       		.byte	0
+ 873 0036 05       		.uleb128 0x5
+ 874 0037 16       		.uleb128 0x16
+ 875 0038 00       		.byte	0
+ 876 0039 03       		.uleb128 0x3
+ 877 003a 0E       		.uleb128 0xe
+ 878 003b 3A       		.uleb128 0x3a
+ 879 003c 0B       		.uleb128 0xb
+ 880 003d 3B       		.uleb128 0x3b
+ 881 003e 05       		.uleb128 0x5
+ 882 003f 49       		.uleb128 0x49
+ 883 0040 13       		.uleb128 0x13
+ 884 0041 00       		.byte	0
+ 885 0042 00       		.byte	0
+ 886 0043 06       		.uleb128 0x6
+ 887 0044 2E       		.uleb128 0x2e
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 19
+
+
+ 888 0045 01       		.byte	0x1
+ 889 0046 3F       		.uleb128 0x3f
+ 890 0047 19       		.uleb128 0x19
+ 891 0048 03       		.uleb128 0x3
+ 892 0049 0E       		.uleb128 0xe
+ 893 004a 3A       		.uleb128 0x3a
+ 894 004b 0B       		.uleb128 0xb
+ 895 004c 3B       		.uleb128 0x3b
+ 896 004d 0B       		.uleb128 0xb
+ 897 004e 27       		.uleb128 0x27
+ 898 004f 19       		.uleb128 0x19
+ 899 0050 11       		.uleb128 0x11
+ 900 0051 01       		.uleb128 0x1
+ 901 0052 12       		.uleb128 0x12
+ 902 0053 06       		.uleb128 0x6
+ 903 0054 40       		.uleb128 0x40
+ 904 0055 18       		.uleb128 0x18
+ 905 0056 9742     		.uleb128 0x2117
+ 906 0058 19       		.uleb128 0x19
+ 907 0059 01       		.uleb128 0x1
+ 908 005a 13       		.uleb128 0x13
+ 909 005b 00       		.byte	0
+ 910 005c 00       		.byte	0
+ 911 005d 07       		.uleb128 0x7
+ 912 005e 05       		.uleb128 0x5
+ 913 005f 00       		.byte	0
+ 914 0060 03       		.uleb128 0x3
+ 915 0061 0E       		.uleb128 0xe
+ 916 0062 3A       		.uleb128 0x3a
+ 917 0063 0B       		.uleb128 0xb
+ 918 0064 3B       		.uleb128 0x3b
+ 919 0065 0B       		.uleb128 0xb
+ 920 0066 49       		.uleb128 0x49
+ 921 0067 13       		.uleb128 0x13
+ 922 0068 02       		.uleb128 0x2
+ 923 0069 17       		.uleb128 0x17
+ 924 006a 00       		.byte	0
+ 925 006b 00       		.byte	0
+ 926 006c 08       		.uleb128 0x8
+ 927 006d 0B       		.uleb128 0xb
+ 928 006e 01       		.byte	0x1
+ 929 006f 11       		.uleb128 0x11
+ 930 0070 01       		.uleb128 0x1
+ 931 0071 12       		.uleb128 0x12
+ 932 0072 06       		.uleb128 0x6
+ 933 0073 00       		.byte	0
+ 934 0074 00       		.byte	0
+ 935 0075 09       		.uleb128 0x9
+ 936 0076 34       		.uleb128 0x34
+ 937 0077 00       		.byte	0
+ 938 0078 03       		.uleb128 0x3
+ 939 0079 08       		.uleb128 0x8
+ 940 007a 3A       		.uleb128 0x3a
+ 941 007b 0B       		.uleb128 0xb
+ 942 007c 3B       		.uleb128 0x3b
+ 943 007d 0B       		.uleb128 0xb
+ 944 007e 49       		.uleb128 0x49
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 20
+
+
+ 945 007f 13       		.uleb128 0x13
+ 946 0080 02       		.uleb128 0x2
+ 947 0081 17       		.uleb128 0x17
+ 948 0082 00       		.byte	0
+ 949 0083 00       		.byte	0
+ 950 0084 0A       		.uleb128 0xa
+ 951 0085 898201   		.uleb128 0x4109
+ 952 0088 01       		.byte	0x1
+ 953 0089 11       		.uleb128 0x11
+ 954 008a 01       		.uleb128 0x1
+ 955 008b 31       		.uleb128 0x31
+ 956 008c 13       		.uleb128 0x13
+ 957 008d 01       		.uleb128 0x1
+ 958 008e 13       		.uleb128 0x13
+ 959 008f 00       		.byte	0
+ 960 0090 00       		.byte	0
+ 961 0091 0B       		.uleb128 0xb
+ 962 0092 8A8201   		.uleb128 0x410a
+ 963 0095 00       		.byte	0
+ 964 0096 02       		.uleb128 0x2
+ 965 0097 18       		.uleb128 0x18
+ 966 0098 9142     		.uleb128 0x2111
+ 967 009a 18       		.uleb128 0x18
+ 968 009b 00       		.byte	0
+ 969 009c 00       		.byte	0
+ 970 009d 0C       		.uleb128 0xc
+ 971 009e 898201   		.uleb128 0x4109
+ 972 00a1 01       		.byte	0x1
+ 973 00a2 11       		.uleb128 0x11
+ 974 00a3 01       		.uleb128 0x1
+ 975 00a4 31       		.uleb128 0x31
+ 976 00a5 13       		.uleb128 0x13
+ 977 00a6 00       		.byte	0
+ 978 00a7 00       		.byte	0
+ 979 00a8 0D       		.uleb128 0xd
+ 980 00a9 2E       		.uleb128 0x2e
+ 981 00aa 01       		.byte	0x1
+ 982 00ab 3F       		.uleb128 0x3f
+ 983 00ac 19       		.uleb128 0x19
+ 984 00ad 03       		.uleb128 0x3
+ 985 00ae 0E       		.uleb128 0xe
+ 986 00af 3A       		.uleb128 0x3a
+ 987 00b0 0B       		.uleb128 0xb
+ 988 00b1 3B       		.uleb128 0x3b
+ 989 00b2 0B       		.uleb128 0xb
+ 990 00b3 49       		.uleb128 0x49
+ 991 00b4 13       		.uleb128 0x13
+ 992 00b5 11       		.uleb128 0x11
+ 993 00b6 01       		.uleb128 0x1
+ 994 00b7 12       		.uleb128 0x12
+ 995 00b8 06       		.uleb128 0x6
+ 996 00b9 40       		.uleb128 0x40
+ 997 00ba 18       		.uleb128 0x18
+ 998 00bb 9642     		.uleb128 0x2116
+ 999 00bd 19       		.uleb128 0x19
+ 1000 00be 01       		.uleb128 0x1
+ 1001 00bf 13       		.uleb128 0x13
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 21
+
+
+ 1002 00c0 00       		.byte	0
+ 1003 00c1 00       		.byte	0
+ 1004 00c2 0E       		.uleb128 0xe
+ 1005 00c3 34       		.uleb128 0x34
+ 1006 00c4 00       		.byte	0
+ 1007 00c5 03       		.uleb128 0x3
+ 1008 00c6 0E       		.uleb128 0xe
+ 1009 00c7 3A       		.uleb128 0x3a
+ 1010 00c8 0B       		.uleb128 0xb
+ 1011 00c9 3B       		.uleb128 0x3b
+ 1012 00ca 0B       		.uleb128 0xb
+ 1013 00cb 49       		.uleb128 0x49
+ 1014 00cc 13       		.uleb128 0x13
+ 1015 00cd 02       		.uleb128 0x2
+ 1016 00ce 17       		.uleb128 0x17
+ 1017 00cf 00       		.byte	0
+ 1018 00d0 00       		.byte	0
+ 1019 00d1 0F       		.uleb128 0xf
+ 1020 00d2 898201   		.uleb128 0x4109
+ 1021 00d5 00       		.byte	0
+ 1022 00d6 11       		.uleb128 0x11
+ 1023 00d7 01       		.uleb128 0x1
+ 1024 00d8 31       		.uleb128 0x31
+ 1025 00d9 13       		.uleb128 0x13
+ 1026 00da 00       		.byte	0
+ 1027 00db 00       		.byte	0
+ 1028 00dc 10       		.uleb128 0x10
+ 1029 00dd 2E       		.uleb128 0x2e
+ 1030 00de 01       		.byte	0x1
+ 1031 00df 3F       		.uleb128 0x3f
+ 1032 00e0 19       		.uleb128 0x19
+ 1033 00e1 03       		.uleb128 0x3
+ 1034 00e2 0E       		.uleb128 0xe
+ 1035 00e3 3A       		.uleb128 0x3a
+ 1036 00e4 0B       		.uleb128 0xb
+ 1037 00e5 3B       		.uleb128 0x3b
+ 1038 00e6 0B       		.uleb128 0xb
+ 1039 00e7 11       		.uleb128 0x11
+ 1040 00e8 01       		.uleb128 0x1
+ 1041 00e9 12       		.uleb128 0x12
+ 1042 00ea 06       		.uleb128 0x6
+ 1043 00eb 40       		.uleb128 0x40
+ 1044 00ec 18       		.uleb128 0x18
+ 1045 00ed 9742     		.uleb128 0x2117
+ 1046 00ef 19       		.uleb128 0x19
+ 1047 00f0 01       		.uleb128 0x1
+ 1048 00f1 13       		.uleb128 0x13
+ 1049 00f2 00       		.byte	0
+ 1050 00f3 00       		.byte	0
+ 1051 00f4 11       		.uleb128 0x11
+ 1052 00f5 34       		.uleb128 0x34
+ 1053 00f6 00       		.byte	0
+ 1054 00f7 03       		.uleb128 0x3
+ 1055 00f8 08       		.uleb128 0x8
+ 1056 00f9 3A       		.uleb128 0x3a
+ 1057 00fa 0B       		.uleb128 0xb
+ 1058 00fb 3B       		.uleb128 0x3b
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 22
+
+
+ 1059 00fc 0B       		.uleb128 0xb
+ 1060 00fd 49       		.uleb128 0x49
+ 1061 00fe 13       		.uleb128 0x13
+ 1062 00ff 02       		.uleb128 0x2
+ 1063 0100 18       		.uleb128 0x18
+ 1064 0101 00       		.byte	0
+ 1065 0102 00       		.byte	0
+ 1066 0103 12       		.uleb128 0x12
+ 1067 0104 34       		.uleb128 0x34
+ 1068 0105 00       		.byte	0
+ 1069 0106 03       		.uleb128 0x3
+ 1070 0107 0E       		.uleb128 0xe
+ 1071 0108 3A       		.uleb128 0x3a
+ 1072 0109 0B       		.uleb128 0xb
+ 1073 010a 3B       		.uleb128 0x3b
+ 1074 010b 05       		.uleb128 0x5
+ 1075 010c 49       		.uleb128 0x49
+ 1076 010d 13       		.uleb128 0x13
+ 1077 010e 3F       		.uleb128 0x3f
+ 1078 010f 19       		.uleb128 0x19
+ 1079 0110 3C       		.uleb128 0x3c
+ 1080 0111 19       		.uleb128 0x19
+ 1081 0112 00       		.byte	0
+ 1082 0113 00       		.byte	0
+ 1083 0114 13       		.uleb128 0x13
+ 1084 0115 35       		.uleb128 0x35
+ 1085 0116 00       		.byte	0
+ 1086 0117 49       		.uleb128 0x49
+ 1087 0118 13       		.uleb128 0x13
+ 1088 0119 00       		.byte	0
+ 1089 011a 00       		.byte	0
+ 1090 011b 14       		.uleb128 0x14
+ 1091 011c 2E       		.uleb128 0x2e
+ 1092 011d 00       		.byte	0
+ 1093 011e 3F       		.uleb128 0x3f
+ 1094 011f 19       		.uleb128 0x19
+ 1095 0120 3C       		.uleb128 0x3c
+ 1096 0121 19       		.uleb128 0x19
+ 1097 0122 6E       		.uleb128 0x6e
+ 1098 0123 0E       		.uleb128 0xe
+ 1099 0124 03       		.uleb128 0x3
+ 1100 0125 0E       		.uleb128 0xe
+ 1101 0126 3A       		.uleb128 0x3a
+ 1102 0127 0B       		.uleb128 0xb
+ 1103 0128 3B       		.uleb128 0x3b
+ 1104 0129 0B       		.uleb128 0xb
+ 1105 012a 00       		.byte	0
+ 1106 012b 00       		.byte	0
+ 1107 012c 15       		.uleb128 0x15
+ 1108 012d 2E       		.uleb128 0x2e
+ 1109 012e 00       		.byte	0
+ 1110 012f 3F       		.uleb128 0x3f
+ 1111 0130 19       		.uleb128 0x19
+ 1112 0131 3C       		.uleb128 0x3c
+ 1113 0132 19       		.uleb128 0x19
+ 1114 0133 6E       		.uleb128 0x6e
+ 1115 0134 0E       		.uleb128 0xe
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 23
+
+
+ 1116 0135 03       		.uleb128 0x3
+ 1117 0136 0E       		.uleb128 0xe
+ 1118 0137 3A       		.uleb128 0x3a
+ 1119 0138 0B       		.uleb128 0xb
+ 1120 0139 3B       		.uleb128 0x3b
+ 1121 013a 05       		.uleb128 0x5
+ 1122 013b 00       		.byte	0
+ 1123 013c 00       		.byte	0
+ 1124 013d 00       		.byte	0
+ 1125              		.section	.debug_loc,"",%progbits
+ 1126              	.Ldebug_loc0:
+ 1127              	.LLST0:
+ 1128 0000 00000000 		.4byte	.LVL0
+ 1129 0004 0C000000 		.4byte	.LVL2
+ 1130 0008 0100     		.2byte	0x1
+ 1131 000a 50       		.byte	0x50
+ 1132 000b 0C000000 		.4byte	.LVL2
+ 1133 000f 2C000000 		.4byte	.LFE85
+ 1134 0013 0100     		.2byte	0x1
+ 1135 0015 55       		.byte	0x55
+ 1136 0016 00000000 		.4byte	0
+ 1137 001a 00000000 		.4byte	0
+ 1138              	.LLST1:
+ 1139 001e 00000000 		.4byte	.LVL0
+ 1140 0022 0C000000 		.4byte	.LVL2
+ 1141 0026 0100     		.2byte	0x1
+ 1142 0028 51       		.byte	0x51
+ 1143 0029 0C000000 		.4byte	.LVL2
+ 1144 002d 2C000000 		.4byte	.LFE85
+ 1145 0031 0100     		.2byte	0x1
+ 1146 0033 57       		.byte	0x57
+ 1147 0034 00000000 		.4byte	0
+ 1148 0038 00000000 		.4byte	0
+ 1149              	.LLST2:
+ 1150 003c 00000000 		.4byte	.LVL0
+ 1151 0040 0C000000 		.4byte	.LVL2
+ 1152 0044 0100     		.2byte	0x1
+ 1153 0046 52       		.byte	0x52
+ 1154 0047 0C000000 		.4byte	.LVL2
+ 1155 004b 2C000000 		.4byte	.LFE85
+ 1156 004f 0100     		.2byte	0x1
+ 1157 0051 56       		.byte	0x56
+ 1158 0052 00000000 		.4byte	0
+ 1159 0056 00000000 		.4byte	0
+ 1160              	.LLST3:
+ 1161 005a 08000000 		.4byte	.LVL1
+ 1162 005e 0C000000 		.4byte	.LVL2
+ 1163 0062 0200     		.2byte	0x2
+ 1164 0064 30       		.byte	0x30
+ 1165 0065 9F       		.byte	0x9f
+ 1166 0066 0C000000 		.4byte	.LVL2
+ 1167 006a 2C000000 		.4byte	.LFE85
+ 1168 006e 0100     		.2byte	0x1
+ 1169 0070 54       		.byte	0x54
+ 1170 0071 00000000 		.4byte	0
+ 1171 0075 00000000 		.4byte	0
+ 1172              	.LLST4:
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 24
+
+
+ 1173 0079 06000000 		.4byte	.LVL8
+ 1174 007d 16000000 		.4byte	.LVL11
+ 1175 0081 0200     		.2byte	0x2
+ 1176 0083 30       		.byte	0x30
+ 1177 0084 9F       		.byte	0x9f
+ 1178 0085 16000000 		.4byte	.LVL11
+ 1179 0089 1E000000 		.4byte	.LVL12
+ 1180 008d 0100     		.2byte	0x1
+ 1181 008f 50       		.byte	0x50
+ 1182 0090 44000000 		.4byte	.LVL19
+ 1183 0094 54000000 		.4byte	.LFE86
+ 1184 0098 0200     		.2byte	0x2
+ 1185 009a 30       		.byte	0x30
+ 1186 009b 9F       		.byte	0x9f
+ 1187 009c 00000000 		.4byte	0
+ 1188 00a0 00000000 		.4byte	0
+ 1189              	.LLST5:
+ 1190 00a4 06000000 		.4byte	.LVL8
+ 1191 00a8 32000000 		.4byte	.LVL16
+ 1192 00ac 0600     		.2byte	0x6
+ 1193 00ae 9E       		.byte	0x9e
+ 1194 00af 04       		.uleb128 0x4
+ 1195 00b0 00000000 		.4byte	0
+ 1196 00b4 32000000 		.4byte	.LVL16
+ 1197 00b8 35000000 		.4byte	.LVL17-1
+ 1198 00bc 0100     		.2byte	0x1
+ 1199 00be 50       		.byte	0x50
+ 1200 00bf 35000000 		.4byte	.LVL17-1
+ 1201 00c3 44000000 		.4byte	.LVL19
+ 1202 00c7 0100     		.2byte	0x1
+ 1203 00c9 54       		.byte	0x54
+ 1204 00ca 44000000 		.4byte	.LVL19
+ 1205 00ce 54000000 		.4byte	.LFE86
+ 1206 00d2 0600     		.2byte	0x6
+ 1207 00d4 9E       		.byte	0x9e
+ 1208 00d5 04       		.uleb128 0x4
+ 1209 00d6 00000000 		.4byte	0
+ 1210 00da 00000000 		.4byte	0
+ 1211 00de 00000000 		.4byte	0
+ 1212              	.LLST6:
+ 1213 00e2 10000000 		.4byte	.LVL22
+ 1214 00e6 14000000 		.4byte	.LVL23
+ 1215 00ea 0100     		.2byte	0x1
+ 1216 00ec 50       		.byte	0x50
+ 1217 00ed 14000000 		.4byte	.LVL23
+ 1218 00f1 96000000 		.4byte	.LVL53
+ 1219 00f5 0100     		.2byte	0x1
+ 1220 00f7 54       		.byte	0x54
+ 1221 00f8 00000000 		.4byte	0
+ 1222 00fc 00000000 		.4byte	0
+ 1223              	.LLST7:
+ 1224 0100 1C000000 		.4byte	.LVL25
+ 1225 0104 1E000000 		.4byte	.LVL26
+ 1226 0108 0100     		.2byte	0x1
+ 1227 010a 50       		.byte	0x50
+ 1228 010b 00000000 		.4byte	0
+ 1229 010f 00000000 		.4byte	0
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 25
+
+
+ 1230              	.LLST8:
+ 1231 0113 1E000000 		.4byte	.LVL26
+ 1232 0117 2E000000 		.4byte	.LVL27
+ 1233 011b 0100     		.2byte	0x1
+ 1234 011d 50       		.byte	0x50
+ 1235 011e 34000000 		.4byte	.LVL29
+ 1236 0122 3A000000 		.4byte	.LVL30
+ 1237 0126 0100     		.2byte	0x1
+ 1238 0128 50       		.byte	0x50
+ 1239 0129 40000000 		.4byte	.LVL32
+ 1240 012d 42000000 		.4byte	.LVL33
+ 1241 0131 0100     		.2byte	0x1
+ 1242 0133 50       		.byte	0x50
+ 1243 0134 48000000 		.4byte	.LVL35
+ 1244 0138 58000000 		.4byte	.LVL36
+ 1245 013c 0100     		.2byte	0x1
+ 1246 013e 50       		.byte	0x50
+ 1247 013f 5E000000 		.4byte	.LVL38
+ 1248 0143 64000000 		.4byte	.LVL39
+ 1249 0147 0100     		.2byte	0x1
+ 1250 0149 50       		.byte	0x50
+ 1251 014a 6A000000 		.4byte	.LVL41
+ 1252 014e 6C000000 		.4byte	.LVL42
+ 1253 0152 0100     		.2byte	0x1
+ 1254 0154 50       		.byte	0x50
+ 1255 0155 72000000 		.4byte	.LVL44
+ 1256 0159 7A000000 		.4byte	.LVL45
+ 1257 015d 0100     		.2byte	0x1
+ 1258 015f 50       		.byte	0x50
+ 1259 0160 80000000 		.4byte	.LVL47
+ 1260 0164 86000000 		.4byte	.LVL48
+ 1261 0168 0100     		.2byte	0x1
+ 1262 016a 50       		.byte	0x50
+ 1263 016b 8C000000 		.4byte	.LVL50
+ 1264 016f 8E000000 		.4byte	.LVL51
+ 1265 0173 0100     		.2byte	0x1
+ 1266 0175 50       		.byte	0x50
+ 1267 0176 00000000 		.4byte	0
+ 1268 017a 00000000 		.4byte	0
+ 1269              		.section	.debug_aranges,"",%progbits
+ 1270 0000 2C000000 		.4byte	0x2c
+ 1271 0004 0200     		.2byte	0x2
+ 1272 0006 00000000 		.4byte	.Ldebug_info0
+ 1273 000a 04       		.byte	0x4
+ 1274 000b 00       		.byte	0
+ 1275 000c 0000     		.2byte	0
+ 1276 000e 0000     		.2byte	0
+ 1277 0010 00000000 		.4byte	.LFB85
+ 1278 0014 2C000000 		.4byte	.LFE85-.LFB85
+ 1279 0018 00000000 		.4byte	.LFB86
+ 1280 001c 54000000 		.4byte	.LFE86-.LFB86
+ 1281 0020 00000000 		.4byte	.LFB87
+ 1282 0024 C4000000 		.4byte	.LFE87-.LFB87
+ 1283 0028 00000000 		.4byte	0
+ 1284 002c 00000000 		.4byte	0
+ 1285              		.section	.debug_ranges,"",%progbits
+ 1286              	.Ldebug_ranges0:
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 26
+
+
+ 1287 0000 00000000 		.4byte	.LFB85
+ 1288 0004 2C000000 		.4byte	.LFE85
+ 1289 0008 00000000 		.4byte	.LFB86
+ 1290 000c 54000000 		.4byte	.LFE86
+ 1291 0010 00000000 		.4byte	.LFB87
+ 1292 0014 C4000000 		.4byte	.LFE87
+ 1293 0018 00000000 		.4byte	0
+ 1294 001c 00000000 		.4byte	0
+ 1295              		.section	.debug_line,"",%progbits
+ 1296              	.Ldebug_line0:
+ 1297 0000 B1020000 		.section	.debug_str,"MS",%progbits,1
+ 1297      02003C02 
+ 1297      00000201 
+ 1297      FB0E0D00 
+ 1297      01010101 
+ 1298              	.LASF21:
+ 1299 0000 6F6E5469 		.ascii	"onTimeMs\000"
+ 1299      6D654D73 
+ 1299      00
+ 1300              	.LASF19:
+ 1301 0009 5469636B 		.ascii	"TickType_t\000"
+ 1301      54797065 
+ 1301      5F7400
+ 1302              	.LASF23:
+ 1303 0014 73746172 		.ascii	"startBlink\000"
+ 1303      74426C69 
+ 1303      6E6B00
+ 1304              	.LASF5:
+ 1305 001f 5F5F696E 		.ascii	"__int32_t\000"
+ 1305      7433325F 
+ 1305      7400
+ 1306              	.LASF32:
+ 1307 0029 4144435F 		.ascii	"ADC_Battery_Start\000"
+ 1307      42617474 
+ 1307      6572795F 
+ 1307      53746172 
+ 1307      7400
+ 1308              	.LASF41:
+ 1309 003b 433A5C55 		.ascii	"C:\\Users\\enar\\OneDrive\\robootti\\clooni\\Zumo\\"
+ 1309      73657273 
+ 1309      5C656E61 
+ 1309      725C4F6E 
+ 1309      65447269 
+ 1310 0067 5A756D6F 		.ascii	"ZumoBot.cydsn\000"
+ 1310      426F742E 
+ 1310      63796473 
+ 1310      6E00
+ 1311              	.LASF4:
+ 1312 0075 6C6F6E67 		.ascii	"long int\000"
+ 1312      20696E74 
+ 1312      00
+ 1313              	.LASF29:
+ 1314 007e 78526573 		.ascii	"xResult\000"
+ 1314      756C7400 
+ 1315              	.LASF14:
+ 1316 0086 666C6F61 		.ascii	"float\000"
+ 1316      7400
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 27
+
+
+ 1317              	.LASF42:
+ 1318 008c 61736B41 		.ascii	"askAge\000"
+ 1318      676500
+ 1319              	.LASF1:
+ 1320 0093 756E7369 		.ascii	"unsigned char\000"
+ 1320      676E6564 
+ 1320      20636861 
+ 1320      7200
+ 1321              	.LASF39:
+ 1322 00a1 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 1322      43313120 
+ 1322      352E342E 
+ 1322      31203230 
+ 1322      31363036 
+ 1323 00d4 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 1323      20726576 
+ 1323      6973696F 
+ 1323      6E203233 
+ 1323      37373135 
+ 1324 0107 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1324      66756E63 
+ 1324      74696F6E 
+ 1324      2D736563 
+ 1324      74696F6E 
+ 1325              	.LASF13:
+ 1326 012f 696E7431 		.ascii	"int16\000"
+ 1326      3600
+ 1327              	.LASF7:
+ 1328 0135 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1328      20756E73 
+ 1328      69676E65 
+ 1328      6420696E 
+ 1328      7400
+ 1329              	.LASF3:
+ 1330 0147 73686F72 		.ascii	"short unsigned int\000"
+ 1330      7420756E 
+ 1330      7369676E 
+ 1330      65642069 
+ 1330      6E7400
+ 1331              	.LASF22:
+ 1332 015a 6F666654 		.ascii	"offTimeMs\000"
+ 1332      696D654D 
+ 1332      7300
+ 1333              	.LASF43:
+ 1334 0164 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 1334      52784275 
+ 1334      66666572 
+ 1334      00
+ 1335              	.LASF15:
+ 1336 0171 646F7562 		.ascii	"double\000"
+ 1336      6C6500
+ 1337              	.LASF6:
+ 1338 0178 5F5F7569 		.ascii	"__uint32_t\000"
+ 1338      6E743332 
+ 1338      5F7400
+ 1339              	.LASF38:
+ 1340 0183 7363616E 		.ascii	"scanf\000"
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 28
+
+
+ 1340      6600
+ 1341              	.LASF27:
+ 1342 0189 78537461 		.ascii	"xStart\000"
+ 1342      727400
+ 1343              	.LASF28:
+ 1344 0190 78456E64 		.ascii	"xEnd\000"
+ 1344      00
+ 1345              	.LASF10:
+ 1346 0195 756E7369 		.ascii	"unsigned int\000"
+ 1346      676E6564 
+ 1346      20696E74 
+ 1346      00
+ 1347              	.LASF35:
+ 1348 01a2 4144435F 		.ascii	"ADC_Battery_GetResult16\000"
+ 1348      42617474 
+ 1348      6572795F 
+ 1348      47657452 
+ 1348      6573756C 
+ 1349              	.LASF9:
+ 1350 01ba 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1350      206C6F6E 
+ 1350      6720756E 
+ 1350      7369676E 
+ 1350      65642069 
+ 1351              	.LASF40:
+ 1352 01d1 66756E63 		.ascii	"func.c\000"
+ 1352      2E6300
+ 1353              	.LASF26:
+ 1354 01d8 766F6C74 		.ascii	"volts\000"
+ 1354      7300
+ 1355              	.LASF11:
+ 1356 01de 696E7433 		.ascii	"int32_t\000"
+ 1356      325F7400 
+ 1357              	.LASF18:
+ 1358 01e6 73697A65 		.ascii	"sizetype\000"
+ 1358      74797065 
+ 1358      00
+ 1359              	.LASF24:
+ 1360 01ef 67657442 		.ascii	"getBatterVoltage\000"
+ 1360      61747465 
+ 1360      72566F6C 
+ 1360      74616765 
+ 1360      00
+ 1361              	.LASF8:
+ 1362 0200 6C6F6E67 		.ascii	"long long int\000"
+ 1362      206C6F6E 
+ 1362      6720696E 
+ 1362      7400
+ 1363              	.LASF30:
+ 1364 020e 42617474 		.ascii	"BatteryLed_Write\000"
+ 1364      6572794C 
+ 1364      65645F57 
+ 1364      72697465 
+ 1364      00
+ 1365              	.LASF16:
+ 1366 021f 63686172 		.ascii	"char\000"
+ 1366      00
+ARM GAS  C:\Users\enar\AppData\Local\Temp\ccpIdrGY.s 			page 29
+
+
+ 1367              	.LASF25:
+ 1368 0224 61646372 		.ascii	"adcresult\000"
+ 1368      6573756C 
+ 1368      7400
+ 1369              	.LASF36:
+ 1370 022e 7072696E 		.ascii	"printf\000"
+ 1370      746600
+ 1371              	.LASF2:
+ 1372 0235 73686F72 		.ascii	"short int\000"
+ 1372      7420696E 
+ 1372      7400
+ 1373              	.LASF34:
+ 1374 023f 4144435F 		.ascii	"ADC_Battery_IsEndConversion\000"
+ 1374      42617474 
+ 1374      6572795F 
+ 1374      4973456E 
+ 1374      64436F6E 
+ 1375              	.LASF12:
+ 1376 025b 75696E74 		.ascii	"uint32_t\000"
+ 1376      33325F74 
+ 1376      00
+ 1377              	.LASF20:
+ 1378 0264 616D6D6F 		.ascii	"ammount\000"
+ 1378      756E7400 
+ 1379              	.LASF31:
+ 1380 026c 76546173 		.ascii	"vTaskDelay\000"
+ 1380      6B44656C 
+ 1380      617900
+ 1381              	.LASF17:
+ 1382 0277 6C6F6E67 		.ascii	"long double\000"
+ 1382      20646F75 
+ 1382      626C6500 
+ 1383              	.LASF0:
+ 1384 0283 7369676E 		.ascii	"signed char\000"
+ 1384      65642063 
+ 1384      68617200 
+ 1385              	.LASF33:
+ 1386 028f 4144435F 		.ascii	"ADC_Battery_StartConvert\000"
+ 1386      42617474 
+ 1386      6572795F 
+ 1386      53746172 
+ 1386      74436F6E 
+ 1387              	.LASF37:
+ 1388 02a8 78546173 		.ascii	"xTaskGetTickCount\000"
+ 1388      6B476574 
+ 1388      5469636B 
+ 1388      436F756E 
+ 1388      7400
+ 1389              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
