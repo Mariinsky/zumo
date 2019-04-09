@@ -54,6 +54,58 @@
  * @brief   
  * @details  ** Enable global interrupt since Zumo library uses interrupts. **<br>&nbsp;&nbsp;&nbsp;CyGlobalIntEnable;<br>
 */
+#if 0
+// reflector assigment1
+void zmain(void)
+{
+    reflectance_start();
+    reflectance_set_threshold(10000,10000,10000,10000, 10000, 10000); // set center sensor threshold to 11000 and others to 9000
+    IR_Start();
+    IR_flush();
+    motor_start();
+    Beep(1000, 150);
+    
+    while(SW1_Read()==1)
+    {
+       if (SW1_Read()==0) {
+        break;    
+    }
+    }
+    while (reflectorStop() == 0) {
+        printf("moi");
+        motor_forward(50,0);
+        if (reflectorStop() == 1) {
+            printf("hyva yritys");
+            motor_forward(0,0);
+            Beep(1000, 150);
+           // Beep(2000, 100);
+            break;
+        }
+    }
+    Beep(3000, 25);
+    vTaskDelay(1000);
+    int line = 0;
+    int white = 0;
+    while (1) {
+             
+        motor_forward(50,0);
+        if (reflectorStop() == 0) {
+            white = 0;
+        }
+        if (reflectorStop() == 1 && white == 0) {
+            
+            white = 1;
+            if (line >= 3){
+                motor_forward(0,0);
+                Beep(100, 200); 
+                break;
+            }
+            line++;
+        }
+    }
+    
+ }
+#endif
 
 #if 0
 // Week 2: Assigment 1 S.O.S blinks.
@@ -183,7 +235,7 @@ void zmain(void)
 }
    
 #endif
-#if 1
+#if 0
     // Week 3. Assigment 3
 void zmain(void)
 {

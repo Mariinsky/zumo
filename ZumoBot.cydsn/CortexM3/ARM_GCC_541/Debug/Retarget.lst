@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
   43              	.L4:
   44 000e 00BF     		.align	2
   45              	.L3:
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 2
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 2
 
 
   46 0010 00000000 		.word	.LANCHOR0
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
   24:ZumoLibrary/Retarget.c **** 		xSerial1PutChar(*ptr++, portMAX_DELAY);
   89              		.loc 1 24 0 is_stmt 1 discriminator 2
   90 001a 661C     		adds	r6, r4, #1
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 3
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 3
 
 
   91              	.LVL5:
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
   32:ZumoLibrary/Retarget.c ****     int chs = 0;
   33:ZumoLibrary/Retarget.c ****     char ch;
   34:ZumoLibrary/Retarget.c ****     static char buf[128];
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 4
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 4
 
 
   35:ZumoLibrary/Retarget.c ****     static unsigned int cnt = 0;
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
   54:ZumoLibrary/Retarget.c ****                 ch = '\n';
  171              		.loc 1 54 0
  172 0048 0A20     		movs	r0, #10
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 5
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 5
 
 
  173 004a 8DF80700 		strb	r0, [sp, #7]
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  214              		.loc 1 67 0 is_stmt 0 discriminator 2
  215 0090 7F2B     		cmp	r3, #127
  216 0092 05D9     		bls	.L13
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 6
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 6
 
 
  217              	.L16:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  259              		.loc 1 79 0
  260 00d8 0134     		adds	r4, r4, #1
  261              	.LVL21:
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 7
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 7
 
 
   80:ZumoLibrary/Retarget.c ****                 count--;
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  301              	.LVL28:
  302              	.L25:
  303              		.align	2
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 8
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 8
 
 
  304              	.L24:
@@ -478,38 +478,38 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  354 0004 0400     		.2byte	0x4
  355 0006 00000000 		.4byte	.Ldebug_abbrev0
  356 000a 04       		.byte	0x4
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 9
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 9
 
 
  357 000b 01       		.uleb128 0x1
- 358 000c B9010000 		.4byte	.LASF143
+ 358 000c A1010000 		.4byte	.LASF143
  359 0010 0C       		.byte	0xc
- 360 0011 9A020000 		.4byte	.LASF144
- 361 0015 74010000 		.4byte	.LASF145
+ 360 0011 82020000 		.4byte	.LASF144
+ 361 0015 4B010000 		.4byte	.LASF145
  362 0019 00000000 		.4byte	.Ldebug_ranges0+0
  363 001d 00000000 		.4byte	0
  364 0021 00000000 		.4byte	.Ldebug_line0
  365 0025 02       		.uleb128 0x2
  366 0026 01       		.byte	0x1
  367 0027 06       		.byte	0x6
- 368 0028 BE050000 		.4byte	.LASF0
+ 368 0028 A6050000 		.4byte	.LASF0
  369 002c 03       		.uleb128 0x3
- 370 002d C2040000 		.4byte	.LASF4
+ 370 002d AA040000 		.4byte	.LASF4
  371 0031 02       		.byte	0x2
  372 0032 1D       		.byte	0x1d
  373 0033 37000000 		.4byte	0x37
  374 0037 02       		.uleb128 0x2
  375 0038 01       		.byte	0x1
  376 0039 08       		.byte	0x8
- 377 003a 56050000 		.4byte	.LASF1
+ 377 003a 3E050000 		.4byte	.LASF1
  378 003e 02       		.uleb128 0x2
  379 003f 02       		.byte	0x2
  380 0040 05       		.byte	0x5
- 381 0041 47040000 		.4byte	.LASF2
+ 381 0041 2F040000 		.4byte	.LASF2
  382 0045 02       		.uleb128 0x2
  383 0046 02       		.byte	0x2
  384 0047 07       		.byte	0x7
- 385 0048 D1050000 		.4byte	.LASF3
+ 385 0048 B9050000 		.4byte	.LASF3
  386 004c 03       		.uleb128 0x3
  387 004d 77000000 		.4byte	.LASF5
  388 0051 02       		.byte	0x2
@@ -518,27 +518,27 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  391 0057 02       		.uleb128 0x2
  392 0058 04       		.byte	0x4
  393 0059 05       		.byte	0x5
- 394 005a 51040000 		.4byte	.LASF6
+ 394 005a 39040000 		.4byte	.LASF6
  395 005e 03       		.uleb128 0x3
- 396 005f 64050000 		.4byte	.LASF7
+ 396 005f 4C050000 		.4byte	.LASF7
  397 0063 02       		.byte	0x2
  398 0064 41       		.byte	0x41
  399 0065 69000000 		.4byte	0x69
  400 0069 02       		.uleb128 0x2
  401 006a 04       		.byte	0x4
  402 006b 07       		.byte	0x7
- 403 006c 1A050000 		.4byte	.LASF8
+ 403 006c 02050000 		.4byte	.LASF8
  404 0070 02       		.uleb128 0x2
  405 0071 08       		.byte	0x8
  406 0072 05       		.byte	0x5
- 407 0073 8A030000 		.4byte	.LASF9
+ 407 0073 72030000 		.4byte	.LASF9
  408 0077 02       		.uleb128 0x2
  409 0078 08       		.byte	0x8
  410 0079 07       		.byte	0x7
  411 007a 34010000 		.4byte	.LASF10
  412 007e 04       		.uleb128 0x4
  413 007f 04       		.byte	0x4
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 10
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 10
 
 
  414 0080 05       		.byte	0x5
@@ -550,7 +550,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  420 008c 02       		.uleb128 0x2
  421 008d 08       		.byte	0x8
  422 008e 04       		.byte	0x4
- 423 008f 13040000 		.4byte	.LASF12
+ 423 008f FB030000 		.4byte	.LASF12
  424 0093 05       		.uleb128 0x5
  425 0094 04       		.byte	0x4
  426 0095 03       		.uleb128 0x3
@@ -559,7 +559,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  429 009b 07       		.byte	0x7
  430 009c 7E000000 		.4byte	0x7e
  431 00a0 03       		.uleb128 0x3
- 432 00a1 FA050000 		.4byte	.LASF14
+ 432 00a1 E2050000 		.4byte	.LASF14
  433 00a5 04       		.byte	0x4
  434 00a6 2C       		.byte	0x2c
  435 00a7 57000000 		.4byte	0x57
@@ -569,7 +569,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  439 00b1 72       		.byte	0x72
  440 00b2 57000000 		.4byte	0x57
  441 00b6 06       		.uleb128 0x6
- 442 00b7 33050000 		.4byte	.LASF16
+ 442 00b7 1B050000 		.4byte	.LASF16
  443 00bb 05       		.byte	0x5
  444 00bc 6501     		.2byte	0x165
  445 00be 85000000 		.4byte	0x85
@@ -579,12 +579,12 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  449 00c5 A6       		.byte	0xa6
  450 00c6 E1000000 		.4byte	0xe1
  451 00ca 08       		.uleb128 0x8
- 452 00cb 32030000 		.4byte	.LASF17
+ 452 00cb 1A030000 		.4byte	.LASF17
  453 00cf 04       		.byte	0x4
  454 00d0 A8       		.byte	0xa8
  455 00d1 B6000000 		.4byte	0xb6
  456 00d5 08       		.uleb128 0x8
- 457 00d6 9A040000 		.4byte	.LASF18
+ 457 00d6 82040000 		.4byte	.LASF18
  458 00da 04       		.byte	0x4
  459 00db A9       		.byte	0xa9
  460 00dc E1000000 		.4byte	0xe1
@@ -598,11 +598,11 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  468 00f0 00       		.byte	0
  469 00f1 02       		.uleb128 0x2
  470 00f2 04       		.byte	0x4
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 11
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 11
 
 
  471 00f3 07       		.byte	0x7
- 472 00f4 11050000 		.4byte	.LASF19
+ 472 00f4 F9040000 		.4byte	.LASF19
  473 00f8 0B       		.uleb128 0xb
  474 00f9 08       		.byte	0x8
  475 00fa 04       		.byte	0x4
@@ -615,24 +615,24 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  482 0107 7E000000 		.4byte	0x7e
  483 010b 00       		.byte	0
  484 010c 0C       		.uleb128 0xc
- 485 010d 8D020000 		.4byte	.LASF21
+ 485 010d 75020000 		.4byte	.LASF21
  486 0111 04       		.byte	0x4
  487 0112 AA       		.byte	0xaa
  488 0113 C2000000 		.4byte	0xc2
  489 0117 04       		.byte	0x4
  490 0118 00       		.byte	0
  491 0119 03       		.uleb128 0x3
- 492 011a E0030000 		.4byte	.LASF22
+ 492 011a C8030000 		.4byte	.LASF22
  493 011e 04       		.byte	0x4
  494 011f AB       		.byte	0xab
  495 0120 F8000000 		.4byte	0xf8
  496 0124 03       		.uleb128 0x3
- 497 0125 16030000 		.4byte	.LASF23
+ 497 0125 FE020000 		.4byte	.LASF23
  498 0129 04       		.byte	0x4
  499 012a AF       		.byte	0xaf
  500 012b 95000000 		.4byte	0x95
  501 012f 03       		.uleb128 0x3
- 502 0130 AE030000 		.4byte	.LASF24
+ 502 0130 96030000 		.4byte	.LASF24
  503 0134 06       		.byte	0x6
  504 0135 16       		.byte	0x16
  505 0136 69000000 		.4byte	0x69
@@ -643,7 +643,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  510 0141 2D       		.byte	0x2d
  511 0142 8D010000 		.4byte	0x18d
  512 0146 0C       		.uleb128 0xc
- 513 0147 64020000 		.4byte	.LASF25
+ 513 0147 4C020000 		.4byte	.LASF25
  514 014b 06       		.byte	0x6
  515 014c 2F       		.byte	0x2f
  516 014d 8D010000 		.4byte	0x18d
@@ -655,22 +655,22 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  522 0158 7E000000 		.4byte	0x7e
  523 015c 04       		.byte	0x4
  524 015d 0C       		.uleb128 0xc
- 525 015e D9040000 		.4byte	.LASF26
+ 525 015e C1040000 		.4byte	.LASF26
  526 0162 06       		.byte	0x6
  527 0163 30       		.byte	0x30
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 12
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 12
 
 
  528 0164 7E000000 		.4byte	0x7e
  529 0168 08       		.byte	0x8
  530 0169 0C       		.uleb128 0xc
- 531 016a 7E040000 		.4byte	.LASF27
+ 531 016a 66040000 		.4byte	.LASF27
  532 016e 06       		.byte	0x6
  533 016f 30       		.byte	0x30
  534 0170 7E000000 		.4byte	0x7e
  535 0174 0C       		.byte	0xc
  536 0175 0C       		.uleb128 0xc
- 537 0176 60010000 		.4byte	.LASF28
+ 537 0176 82010000 		.4byte	.LASF28
  538 017a 06       		.byte	0x6
  539 017b 30       		.byte	0x30
  540 017c 7E000000 		.4byte	0x7e
@@ -693,13 +693,13 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  557 01a1 00       		.byte	0
  558 01a2 00       		.byte	0
  559 01a3 0D       		.uleb128 0xd
- 560 01a4 06050000 		.4byte	.LASF30
+ 560 01a4 EE040000 		.4byte	.LASF30
  561 01a8 24       		.byte	0x24
  562 01a9 06       		.byte	0x6
  563 01aa 35       		.byte	0x35
  564 01ab 1C020000 		.4byte	0x21c
  565 01af 0C       		.uleb128 0xc
- 566 01b0 47020000 		.4byte	.LASF31
+ 566 01b0 2F020000 		.4byte	.LASF31
  567 01b4 06       		.byte	0x6
  568 01b5 37       		.byte	0x37
  569 01b6 7E000000 		.4byte	0x7e
@@ -717,8 +717,8 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  581 01ce 7E000000 		.4byte	0x7e
  582 01d2 08       		.byte	0x8
  583 01d3 0C       		.uleb128 0xc
- 584 01d4 DA020000 		.4byte	.LASF34
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 13
+ 584 01d4 C2020000 		.4byte	.LASF34
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 13
 
 
  585 01d8 06       		.byte	0x6
@@ -726,13 +726,13 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  587 01da 7E000000 		.4byte	0x7e
  588 01de 0C       		.byte	0xc
  589 01df 0C       		.uleb128 0xc
- 590 01e0 0A040000 		.4byte	.LASF35
+ 590 01e0 F2030000 		.4byte	.LASF35
  591 01e4 06       		.byte	0x6
  592 01e5 3B       		.byte	0x3b
  593 01e6 7E000000 		.4byte	0x7e
  594 01ea 10       		.byte	0x10
  595 01eb 0C       		.uleb128 0xc
- 596 01ec A1040000 		.4byte	.LASF36
+ 596 01ec 89040000 		.4byte	.LASF36
  597 01f0 06       		.byte	0x6
  598 01f1 3C       		.byte	0x3c
  599 01f2 7E000000 		.4byte	0x7e
@@ -744,13 +744,13 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  605 01fe 7E000000 		.4byte	0x7e
  606 0202 18       		.byte	0x18
  607 0203 0C       		.uleb128 0xc
- 608 0204 50020000 		.4byte	.LASF38
+ 608 0204 38020000 		.4byte	.LASF38
  609 0208 06       		.byte	0x6
  610 0209 3E       		.byte	0x3e
  611 020a 7E000000 		.4byte	0x7e
  612 020e 1C       		.byte	0x1c
  613 020f 0C       		.uleb128 0xc
- 614 0210 EB030000 		.4byte	.LASF39
+ 614 0210 D3030000 		.4byte	.LASF39
  615 0214 06       		.byte	0x6
  616 0215 3F       		.byte	0x3f
  617 0216 7E000000 		.4byte	0x7e
@@ -763,28 +763,28 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  624 0224 48       		.byte	0x48
  625 0225 5C020000 		.4byte	0x25c
  626 0229 0C       		.uleb128 0xc
- 627 022a B6050000 		.4byte	.LASF41
+ 627 022a 9E050000 		.4byte	.LASF41
  628 022e 06       		.byte	0x6
  629 022f 49       		.byte	0x49
  630 0230 5C020000 		.4byte	0x25c
  631 0234 00       		.byte	0
  632 0235 0C       		.uleb128 0xc
- 633 0236 42050000 		.4byte	.LASF42
+ 633 0236 2A050000 		.4byte	.LASF42
  634 023a 06       		.byte	0x6
  635 023b 4A       		.byte	0x4a
  636 023c 5C020000 		.4byte	0x25c
  637 0240 80       		.byte	0x80
  638 0241 11       		.uleb128 0x11
- 639 0242 E4050000 		.4byte	.LASF43
+ 639 0242 CC050000 		.4byte	.LASF43
  640 0246 06       		.byte	0x6
  641 0247 4C       		.byte	0x4c
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 14
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 14
 
 
  642 0248 2F010000 		.4byte	0x12f
  643 024c 0001     		.2byte	0x100
  644 024e 11       		.uleb128 0x11
- 645 024f 1C060000 		.4byte	.LASF44
+ 645 024f 04060000 		.4byte	.LASF44
  646 0253 06       		.byte	0x6
  647 0254 4F       		.byte	0x4f
  648 0255 2F010000 		.4byte	0x12f
@@ -798,19 +798,19 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  656 026a 1F       		.byte	0x1f
  657 026b 00       		.byte	0
  658 026c 10       		.uleb128 0x10
- 659 026d 36040000 		.4byte	.LASF45
+ 659 026d 1E040000 		.4byte	.LASF45
  660 0271 9001     		.2byte	0x190
  661 0273 06       		.byte	0x6
  662 0274 5B       		.byte	0x5b
  663 0275 AA020000 		.4byte	0x2aa
  664 0279 0C       		.uleb128 0xc
- 665 027a 64020000 		.4byte	.LASF25
+ 665 027a 4C020000 		.4byte	.LASF25
  666 027e 06       		.byte	0x6
  667 027f 5C       		.byte	0x5c
  668 0280 AA020000 		.4byte	0x2aa
  669 0284 00       		.byte	0
  670 0285 0C       		.uleb128 0xc
- 671 0286 5F020000 		.4byte	.LASF46
+ 671 0286 47020000 		.4byte	.LASF46
  672 028a 06       		.byte	0x6
  673 028b 5D       		.byte	0x5d
  674 028c 7E000000 		.4byte	0x7e
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  696 02ba F1000000 		.4byte	0xf1
  697 02be 1F       		.byte	0x1f
  698 02bf 00       		.byte	0
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 15
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 15
 
 
  699 02c0 0F       		.uleb128 0xf
@@ -846,19 +846,19 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  701 02c2 C6020000 		.4byte	0x2c6
  702 02c6 12       		.uleb128 0x12
  703 02c7 0D       		.uleb128 0xd
- 704 02c8 86050000 		.4byte	.LASF48
+ 704 02c8 6E050000 		.4byte	.LASF48
  705 02cc 08       		.byte	0x8
  706 02cd 06       		.byte	0x6
  707 02ce 73       		.byte	0x73
  708 02cf EC020000 		.4byte	0x2ec
  709 02d3 0C       		.uleb128 0xc
- 710 02d4 98030000 		.4byte	.LASF49
+ 710 02d4 80030000 		.4byte	.LASF49
  711 02d8 06       		.byte	0x6
  712 02d9 74       		.byte	0x74
  713 02da EC020000 		.4byte	0x2ec
  714 02de 00       		.byte	0
  715 02df 0C       		.uleb128 0xc
- 716 02e0 ED050000 		.4byte	.LASF50
+ 716 02e0 D5050000 		.4byte	.LASF50
  717 02e4 06       		.byte	0x6
  718 02e5 75       		.byte	0x75
  719 02e6 7E000000 		.4byte	0x7e
@@ -868,7 +868,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  723 02ed 04       		.byte	0x4
  724 02ee 37000000 		.4byte	0x37
  725 02f2 0D       		.uleb128 0xd
- 726 02f3 58010000 		.4byte	.LASF51
+ 726 02f3 7A010000 		.4byte	.LASF51
  727 02f7 68       		.byte	0x68
  728 02f8 06       		.byte	0x6
  729 02f9 B3       		.byte	0xb3
@@ -898,10 +898,10 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  753 0326 3E000000 		.4byte	0x3e
  754 032a 0C       		.byte	0xc
  755 032b 0C       		.uleb128 0xc
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 16
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 16
 
 
- 756 032c D0030000 		.4byte	.LASF53
+ 756 032c B8030000 		.4byte	.LASF53
  757 0330 06       		.byte	0x6
  758 0331 B8       		.byte	0xb8
  759 0332 3E000000 		.4byte	0x3e
@@ -931,19 +931,19 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  783 0362 7F050000 		.4byte	0x57f
  784 0366 20       		.byte	0x20
  785 0367 0C       		.uleb128 0xc
- 786 0368 1F040000 		.4byte	.LASF57
+ 786 0368 07040000 		.4byte	.LASF57
  787 036c 06       		.byte	0x6
  788 036d C5       		.byte	0xc5
  789 036e AE050000 		.4byte	0x5ae
  790 0372 24       		.byte	0x24
  791 0373 0C       		.uleb128 0xc
- 792 0374 35060000 		.4byte	.LASF58
+ 792 0374 1D060000 		.4byte	.LASF58
  793 0378 06       		.byte	0x6
  794 0379 C8       		.byte	0xc8
  795 037a D2050000 		.4byte	0x5d2
  796 037e 28       		.byte	0x28
  797 037f 0C       		.uleb128 0xc
- 798 0380 46030000 		.4byte	.LASF59
+ 798 0380 2E030000 		.4byte	.LASF59
  799 0384 06       		.byte	0x6
  800 0385 C9       		.byte	0xc9
  801 0386 EC050000 		.4byte	0x5ec
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  810 0398 5F757000 		.ascii	"_up\000"
  811 039c 06       		.byte	0x6
  812 039d CD       		.byte	0xcd
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 17
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 17
 
 
  813 039e EC020000 		.4byte	0x2ec
@@ -970,13 +970,13 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  819 03aa 7E000000 		.4byte	0x7e
  820 03ae 3C       		.byte	0x3c
  821 03af 0C       		.uleb128 0xc
- 822 03b0 4C060000 		.4byte	.LASF60
+ 822 03b0 34060000 		.4byte	.LASF60
  823 03b4 06       		.byte	0x6
  824 03b5 D1       		.byte	0xd1
  825 03b6 F2050000 		.4byte	0x5f2
  826 03ba 40       		.byte	0x40
  827 03bb 0C       		.uleb128 0xc
- 828 03bc 01060000 		.4byte	.LASF61
+ 828 03bc E9050000 		.4byte	.LASF61
  829 03c0 06       		.byte	0x6
  830 03c1 D2       		.byte	0xd2
  831 03c2 02060000 		.4byte	0x602
@@ -988,40 +988,40 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  837 03ce C7020000 		.4byte	0x2c7
  838 03d2 44       		.byte	0x44
  839 03d3 0C       		.uleb128 0xc
- 840 03d4 FD040000 		.4byte	.LASF62
+ 840 03d4 E5040000 		.4byte	.LASF62
  841 03d8 06       		.byte	0x6
  842 03d9 D8       		.byte	0xd8
  843 03da 7E000000 		.4byte	0x7e
  844 03de 4C       		.byte	0x4c
  845 03df 0C       		.uleb128 0xc
- 846 03e0 6C010000 		.4byte	.LASF63
+ 846 03e0 8E010000 		.4byte	.LASF63
  847 03e4 06       		.byte	0x6
  848 03e5 D9       		.byte	0xd9
  849 03e6 A0000000 		.4byte	0xa0
  850 03ea 50       		.byte	0x50
  851 03eb 0C       		.uleb128 0xc
- 852 03ec 94040000 		.4byte	.LASF64
+ 852 03ec 7C040000 		.4byte	.LASF64
  853 03f0 06       		.byte	0x6
  854 03f1 DC       		.byte	0xdc
  855 03f2 3A040000 		.4byte	0x43a
  856 03f6 54       		.byte	0x54
  857 03f7 0C       		.uleb128 0xc
- 858 03f8 0B050000 		.4byte	.LASF65
+ 858 03f8 F3040000 		.4byte	.LASF65
  859 03fc 06       		.byte	0x6
  860 03fd E0       		.byte	0xe0
  861 03fe 24010000 		.4byte	0x124
  862 0402 58       		.byte	0x58
  863 0403 0C       		.uleb128 0xc
- 864 0404 3E040000 		.4byte	.LASF66
+ 864 0404 26040000 		.4byte	.LASF66
  865 0408 06       		.byte	0x6
  866 0409 E2       		.byte	0xe2
  867 040a 19010000 		.4byte	0x119
  868 040e 5C       		.byte	0x5c
  869 040f 0C       		.uleb128 0xc
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 18
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 18
 
 
- 870 0410 14060000 		.4byte	.LASF67
+ 870 0410 FC050000 		.4byte	.LASF67
  871 0414 06       		.byte	0x6
  872 0415 E3       		.byte	0xe3
  873 0416 7E000000 		.4byte	0x7e
@@ -1043,7 +1043,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  889 043b 04       		.byte	0x4
  890 043c 40040000 		.4byte	0x440
  891 0440 15       		.uleb128 0x15
- 892 0441 CA050000 		.4byte	.LASF68
+ 892 0441 B2050000 		.4byte	.LASF68
  893 0445 2804     		.2byte	0x428
  894 0447 06       		.byte	0x6
  895 0448 3802     		.2byte	0x238
@@ -1055,7 +1055,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  901 0456 7E000000 		.4byte	0x7e
  902 045a 00       		.byte	0
  903 045b 16       		.uleb128 0x16
- 904 045c 74030000 		.4byte	.LASF70
+ 904 045c 5C030000 		.4byte	.LASF70
  905 0460 06       		.byte	0x6
  906 0461 3F02     		.2byte	0x23f
  907 0463 59060000 		.4byte	0x659
@@ -1067,46 +1067,46 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  913 0470 59060000 		.4byte	0x659
  914 0474 08       		.byte	0x8
  915 0475 16       		.uleb128 0x16
- 916 0476 3B060000 		.4byte	.LASF72
+ 916 0476 23060000 		.4byte	.LASF72
  917 047a 06       		.byte	0x6
  918 047b 3F02     		.2byte	0x23f
  919 047d 59060000 		.4byte	0x659
  920 0481 0C       		.byte	0xc
  921 0482 16       		.uleb128 0x16
- 922 0483 5A020000 		.4byte	.LASF73
+ 922 0483 42020000 		.4byte	.LASF73
  923 0487 06       		.byte	0x6
  924 0488 4102     		.2byte	0x241
  925 048a 7E000000 		.4byte	0x7e
  926 048e 10       		.byte	0x10
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 19
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 19
 
 
  927 048f 16       		.uleb128 0x16
- 928 0490 AE010000 		.4byte	.LASF74
+ 928 0490 96010000 		.4byte	.LASF74
  929 0494 06       		.byte	0x6
  930 0495 4202     		.2byte	0x242
  931 0497 3B080000 		.4byte	0x83b
  932 049b 14       		.byte	0x14
  933 049c 16       		.uleb128 0x16
- 934 049d EB040000 		.4byte	.LASF75
+ 934 049d D3040000 		.4byte	.LASF75
  935 04a1 06       		.byte	0x6
  936 04a2 4402     		.2byte	0x244
  937 04a4 7E000000 		.4byte	0x7e
  938 04a8 30       		.byte	0x30
  939 04a9 16       		.uleb128 0x16
- 940 04aa 84040000 		.4byte	.LASF76
+ 940 04aa 6C040000 		.4byte	.LASF76
  941 04ae 06       		.byte	0x6
  942 04af 4502     		.2byte	0x245
  943 04b1 A3050000 		.4byte	0x5a3
  944 04b5 34       		.byte	0x34
  945 04b6 16       		.uleb128 0x16
- 946 04b7 57030000 		.4byte	.LASF77
+ 946 04b7 3F030000 		.4byte	.LASF77
  947 04bb 06       		.byte	0x6
  948 04bc 4702     		.2byte	0x247
  949 04be 7E000000 		.4byte	0x7e
  950 04c2 38       		.byte	0x38
  951 04c3 16       		.uleb128 0x16
- 952 04c4 D6030000 		.4byte	.LASF78
+ 952 04c4 BE030000 		.4byte	.LASF78
  953 04c8 06       		.byte	0x6
  954 04c9 4902     		.2byte	0x249
  955 04cb 56080000 		.4byte	0x856
@@ -1124,64 +1124,64 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  967 04e5 7E000000 		.4byte	0x7e
  968 04e9 44       		.byte	0x44
  969 04ea 16       		.uleb128 0x16
- 970 04eb 95020000 		.4byte	.LASF81
+ 970 04eb 7D020000 		.4byte	.LASF81
  971 04ef 06       		.byte	0x6
  972 04f0 4E02     		.2byte	0x24e
  973 04f2 8D010000 		.4byte	0x18d
  974 04f6 48       		.byte	0x48
  975 04f7 16       		.uleb128 0x16
- 976 04f8 9E030000 		.4byte	.LASF82
+ 976 04f8 86030000 		.4byte	.LASF82
  977 04fc 06       		.byte	0x6
  978 04fd 4F02     		.2byte	0x24f
  979 04ff 5C080000 		.4byte	0x85c
  980 0503 4C       		.byte	0x4c
  981 0504 16       		.uleb128 0x16
- 982 0505 D1040000 		.4byte	.LASF83
+ 982 0505 B9040000 		.4byte	.LASF83
  983 0509 06       		.byte	0x6
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 20
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 20
 
 
  984 050a 5202     		.2byte	0x252
  985 050c 7E000000 		.4byte	0x7e
  986 0510 50       		.byte	0x50
  987 0511 16       		.uleb128 0x16
- 988 0512 4E050000 		.4byte	.LASF84
+ 988 0512 36050000 		.4byte	.LASF84
  989 0516 06       		.byte	0x6
  990 0517 5302     		.2byte	0x253
  991 0519 72050000 		.4byte	0x572
  992 051d 54       		.byte	0x54
  993 051e 16       		.uleb128 0x16
- 994 051f CC040000 		.4byte	.LASF85
+ 994 051f B4040000 		.4byte	.LASF85
  995 0523 06       		.byte	0x6
  996 0524 7602     		.2byte	0x276
  997 0526 19080000 		.4byte	0x819
  998 052a 58       		.byte	0x58
  999 052b 17       		.uleb128 0x17
- 1000 052c 36040000 		.4byte	.LASF45
+ 1000 052c 1E040000 		.4byte	.LASF45
  1001 0530 06       		.byte	0x6
  1002 0531 7A02     		.2byte	0x27a
  1003 0533 AA020000 		.4byte	0x2aa
  1004 0537 4801     		.2byte	0x148
  1005 0539 17       		.uleb128 0x17
- 1006 053a FD020000 		.4byte	.LASF86
+ 1006 053a E5020000 		.4byte	.LASF86
  1007 053e 06       		.byte	0x6
  1008 053f 7B02     		.2byte	0x27b
  1009 0541 6C020000 		.4byte	0x26c
  1010 0545 4C01     		.2byte	0x14c
  1011 0547 17       		.uleb128 0x17
- 1012 0548 E4020000 		.4byte	.LASF87
+ 1012 0548 CC020000 		.4byte	.LASF87
  1013 054c 06       		.byte	0x6
  1014 054d 7F02     		.2byte	0x27f
  1015 054f 6D080000 		.4byte	0x86d
  1016 0553 DC02     		.2byte	0x2dc
  1017 0555 17       		.uleb128 0x17
- 1018 0556 93050000 		.4byte	.LASF88
+ 1018 0556 7B050000 		.4byte	.LASF88
  1019 055a 06       		.byte	0x6
  1020 055b 8402     		.2byte	0x284
  1021 055d 1E060000 		.4byte	0x61e
  1022 0561 E002     		.2byte	0x2e0
  1023 0563 17       		.uleb128 0x17
- 1024 0564 79040000 		.4byte	.LASF89
+ 1024 0564 61040000 		.4byte	.LASF89
  1025 0568 06       		.byte	0x6
  1026 0569 8502     		.2byte	0x285
  1027 056b 79080000 		.4byte	0x879
@@ -1193,12 +1193,12 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1033 0578 02       		.uleb128 0x2
  1034 0579 01       		.byte	0x1
  1035 057a 08       		.byte	0x8
- 1036 057b D5020000 		.4byte	.LASF90
+ 1036 057b BD020000 		.4byte	.LASF90
  1037 057f 0F       		.uleb128 0xf
  1038 0580 04       		.byte	0x4
  1039 0581 1C040000 		.4byte	0x41c
  1040 0585 13       		.uleb128 0x13
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 21
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 21
 
 
  1041 0586 7E000000 		.4byte	0x7e
@@ -1258,36 +1258,36 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1095 0607 12060000 		.4byte	0x612
  1096 060b 0A       		.uleb128 0xa
  1097 060c F1000000 		.4byte	0xf1
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 22
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 22
 
 
  1098 0610 00       		.byte	0
  1099 0611 00       		.byte	0
  1100 0612 06       		.uleb128 0x6
- 1101 0613 65010000 		.4byte	.LASF91
+ 1101 0613 87010000 		.4byte	.LASF91
  1102 0617 06       		.byte	0x6
  1103 0618 1D01     		.2byte	0x11d
  1104 061a F2020000 		.4byte	0x2f2
  1105 061e 19       		.uleb128 0x19
- 1106 061f 8D050000 		.4byte	.LASF92
+ 1106 061f 75050000 		.4byte	.LASF92
  1107 0623 0C       		.byte	0xc
  1108 0624 06       		.byte	0x6
  1109 0625 2101     		.2byte	0x121
  1110 0627 53060000 		.4byte	0x653
  1111 062b 16       		.uleb128 0x16
- 1112 062c 64020000 		.4byte	.LASF25
+ 1112 062c 4C020000 		.4byte	.LASF25
  1113 0630 06       		.byte	0x6
  1114 0631 2301     		.2byte	0x123
  1115 0633 53060000 		.4byte	0x653
  1116 0637 00       		.byte	0
  1117 0638 16       		.uleb128 0x16
- 1118 0639 2C050000 		.4byte	.LASF93
+ 1118 0639 14050000 		.4byte	.LASF93
  1119 063d 06       		.byte	0x6
  1120 063e 2401     		.2byte	0x124
  1121 0640 7E000000 		.4byte	0x7e
  1122 0644 04       		.byte	0x4
  1123 0645 16       		.uleb128 0x16
- 1124 0646 38030000 		.4byte	.LASF94
+ 1124 0646 20030000 		.4byte	.LASF94
  1125 064a 06       		.byte	0x6
  1126 064b 2501     		.2byte	0x125
  1127 064d 59060000 		.4byte	0x659
@@ -1306,22 +1306,22 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1140 0666 3D01     		.2byte	0x13d
  1141 0668 94060000 		.4byte	0x694
  1142 066c 16       		.uleb128 0x16
- 1143 066d 24060000 		.4byte	.LASF96
+ 1143 066d 0C060000 		.4byte	.LASF96
  1144 0671 06       		.byte	0x6
  1145 0672 3E01     		.2byte	0x13e
  1146 0674 94060000 		.4byte	0x694
  1147 0678 00       		.byte	0
  1148 0679 16       		.uleb128 0x16
- 1149 067a A8030000 		.4byte	.LASF97
+ 1149 067a 90030000 		.4byte	.LASF97
  1150 067e 06       		.byte	0x6
  1151 067f 3F01     		.2byte	0x13f
  1152 0681 94060000 		.4byte	0x694
  1153 0685 06       		.byte	0x6
  1154 0686 16       		.uleb128 0x16
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 23
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 23
 
 
- 1155 0687 81050000 		.4byte	.LASF98
+ 1155 0687 69050000 		.4byte	.LASF98
  1156 068b 06       		.byte	0x6
  1157 068c 4001     		.2byte	0x140
  1158 068e 45000000 		.4byte	0x45
@@ -1340,37 +1340,37 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1171 06a7 5702     		.2byte	0x257
  1172 06a9 A5070000 		.4byte	0x7a5
  1173 06ad 16       		.uleb128 0x16
- 1174 06ae 07060000 		.4byte	.LASF99
+ 1174 06ae EF050000 		.4byte	.LASF99
  1175 06b2 06       		.byte	0x6
  1176 06b3 5902     		.2byte	0x259
  1177 06b5 85000000 		.4byte	0x85
  1178 06b9 00       		.byte	0
  1179 06ba 16       		.uleb128 0x16
- 1180 06bb 9B050000 		.4byte	.LASF100
+ 1180 06bb 83050000 		.4byte	.LASF100
  1181 06bf 06       		.byte	0x6
  1182 06c0 5A02     		.2byte	0x25a
  1183 06c2 72050000 		.4byte	0x572
  1184 06c6 04       		.byte	0x4
  1185 06c7 16       		.uleb128 0x16
- 1186 06c8 4B010000 		.4byte	.LASF101
+ 1186 06c8 6D010000 		.4byte	.LASF101
  1187 06cc 06       		.byte	0x6
  1188 06cd 5B02     		.2byte	0x25b
  1189 06cf A5070000 		.4byte	0x7a5
  1190 06d3 08       		.byte	0x8
  1191 06d4 16       		.uleb128 0x16
- 1192 06d5 AB040000 		.4byte	.LASF102
+ 1192 06d5 93040000 		.4byte	.LASF102
  1193 06d9 06       		.byte	0x6
  1194 06da 5C02     		.2byte	0x25c
  1195 06dc A3010000 		.4byte	0x1a3
  1196 06e0 24       		.byte	0x24
  1197 06e1 16       		.uleb128 0x16
- 1198 06e2 7B030000 		.4byte	.LASF103
+ 1198 06e2 63030000 		.4byte	.LASF103
  1199 06e6 06       		.byte	0x6
  1200 06e7 5D02     		.2byte	0x25d
  1201 06e9 7E000000 		.4byte	0x7e
  1202 06ed 48       		.byte	0x48
  1203 06ee 16       		.uleb128 0x16
- 1204 06ef 2A060000 		.4byte	.LASF104
+ 1204 06ef 12060000 		.4byte	.LASF104
  1205 06f3 06       		.byte	0x6
  1206 06f4 5E02     		.2byte	0x25e
  1207 06f6 77000000 		.4byte	0x77
@@ -1378,20 +1378,20 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1209 06fb 16       		.uleb128 0x16
  1210 06fc 44000000 		.4byte	.LASF105
  1211 0700 06       		.byte	0x6
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 24
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 24
 
 
  1212 0701 5F02     		.2byte	0x25f
  1213 0703 5F060000 		.4byte	0x65f
  1214 0707 58       		.byte	0x58
  1215 0708 16       		.uleb128 0x16
- 1216 0709 C8020000 		.4byte	.LASF106
+ 1216 0709 B0020000 		.4byte	.LASF106
  1217 070d 06       		.byte	0x6
  1218 070e 6002     		.2byte	0x260
  1219 0710 19010000 		.4byte	0x119
  1220 0714 68       		.byte	0x68
  1221 0715 16       		.uleb128 0x16
- 1222 0716 A8050000 		.4byte	.LASF107
+ 1222 0716 90050000 		.4byte	.LASF107
  1223 071a 06       		.byte	0x6
  1224 071b 6102     		.2byte	0x261
  1225 071d 19010000 		.4byte	0x119
@@ -1403,7 +1403,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1231 072a 19010000 		.4byte	0x119
  1232 072e 78       		.byte	0x78
  1233 072f 16       		.uleb128 0x16
- 1234 0730 E1040000 		.4byte	.LASF109
+ 1234 0730 C9040000 		.4byte	.LASF109
  1235 0734 06       		.byte	0x6
  1236 0735 6302     		.2byte	0x263
  1237 0737 B5070000 		.4byte	0x7b5
@@ -1415,7 +1415,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1243 0744 C5070000 		.4byte	0x7c5
  1244 0748 88       		.byte	0x88
  1245 0749 16       		.uleb128 0x16
- 1246 074a 6F050000 		.4byte	.LASF111
+ 1246 074a 57050000 		.4byte	.LASF111
  1247 074e 06       		.byte	0x6
  1248 074f 6502     		.2byte	0x265
  1249 0751 7E000000 		.4byte	0x7e
@@ -1427,34 +1427,34 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1255 075e 19010000 		.4byte	0x119
  1256 0762 A4       		.byte	0xa4
  1257 0763 16       		.uleb128 0x16
- 1258 0764 EE020000 		.4byte	.LASF113
+ 1258 0764 D6020000 		.4byte	.LASF113
  1259 0768 06       		.byte	0x6
  1260 0769 6702     		.2byte	0x267
  1261 076b 19010000 		.4byte	0x119
  1262 076f AC       		.byte	0xac
  1263 0770 16       		.uleb128 0x16
- 1264 0771 6A020000 		.4byte	.LASF114
+ 1264 0771 52020000 		.4byte	.LASF114
  1265 0775 06       		.byte	0x6
  1266 0776 6802     		.2byte	0x268
  1267 0778 19010000 		.4byte	0x119
  1268 077c B4       		.byte	0xb4
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 25
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 25
 
 
  1269 077d 16       		.uleb128 0x16
- 1270 077e B6030000 		.4byte	.LASF115
+ 1270 077e 9E030000 		.4byte	.LASF115
  1271 0782 06       		.byte	0x6
  1272 0783 6902     		.2byte	0x269
  1273 0785 19010000 		.4byte	0x119
  1274 0789 BC       		.byte	0xbc
  1275 078a 16       		.uleb128 0x16
- 1276 078b B7020000 		.4byte	.LASF116
+ 1276 078b 9F020000 		.4byte	.LASF116
  1277 078f 06       		.byte	0x6
  1278 0790 6A02     		.2byte	0x26a
  1279 0792 19010000 		.4byte	0x119
  1280 0796 C4       		.byte	0xc4
  1281 0797 16       		.uleb128 0x16
- 1282 0798 F6030000 		.4byte	.LASF117
+ 1282 0798 DE030000 		.4byte	.LASF117
  1283 079c 06       		.byte	0x6
  1284 079d 6B02     		.2byte	0x26b
  1285 079f 7E000000 		.4byte	0x7e
@@ -1493,12 +1493,12 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1318 07e6 F9070000 		.4byte	0x7f9
  1319 07ea 00       		.byte	0
  1320 07eb 16       		.uleb128 0x16
- 1321 07ec 43060000 		.4byte	.LASF119
+ 1321 07ec 2B060000 		.4byte	.LASF119
  1322 07f0 06       		.byte	0x6
  1323 07f1 7402     		.2byte	0x274
  1324 07f3 09080000 		.4byte	0x809
  1325 07f7 78       		.byte	0x78
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 26
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 26
 
 
  1326 07f8 00       		.byte	0
@@ -1522,12 +1522,12 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1344 081c 5502     		.2byte	0x255
  1345 081e 3B080000 		.4byte	0x83b
  1346 0822 1C       		.uleb128 0x1c
- 1347 0823 CA050000 		.4byte	.LASF68
+ 1347 0823 B2050000 		.4byte	.LASF68
  1348 0827 06       		.byte	0x6
  1349 0828 6C02     		.2byte	0x26c
  1350 082a A4060000 		.4byte	0x6a4
  1351 082e 1C       		.uleb128 0x1c
- 1352 082f BA040000 		.4byte	.LASF120
+ 1352 082f A2040000 		.4byte	.LASF120
  1353 0833 06       		.byte	0x6
  1354 0834 7502     		.2byte	0x275
  1355 0836 D5070000 		.4byte	0x7d5
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1380 086d 0F       		.uleb128 0xf
  1381 086e 04       		.byte	0x4
  1382 086f 73080000 		.4byte	0x873
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 27
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 27
 
 
  1383 0873 0F       		.uleb128 0xf
@@ -1572,12 +1572,12 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1391 0887 02       		.byte	0x2
  1392 0888 00       		.byte	0
  1393 0889 03       		.uleb128 0x3
- 1394 088a 3E030000 		.4byte	.LASF121
+ 1394 088a 26030000 		.4byte	.LASF121
  1395 088e 07       		.byte	0x7
  1396 088f 18       		.byte	0x18
  1397 0890 2C000000 		.4byte	0x2c
  1398 0894 03       		.uleb128 0x3
- 1399 0895 3A050000 		.4byte	.LASF122
+ 1399 0895 22050000 		.4byte	.LASF122
  1400 0899 07       		.byte	0x7
  1401 089a 2C       		.byte	0x2c
  1402 089b 4C000000 		.4byte	0x4c
@@ -1593,24 +1593,24 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1412 08b1 02       		.uleb128 0x2
  1413 08b2 08       		.byte	0x8
  1414 08b3 04       		.byte	0x4
- 1415 08b4 F3050000 		.4byte	.LASF125
+ 1415 08b4 DB050000 		.4byte	.LASF125
  1416 08b8 03       		.uleb128 0x3
- 1417 08b9 C5030000 		.4byte	.LASF126
+ 1417 08b9 AD030000 		.4byte	.LASF126
  1418 08bd 08       		.byte	0x8
  1419 08be 38       		.byte	0x38
  1420 08bf 57000000 		.4byte	0x57
  1421 08c3 03       		.uleb128 0x3
- 1422 08c4 FF030000 		.4byte	.LASF127
+ 1422 08c4 E7030000 		.4byte	.LASF127
  1423 08c8 08       		.byte	0x8
  1424 08c9 3F       		.byte	0x3f
  1425 08ca 9F080000 		.4byte	0x89f
  1426 08ce 03       		.uleb128 0x3
- 1427 08cf 1F030000 		.4byte	.LASF128
+ 1427 08cf 07030000 		.4byte	.LASF128
  1428 08d3 09       		.byte	0x9
  1429 08d4 2E       		.byte	0x2e
  1430 08d5 93000000 		.4byte	0x93
  1431 08d9 03       		.uleb128 0x3
- 1432 08da 67040000 		.4byte	.LASF129
+ 1432 08da 4F040000 		.4byte	.LASF129
  1433 08de 0A       		.byte	0xa
  1434 08df 25       		.byte	0x25
  1435 08e0 CE080000 		.4byte	0x8ce
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1437 08e5 14000000 		.4byte	.LASF146
  1438 08e9 01       		.byte	0x1
  1439 08ea 0A       		.byte	0xa
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 28
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 28
 
 
  1440 08eb 00000000 		.4byte	.LFB69
@@ -1637,7 +1637,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1453 0907 00       		.byte	0
  1454 0908 00       		.byte	0
  1455 0909 21       		.uleb128 0x21
- 1456 090a 1F040000 		.4byte	.LASF57
+ 1456 090a 07040000 		.4byte	.LASF57
  1457 090e 01       		.byte	0x1
  1458 090f 12       		.byte	0x12
  1459 0910 7E000000 		.4byte	0x7e
@@ -1647,7 +1647,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1463 091d 9C       		.byte	0x9c
  1464 091e 86090000 		.4byte	0x986
  1465 0922 22       		.uleb128 0x22
- 1466 0923 2D030000 		.4byte	.LASF130
+ 1466 0923 15030000 		.4byte	.LASF130
  1467 0927 01       		.byte	0x1
  1468 0928 12       		.byte	0x12
  1469 0929 7E000000 		.4byte	0x7e
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1494 096a 01       		.uleb128 0x1
  1495 096b 50       		.byte	0x50
  1496 096c 01       		.uleb128 0x1
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 29
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 29
 
 
  1497 096d 3D       		.byte	0x3d
@@ -1711,7 +1711,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1524 099a 9C       		.byte	0x9c
  1525 099b B90A0000 		.4byte	0xab9
  1526 099f 22       		.uleb128 0x22
- 1527 09a0 2D030000 		.4byte	.LASF130
+ 1527 09a0 15030000 		.4byte	.LASF130
  1528 09a4 01       		.byte	0x1
  1529 09a5 1E       		.byte	0x1e
  1530 09a6 7E000000 		.4byte	0x7e
@@ -1723,7 +1723,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1536 09b5 72050000 		.4byte	0x572
  1537 09b9 B3000000 		.4byte	.LLST5
  1538 09bd 22       		.uleb128 0x22
- 1539 09be B1020000 		.4byte	.LASF131
+ 1539 09be 99020000 		.4byte	.LASF131
  1540 09c2 01       		.byte	0x1
  1541 09c3 1E       		.byte	0x1e
  1542 09c4 7E000000 		.4byte	0x7e
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1551 09dc 636800   		.ascii	"ch\000"
  1552 09df 01       		.byte	0x1
  1553 09e0 21       		.byte	0x21
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 30
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 30
 
 
  1554 09e1 78050000 		.4byte	0x578
@@ -1770,7 +1770,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1580 0a16 03       		.byte	0x3
  1581 0a17 08000000 		.4byte	head.8431
  1582 0a1b 27       		.uleb128 0x27
- 1583 0a1c 7C050000 		.4byte	.LASF133
+ 1583 0a1c 64050000 		.4byte	.LASF133
  1584 0a20 01       		.byte	0x1
  1585 0a21 25       		.byte	0x25
  1586 0a22 85000000 		.4byte	0x85
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1608 0a55 02       		.uleb128 0x2
  1609 0a56 09       		.byte	0x9
  1610 0a57 FF       		.byte	0xff
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 31
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 31
 
 
  1611 0a58 00       		.byte	0
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1665 0aaf 52       		.byte	0x52
  1666 0ab0 01       		.uleb128 0x1
  1667 0ab1 30       		.byte	0x30
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 32
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 32
 
 
  1668 0ab2 20       		.uleb128 0x20
@@ -1876,7 +1876,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1680 0ac7 7F       		.byte	0x7f
  1681 0ac8 00       		.byte	0
  1682 0ac9 27       		.uleb128 0x27
- 1683 0aca 4D030000 		.4byte	.LASF134
+ 1683 0aca 35030000 		.4byte	.LASF134
  1684 0ace 01       		.byte	0x1
  1685 0acf 08       		.byte	0x8
  1686 0ad0 D9080000 		.4byte	0x8d9
@@ -1889,20 +1889,20 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1693 0ae0 FD02     		.2byte	0x2fd
  1694 0ae2 3A040000 		.4byte	0x43a
  1695 0ae6 29       		.uleb128 0x29
- 1696 0ae7 5A040000 		.4byte	.LASF136
+ 1696 0ae7 42040000 		.4byte	.LASF136
  1697 0aeb 0B       		.byte	0xb
  1698 0aec 1207     		.2byte	0x712
  1699 0aee F20A0000 		.4byte	0xaf2
  1700 0af2 2A       		.uleb128 0x2a
  1701 0af3 94080000 		.4byte	0x894
  1702 0af7 2B       		.uleb128 0x2b
- 1703 0af8 62030000 		.4byte	.LASF137
- 1704 0afc 62030000 		.4byte	.LASF137
+ 1703 0af8 4A030000 		.4byte	.LASF137
+ 1704 0afc 4A030000 		.4byte	.LASF137
  1705 0b00 09       		.byte	0x9
  1706 0b01 8405     		.2byte	0x584
  1707 0b03 2C       		.uleb128 0x2c
- 1708 0b04 06030000 		.4byte	.LASF138
- 1709 0b08 06030000 		.4byte	.LASF138
+ 1708 0b04 EE020000 		.4byte	.LASF138
+ 1709 0b08 EE020000 		.4byte	.LASF138
  1710 0b0c 0C       		.byte	0xc
  1711 0b0d 25       		.byte	0x25
  1712 0b0e 2C       		.uleb128 0x2c
@@ -1916,16 +1916,16 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1720 0b22 09       		.byte	0x9
  1721 0b23 8805     		.2byte	0x588
  1722 0b25 2C       		.uleb128 0x2c
- 1723 0b26 26040000 		.4byte	.LASF141
- 1724 0b2a 26040000 		.4byte	.LASF141
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 33
+ 1723 0b26 0E040000 		.4byte	.LASF141
+ 1724 0b2a 0E040000 		.4byte	.LASF141
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 33
 
 
  1725 0b2e 0C       		.byte	0xc
  1726 0b2f 24       		.byte	0x24
  1727 0b30 2B       		.uleb128 0x2b
- 1728 0b31 7B020000 		.4byte	.LASF142
- 1729 0b35 7B020000 		.4byte	.LASF142
+ 1728 0b31 63020000 		.4byte	.LASF142
+ 1729 0b35 63020000 		.4byte	.LASF142
  1730 0b39 09       		.byte	0x9
  1731 0b3a 8802     		.2byte	0x288
  1732 0b3c 00       		.byte	0
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1779 002c 24       		.uleb128 0x24
  1780 002d 00       		.byte	0
  1781 002e 0B       		.uleb128 0xb
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 34
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 34
 
 
  1782 002f 0B       		.uleb128 0xb
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1836 0065 01       		.uleb128 0x1
  1837 0066 01       		.byte	0x1
  1838 0067 49       		.uleb128 0x49
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 35
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 35
 
 
  1839 0068 13       		.uleb128 0x13
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1893 009e 13       		.uleb128 0x13
  1894 009f 00       		.byte	0
  1895 00a0 00       		.byte	0
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 36
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 36
 
 
  1896 00a1 0E       		.uleb128 0xe
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  1950 00d7 12       		.uleb128 0x12
  1951 00d8 15       		.uleb128 0x15
  1952 00d9 00       		.byte	0
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 37
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 37
 
 
  1953 00da 27       		.uleb128 0x27
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  2007 0110 00       		.byte	0
  2008 0111 03       		.uleb128 0x3
  2009 0112 0E       		.uleb128 0xe
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 38
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 38
 
 
  2010 0113 3A       		.uleb128 0x3a
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  2064 0149 01       		.uleb128 0x1
  2065 014a 13       		.uleb128 0x13
  2066 014b 00       		.byte	0
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 39
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 39
 
 
  2067 014c 00       		.byte	0
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  2121 0185 13       		.uleb128 0x13
  2122 0186 00       		.byte	0
  2123 0187 00       		.byte	0
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 40
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 40
 
 
  2124 0188 20       		.uleb128 0x20
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  2178 01c2 03       		.uleb128 0x3
  2179 01c3 08       		.uleb128 0x8
  2180 01c4 3A       		.uleb128 0x3a
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 41
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 41
 
 
  2181 01c5 0B       		.uleb128 0xb
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  2235 01fd 0E       		.uleb128 0xe
  2236 01fe 3A       		.uleb128 0x3a
  2237 01ff 0B       		.uleb128 0xb
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 42
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 42
 
 
  2238 0200 3B       		.uleb128 0x3b
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  2292 0238 3B       		.uleb128 0x3b
  2293 0239 05       		.uleb128 0x5
  2294 023a 00       		.byte	0
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 43
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 43
 
 
  2295 023b 00       		.byte	0
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  2349              	.LLST2:
  2350 0055 00000000 		.4byte	.LVL1
  2351 0059 0A000000 		.4byte	.LVL3
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 44
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 44
 
 
  2352 005d 0100     		.2byte	0x1
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  2406 00e5 00000000 		.4byte	0
  2407              	.LLST6:
  2408 00e9 00000000 		.4byte	.LVL9
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 45
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 45
 
 
  2409 00ed 11000000 		.4byte	.LVL12-1
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  2463 0004 14000000 		.4byte	.LFE69
  2464 0008 00000000 		.4byte	.LFB70
  2465 000c 32000000 		.4byte	.LFE70
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 46
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 46
 
 
  2466 0010 00000000 		.4byte	.LFB71
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  2493              	.LASF132:
  2494 0072 68656164 		.ascii	"head\000"
  2494      00
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 47
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 47
 
 
  2495              	.LASF5:
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  2525              	.LASF124:
  2526 0100 666C6F61 		.ascii	"float\000"
  2526      7400
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 48
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 48
 
 
  2527              	.LASF32:
@@ -2845,483 +2845,479 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 1
  2538      6720756E 
  2538      7369676E 
  2538      65642069 
- 2539              	.LASF101:
- 2540 014b 5F617363 		.ascii	"_asctime_buf\000"
- 2540      74696D65 
- 2540      5F627566 
- 2540      00
- 2541              	.LASF51:
- 2542 0158 5F5F7346 		.ascii	"__sFILE\000"
- 2542      494C4500 
- 2543              	.LASF28:
- 2544 0160 5F776473 		.ascii	"_wds\000"
- 2544      00
- 2545              	.LASF91:
- 2546 0165 5F5F4649 		.ascii	"__FILE\000"
- 2546      4C4500
- 2547              	.LASF63:
- 2548 016c 5F6F6666 		.ascii	"_offset\000"
- 2548      73657400 
- 2549              	.LASF145:
- 2550 0174 433A5C55 		.ascii	"C:\\Users\\enar\\OneDrive\\robootti\\clooni\\Zumo\\"
- 2550      73657273 
- 2550      5C656E61 
- 2550      725C4F6E 
- 2550      65447269 
- 2551 01a0 5A756D6F 		.ascii	"ZumoBot.cydsn\000"
- 2551      426F742E 
- 2551      63796473 
- 2551      6E00
- 2552              	.LASF74:
- 2553 01ae 5F656D65 		.ascii	"_emergency\000"
- 2553      7267656E 
- 2553      637900
- 2554              	.LASF143:
- 2555 01b9 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 49
+ 2539              	.LASF145:
+ 2540 014b 5A3A5C73 		.ascii	"Z:\\shared\\zumo\\zumo\\ZumoBot.cydsn\000"
+ 2540      68617265 
+ 2540      645C7A75 
+ 2540      6D6F5C7A 
+ 2540      756D6F5C 
+ 2541              	.LASF101:
+ 2542 016d 5F617363 		.ascii	"_asctime_buf\000"
+ 2542      74696D65 
+ 2542      5F627566 
+ 2542      00
+ 2543              	.LASF51:
+ 2544 017a 5F5F7346 		.ascii	"__sFILE\000"
+ 2544      494C4500 
+ 2545              	.LASF28:
+ 2546 0182 5F776473 		.ascii	"_wds\000"
+ 2546      00
+ 2547              	.LASF91:
+ 2548 0187 5F5F4649 		.ascii	"__FILE\000"
+ 2548      4C4500
+ 2549              	.LASF63:
+ 2550 018e 5F6F6666 		.ascii	"_offset\000"
+ 2550      73657400 
+ 2551              	.LASF74:
+ 2552 0196 5F656D65 		.ascii	"_emergency\000"
+ 2552      7267656E 
+ 2552      637900
+ 2553              	.LASF143:
+ 2554 01a1 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 2554      43313120 
+ 2554      352E342E 
+ 2554      31203230 
+ 2554      31363036 
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 49
 
 
- 2555      43313120 
- 2555      352E342E 
- 2555      31203230 
- 2555      31363036 
- 2556 01ec 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 2556      20726576 
- 2556      6973696F 
- 2556      6E203233 
- 2556      37373135 
- 2557 021f 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 2557      66756E63 
- 2557      74696F6E 
- 2557      2D736563 
- 2557      74696F6E 
- 2558              	.LASF31:
- 2559 0247 5F5F746D 		.ascii	"__tm_sec\000"
- 2559      5F736563 
- 2559      00
- 2560              	.LASF38:
- 2561 0250 5F5F746D 		.ascii	"__tm_yday\000"
- 2561      5F796461 
- 2561      7900
- 2562              	.LASF73:
- 2563 025a 5F696E63 		.ascii	"_inc\000"
- 2563      00
- 2564              	.LASF46:
- 2565 025f 5F696E64 		.ascii	"_ind\000"
- 2565      00
- 2566              	.LASF25:
- 2567 0264 5F6E6578 		.ascii	"_next\000"
- 2567      7400
- 2568              	.LASF114:
- 2569 026a 5F6D6273 		.ascii	"_mbsrtowcs_state\000"
- 2569      72746F77 
- 2569      63735F73 
- 2569      74617465 
- 2569      00
- 2570              	.LASF142:
- 2571 027b 78517565 		.ascii	"xQueueGenericSend\000"
- 2571      75654765 
- 2571      6E657269 
- 2571      6353656E 
- 2571      6400
- 2572              	.LASF21:
- 2573 028d 5F5F7661 		.ascii	"__value\000"
- 2573      6C756500 
- 2574              	.LASF81:
- 2575 0295 5F703573 		.ascii	"_p5s\000"
- 2575      00
- 2576              	.LASF144:
- 2577 029a 5A756D6F 		.ascii	"ZumoLibrary\\Retarget.c\000"
- 2577      4C696272 
- 2577      6172795C 
- 2577      52657461 
- 2577      72676574 
- 2578              	.LASF131:
- 2579 02b1 636F756E 		.ascii	"count\000"
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 50
+ 2555 01d4 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 2555      20726576 
+ 2555      6973696F 
+ 2555      6E203233 
+ 2555      37373135 
+ 2556 0207 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 2556      66756E63 
+ 2556      74696F6E 
+ 2556      2D736563 
+ 2556      74696F6E 
+ 2557              	.LASF31:
+ 2558 022f 5F5F746D 		.ascii	"__tm_sec\000"
+ 2558      5F736563 
+ 2558      00
+ 2559              	.LASF38:
+ 2560 0238 5F5F746D 		.ascii	"__tm_yday\000"
+ 2560      5F796461 
+ 2560      7900
+ 2561              	.LASF73:
+ 2562 0242 5F696E63 		.ascii	"_inc\000"
+ 2562      00
+ 2563              	.LASF46:
+ 2564 0247 5F696E64 		.ascii	"_ind\000"
+ 2564      00
+ 2565              	.LASF25:
+ 2566 024c 5F6E6578 		.ascii	"_next\000"
+ 2566      7400
+ 2567              	.LASF114:
+ 2568 0252 5F6D6273 		.ascii	"_mbsrtowcs_state\000"
+ 2568      72746F77 
+ 2568      63735F73 
+ 2568      74617465 
+ 2568      00
+ 2569              	.LASF142:
+ 2570 0263 78517565 		.ascii	"xQueueGenericSend\000"
+ 2570      75654765 
+ 2570      6E657269 
+ 2570      6353656E 
+ 2570      6400
+ 2571              	.LASF21:
+ 2572 0275 5F5F7661 		.ascii	"__value\000"
+ 2572      6C756500 
+ 2573              	.LASF81:
+ 2574 027d 5F703573 		.ascii	"_p5s\000"
+ 2574      00
+ 2575              	.LASF144:
+ 2576 0282 5A756D6F 		.ascii	"ZumoLibrary\\Retarget.c\000"
+ 2576      4C696272 
+ 2576      6172795C 
+ 2576      52657461 
+ 2576      72676574 
+ 2577              	.LASF131:
+ 2578 0299 636F756E 		.ascii	"count\000"
+ 2578      7400
+ 2579              	.LASF116:
+ 2580 029f 5F776373 		.ascii	"_wcsrtombs_state\000"
+ 2580      72746F6D 
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 50
 
 
- 2579      7400
- 2580              	.LASF116:
- 2581 02b7 5F776373 		.ascii	"_wcsrtombs_state\000"
- 2581      72746F6D 
- 2581      62735F73 
- 2581      74617465 
- 2581      00
- 2582              	.LASF106:
- 2583 02c8 5F6D626C 		.ascii	"_mblen_state\000"
- 2583      656E5F73 
- 2583      74617465 
- 2583      00
- 2584              	.LASF90:
- 2585 02d5 63686172 		.ascii	"char\000"
- 2585      00
- 2586              	.LASF34:
- 2587 02da 5F5F746D 		.ascii	"__tm_mday\000"
- 2587      5F6D6461 
- 2587      7900
- 2588              	.LASF87:
- 2589 02e4 5F736967 		.ascii	"_sig_func\000"
- 2589      5F66756E 
- 2589      6300
- 2590              	.LASF113:
- 2591 02ee 5F6D6272 		.ascii	"_mbrtowc_state\000"
- 2591      746F7763 
- 2591      5F737461 
- 2591      746500
- 2592              	.LASF86:
- 2593 02fd 5F617465 		.ascii	"_atexit0\000"
- 2593      78697430 
- 2593      00
- 2594              	.LASF138:
- 2595 0306 78536572 		.ascii	"xSerial1PutChar\000"
- 2595      69616C31 
- 2595      50757443 
- 2595      68617200 
- 2596              	.LASF23:
- 2597 0316 5F666C6F 		.ascii	"_flock_t\000"
- 2597      636B5F74 
- 2597      00
- 2598              	.LASF128:
- 2599 031f 51756575 		.ascii	"QueueHandle_t\000"
- 2599      6548616E 
- 2599      646C655F 
- 2599      7400
- 2600              	.LASF130:
- 2601 032d 66696C65 		.ascii	"file\000"
- 2601      00
- 2602              	.LASF17:
- 2603 0332 5F5F7763 		.ascii	"__wch\000"
- 2603      6800
- 2604              	.LASF94:
- 2605 0338 5F696F62 		.ascii	"_iobs\000"
- 2605      7300
- 2606              	.LASF121:
- 2607 033e 75696E74 		.ascii	"uint8_t\000"
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 51
+ 2580      62735F73 
+ 2580      74617465 
+ 2580      00
+ 2581              	.LASF106:
+ 2582 02b0 5F6D626C 		.ascii	"_mblen_state\000"
+ 2582      656E5F73 
+ 2582      74617465 
+ 2582      00
+ 2583              	.LASF90:
+ 2584 02bd 63686172 		.ascii	"char\000"
+ 2584      00
+ 2585              	.LASF34:
+ 2586 02c2 5F5F746D 		.ascii	"__tm_mday\000"
+ 2586      5F6D6461 
+ 2586      7900
+ 2587              	.LASF87:
+ 2588 02cc 5F736967 		.ascii	"_sig_func\000"
+ 2588      5F66756E 
+ 2588      6300
+ 2589              	.LASF113:
+ 2590 02d6 5F6D6272 		.ascii	"_mbrtowc_state\000"
+ 2590      746F7763 
+ 2590      5F737461 
+ 2590      746500
+ 2591              	.LASF86:
+ 2592 02e5 5F617465 		.ascii	"_atexit0\000"
+ 2592      78697430 
+ 2592      00
+ 2593              	.LASF138:
+ 2594 02ee 78536572 		.ascii	"xSerial1PutChar\000"
+ 2594      69616C31 
+ 2594      50757443 
+ 2594      68617200 
+ 2595              	.LASF23:
+ 2596 02fe 5F666C6F 		.ascii	"_flock_t\000"
+ 2596      636B5F74 
+ 2596      00
+ 2597              	.LASF128:
+ 2598 0307 51756575 		.ascii	"QueueHandle_t\000"
+ 2598      6548616E 
+ 2598      646C655F 
+ 2598      7400
+ 2599              	.LASF130:
+ 2600 0315 66696C65 		.ascii	"file\000"
+ 2600      00
+ 2601              	.LASF17:
+ 2602 031a 5F5F7763 		.ascii	"__wch\000"
+ 2602      6800
+ 2603              	.LASF94:
+ 2604 0320 5F696F62 		.ascii	"_iobs\000"
+ 2604      7300
+ 2605              	.LASF121:
+ 2606 0326 75696E74 		.ascii	"uint8_t\000"
+ 2606      385F7400 
+ 2607              	.LASF59:
+ 2608 032e 5F636C6F 		.ascii	"_close\000"
+ 2608      736500
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 51
 
 
- 2607      385F7400 
- 2608              	.LASF59:
- 2609 0346 5F636C6F 		.ascii	"_close\000"
- 2609      736500
- 2610              	.LASF134:
- 2611 034d 72656164 		.ascii	"readMutex\000"
- 2611      4D757465 
- 2611      7800
- 2612              	.LASF77:
- 2613 0357 5F5F7364 		.ascii	"__sdidinit\000"
- 2613      6964696E 
- 2613      697400
- 2614              	.LASF137:
- 2615 0362 78517565 		.ascii	"xQueueCreateMutex\000"
- 2615      75654372 
- 2615      65617465 
- 2615      4D757465 
- 2615      7800
- 2616              	.LASF70:
- 2617 0374 5F737464 		.ascii	"_stdin\000"
- 2617      696E00
- 2618              	.LASF103:
- 2619 037b 5F67616D 		.ascii	"_gamma_signgam\000"
- 2619      6D615F73 
- 2619      69676E67 
- 2619      616D00
- 2620              	.LASF9:
- 2621 038a 6C6F6E67 		.ascii	"long long int\000"
- 2621      206C6F6E 
- 2621      6720696E 
- 2621      7400
- 2622              	.LASF49:
- 2623 0398 5F626173 		.ascii	"_base\000"
- 2623      6500
- 2624              	.LASF82:
- 2625 039e 5F667265 		.ascii	"_freelist\000"
- 2625      656C6973 
- 2625      7400
- 2626              	.LASF97:
- 2627 03a8 5F6D756C 		.ascii	"_mult\000"
- 2627      7400
- 2628              	.LASF24:
- 2629 03ae 5F5F554C 		.ascii	"__ULong\000"
- 2629      6F6E6700 
- 2630              	.LASF115:
- 2631 03b6 5F776372 		.ascii	"_wcrtomb_state\000"
- 2631      746F6D62 
- 2631      5F737461 
- 2631      746500
- 2632              	.LASF126:
- 2633 03c5 42617365 		.ascii	"BaseType_t\000"
- 2633      54797065 
- 2633      5F7400
- 2634              	.LASF53:
- 2635 03d0 5F66696C 		.ascii	"_file\000"
- 2635      6500
- 2636              	.LASF78:
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 52
+ 2609              	.LASF134:
+ 2610 0335 72656164 		.ascii	"readMutex\000"
+ 2610      4D757465 
+ 2610      7800
+ 2611              	.LASF77:
+ 2612 033f 5F5F7364 		.ascii	"__sdidinit\000"
+ 2612      6964696E 
+ 2612      697400
+ 2613              	.LASF137:
+ 2614 034a 78517565 		.ascii	"xQueueCreateMutex\000"
+ 2614      75654372 
+ 2614      65617465 
+ 2614      4D757465 
+ 2614      7800
+ 2615              	.LASF70:
+ 2616 035c 5F737464 		.ascii	"_stdin\000"
+ 2616      696E00
+ 2617              	.LASF103:
+ 2618 0363 5F67616D 		.ascii	"_gamma_signgam\000"
+ 2618      6D615F73 
+ 2618      69676E67 
+ 2618      616D00
+ 2619              	.LASF9:
+ 2620 0372 6C6F6E67 		.ascii	"long long int\000"
+ 2620      206C6F6E 
+ 2620      6720696E 
+ 2620      7400
+ 2621              	.LASF49:
+ 2622 0380 5F626173 		.ascii	"_base\000"
+ 2622      6500
+ 2623              	.LASF82:
+ 2624 0386 5F667265 		.ascii	"_freelist\000"
+ 2624      656C6973 
+ 2624      7400
+ 2625              	.LASF97:
+ 2626 0390 5F6D756C 		.ascii	"_mult\000"
+ 2626      7400
+ 2627              	.LASF24:
+ 2628 0396 5F5F554C 		.ascii	"__ULong\000"
+ 2628      6F6E6700 
+ 2629              	.LASF115:
+ 2630 039e 5F776372 		.ascii	"_wcrtomb_state\000"
+ 2630      746F6D62 
+ 2630      5F737461 
+ 2630      746500
+ 2631              	.LASF126:
+ 2632 03ad 42617365 		.ascii	"BaseType_t\000"
+ 2632      54797065 
+ 2632      5F7400
+ 2633              	.LASF53:
+ 2634 03b8 5F66696C 		.ascii	"_file\000"
+ 2634      6500
+ 2635              	.LASF78:
+ 2636 03be 5F5F636C 		.ascii	"__cleanup\000"
+ 2636      65616E75 
+ 2636      7000
+ 2637              	.LASF22:
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 52
 
 
- 2637 03d6 5F5F636C 		.ascii	"__cleanup\000"
- 2637      65616E75 
- 2637      7000
- 2638              	.LASF22:
- 2639 03e0 5F6D6273 		.ascii	"_mbstate_t\000"
- 2639      74617465 
- 2639      5F7400
- 2640              	.LASF39:
- 2641 03eb 5F5F746D 		.ascii	"__tm_isdst\000"
- 2641      5F697364 
- 2641      737400
- 2642              	.LASF117:
- 2643 03f6 5F685F65 		.ascii	"_h_errno\000"
- 2643      72726E6F 
- 2643      00
- 2644              	.LASF127:
- 2645 03ff 5469636B 		.ascii	"TickType_t\000"
- 2645      54797065 
- 2645      5F7400
- 2646              	.LASF35:
- 2647 040a 5F5F746D 		.ascii	"__tm_mon\000"
- 2647      5F6D6F6E 
- 2647      00
- 2648              	.LASF12:
- 2649 0413 6C6F6E67 		.ascii	"long double\000"
- 2649      20646F75 
- 2649      626C6500 
- 2650              	.LASF57:
- 2651 041f 5F777269 		.ascii	"_write\000"
- 2651      746500
- 2652              	.LASF141:
- 2653 0426 78536572 		.ascii	"xSerial1GetChar\000"
- 2653      69616C31 
- 2653      47657443 
- 2653      68617200 
- 2654              	.LASF45:
- 2655 0436 5F617465 		.ascii	"_atexit\000"
- 2655      78697400 
- 2656              	.LASF66:
- 2657 043e 5F6D6273 		.ascii	"_mbstate\000"
- 2657      74617465 
- 2657      00
- 2658              	.LASF2:
- 2659 0447 73686F72 		.ascii	"short int\000"
- 2659      7420696E 
- 2659      7400
- 2660              	.LASF6:
- 2661 0451 6C6F6E67 		.ascii	"long int\000"
- 2661      20696E74 
- 2661      00
- 2662              	.LASF136:
- 2663 045a 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 2663      52784275 
- 2663      66666572 
- 2663      00
- 2664              	.LASF129:
- 2665 0467 53656D61 		.ascii	"SemaphoreHandle_t\000"
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 53
+ 2638 03c8 5F6D6273 		.ascii	"_mbstate_t\000"
+ 2638      74617465 
+ 2638      5F7400
+ 2639              	.LASF39:
+ 2640 03d3 5F5F746D 		.ascii	"__tm_isdst\000"
+ 2640      5F697364 
+ 2640      737400
+ 2641              	.LASF117:
+ 2642 03de 5F685F65 		.ascii	"_h_errno\000"
+ 2642      72726E6F 
+ 2642      00
+ 2643              	.LASF127:
+ 2644 03e7 5469636B 		.ascii	"TickType_t\000"
+ 2644      54797065 
+ 2644      5F7400
+ 2645              	.LASF35:
+ 2646 03f2 5F5F746D 		.ascii	"__tm_mon\000"
+ 2646      5F6D6F6E 
+ 2646      00
+ 2647              	.LASF12:
+ 2648 03fb 6C6F6E67 		.ascii	"long double\000"
+ 2648      20646F75 
+ 2648      626C6500 
+ 2649              	.LASF57:
+ 2650 0407 5F777269 		.ascii	"_write\000"
+ 2650      746500
+ 2651              	.LASF141:
+ 2652 040e 78536572 		.ascii	"xSerial1GetChar\000"
+ 2652      69616C31 
+ 2652      47657443 
+ 2652      68617200 
+ 2653              	.LASF45:
+ 2654 041e 5F617465 		.ascii	"_atexit\000"
+ 2654      78697400 
+ 2655              	.LASF66:
+ 2656 0426 5F6D6273 		.ascii	"_mbstate\000"
+ 2656      74617465 
+ 2656      00
+ 2657              	.LASF2:
+ 2658 042f 73686F72 		.ascii	"short int\000"
+ 2658      7420696E 
+ 2658      7400
+ 2659              	.LASF6:
+ 2660 0439 6C6F6E67 		.ascii	"long int\000"
+ 2660      20696E74 
+ 2660      00
+ 2661              	.LASF136:
+ 2662 0442 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 2662      52784275 
+ 2662      66666572 
+ 2662      00
+ 2663              	.LASF129:
+ 2664 044f 53656D61 		.ascii	"SemaphoreHandle_t\000"
+ 2664      70686F72 
+ 2664      6548616E 
+ 2664      646C655F 
+ 2664      7400
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 53
 
 
- 2665      70686F72 
- 2665      6548616E 
- 2665      646C655F 
- 2665      7400
- 2666              	.LASF89:
- 2667 0479 5F5F7366 		.ascii	"__sf\000"
- 2667      00
- 2668              	.LASF27:
- 2669 047e 5F736967 		.ascii	"_sign\000"
- 2669      6E00
- 2670              	.LASF76:
- 2671 0484 5F637572 		.ascii	"_current_locale\000"
- 2671      72656E74 
- 2671      5F6C6F63 
- 2671      616C6500 
- 2672              	.LASF64:
- 2673 0494 5F646174 		.ascii	"_data\000"
- 2673      6100
- 2674              	.LASF18:
- 2675 049a 5F5F7763 		.ascii	"__wchb\000"
- 2675      686200
- 2676              	.LASF36:
- 2677 04a1 5F5F746D 		.ascii	"__tm_year\000"
- 2677      5F796561 
- 2677      7200
- 2678              	.LASF102:
- 2679 04ab 5F6C6F63 		.ascii	"_localtime_buf\000"
- 2679      616C7469 
- 2679      6D655F62 
- 2679      756600
- 2680              	.LASF120:
- 2681 04ba 5F756E75 		.ascii	"_unused\000"
- 2681      73656400 
- 2682              	.LASF4:
- 2683 04c2 5F5F7569 		.ascii	"__uint8_t\000"
- 2683      6E74385F 
- 2683      7400
- 2684              	.LASF85:
- 2685 04cc 5F6E6577 		.ascii	"_new\000"
- 2685      00
- 2686              	.LASF83:
- 2687 04d1 5F637674 		.ascii	"_cvtlen\000"
- 2687      6C656E00 
- 2688              	.LASF26:
- 2689 04d9 5F6D6178 		.ascii	"_maxwds\000"
- 2689      77647300 
- 2690              	.LASF109:
- 2691 04e1 5F6C3634 		.ascii	"_l64a_buf\000"
- 2691      615F6275 
- 2691      6600
- 2692              	.LASF75:
- 2693 04eb 5F637572 		.ascii	"_current_category\000"
- 2693      72656E74 
- 2693      5F636174 
- 2693      65676F72 
- 2693      7900
- 2694              	.LASF62:
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 54
+ 2665              	.LASF89:
+ 2666 0461 5F5F7366 		.ascii	"__sf\000"
+ 2666      00
+ 2667              	.LASF27:
+ 2668 0466 5F736967 		.ascii	"_sign\000"
+ 2668      6E00
+ 2669              	.LASF76:
+ 2670 046c 5F637572 		.ascii	"_current_locale\000"
+ 2670      72656E74 
+ 2670      5F6C6F63 
+ 2670      616C6500 
+ 2671              	.LASF64:
+ 2672 047c 5F646174 		.ascii	"_data\000"
+ 2672      6100
+ 2673              	.LASF18:
+ 2674 0482 5F5F7763 		.ascii	"__wchb\000"
+ 2674      686200
+ 2675              	.LASF36:
+ 2676 0489 5F5F746D 		.ascii	"__tm_year\000"
+ 2676      5F796561 
+ 2676      7200
+ 2677              	.LASF102:
+ 2678 0493 5F6C6F63 		.ascii	"_localtime_buf\000"
+ 2678      616C7469 
+ 2678      6D655F62 
+ 2678      756600
+ 2679              	.LASF120:
+ 2680 04a2 5F756E75 		.ascii	"_unused\000"
+ 2680      73656400 
+ 2681              	.LASF4:
+ 2682 04aa 5F5F7569 		.ascii	"__uint8_t\000"
+ 2682      6E74385F 
+ 2682      7400
+ 2683              	.LASF85:
+ 2684 04b4 5F6E6577 		.ascii	"_new\000"
+ 2684      00
+ 2685              	.LASF83:
+ 2686 04b9 5F637674 		.ascii	"_cvtlen\000"
+ 2686      6C656E00 
+ 2687              	.LASF26:
+ 2688 04c1 5F6D6178 		.ascii	"_maxwds\000"
+ 2688      77647300 
+ 2689              	.LASF109:
+ 2690 04c9 5F6C3634 		.ascii	"_l64a_buf\000"
+ 2690      615F6275 
+ 2690      6600
+ 2691              	.LASF75:
+ 2692 04d3 5F637572 		.ascii	"_current_category\000"
+ 2692      72656E74 
+ 2692      5F636174 
+ 2692      65676F72 
+ 2692      7900
+ 2693              	.LASF62:
+ 2694 04e5 5F626C6B 		.ascii	"_blksize\000"
+ 2694      73697A65 
+ 2694      00
+ 2695              	.LASF30:
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 54
 
 
- 2695 04fd 5F626C6B 		.ascii	"_blksize\000"
- 2695      73697A65 
- 2695      00
- 2696              	.LASF30:
- 2697 0506 5F5F746D 		.ascii	"__tm\000"
- 2697      00
- 2698              	.LASF65:
- 2699 050b 5F6C6F63 		.ascii	"_lock\000"
- 2699      6B00
- 2700              	.LASF19:
- 2701 0511 73697A65 		.ascii	"sizetype\000"
- 2701      74797065 
- 2701      00
- 2702              	.LASF8:
- 2703 051a 6C6F6E67 		.ascii	"long unsigned int\000"
- 2703      20756E73 
- 2703      69676E65 
- 2703      6420696E 
- 2703      7400
- 2704              	.LASF93:
- 2705 052c 5F6E696F 		.ascii	"_niobs\000"
- 2705      627300
- 2706              	.LASF16:
- 2707 0533 77696E74 		.ascii	"wint_t\000"
- 2707      5F7400
- 2708              	.LASF122:
- 2709 053a 696E7433 		.ascii	"int32_t\000"
- 2709      325F7400 
- 2710              	.LASF42:
- 2711 0542 5F64736F 		.ascii	"_dso_handle\000"
- 2711      5F68616E 
- 2711      646C6500 
- 2712              	.LASF84:
- 2713 054e 5F637674 		.ascii	"_cvtbuf\000"
- 2713      62756600 
- 2714              	.LASF1:
- 2715 0556 756E7369 		.ascii	"unsigned char\000"
- 2715      676E6564 
- 2715      20636861 
- 2715      7200
- 2716              	.LASF7:
- 2717 0564 5F5F7569 		.ascii	"__uint32_t\000"
- 2717      6E743332 
- 2717      5F7400
- 2718              	.LASF111:
- 2719 056f 5F676574 		.ascii	"_getdate_err\000"
- 2719      64617465 
- 2719      5F657272 
- 2719      00
- 2720              	.LASF133:
- 2721 057c 7461696C 		.ascii	"tail\000"
- 2721      00
- 2722              	.LASF98:
- 2723 0581 5F616464 		.ascii	"_add\000"
- 2723      00
- 2724              	.LASF48:
- 2725 0586 5F5F7362 		.ascii	"__sbuf\000"
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 55
+ 2696 04ee 5F5F746D 		.ascii	"__tm\000"
+ 2696      00
+ 2697              	.LASF65:
+ 2698 04f3 5F6C6F63 		.ascii	"_lock\000"
+ 2698      6B00
+ 2699              	.LASF19:
+ 2700 04f9 73697A65 		.ascii	"sizetype\000"
+ 2700      74797065 
+ 2700      00
+ 2701              	.LASF8:
+ 2702 0502 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2702      20756E73 
+ 2702      69676E65 
+ 2702      6420696E 
+ 2702      7400
+ 2703              	.LASF93:
+ 2704 0514 5F6E696F 		.ascii	"_niobs\000"
+ 2704      627300
+ 2705              	.LASF16:
+ 2706 051b 77696E74 		.ascii	"wint_t\000"
+ 2706      5F7400
+ 2707              	.LASF122:
+ 2708 0522 696E7433 		.ascii	"int32_t\000"
+ 2708      325F7400 
+ 2709              	.LASF42:
+ 2710 052a 5F64736F 		.ascii	"_dso_handle\000"
+ 2710      5F68616E 
+ 2710      646C6500 
+ 2711              	.LASF84:
+ 2712 0536 5F637674 		.ascii	"_cvtbuf\000"
+ 2712      62756600 
+ 2713              	.LASF1:
+ 2714 053e 756E7369 		.ascii	"unsigned char\000"
+ 2714      676E6564 
+ 2714      20636861 
+ 2714      7200
+ 2715              	.LASF7:
+ 2716 054c 5F5F7569 		.ascii	"__uint32_t\000"
+ 2716      6E743332 
+ 2716      5F7400
+ 2717              	.LASF111:
+ 2718 0557 5F676574 		.ascii	"_getdate_err\000"
+ 2718      64617465 
+ 2718      5F657272 
+ 2718      00
+ 2719              	.LASF133:
+ 2720 0564 7461696C 		.ascii	"tail\000"
+ 2720      00
+ 2721              	.LASF98:
+ 2722 0569 5F616464 		.ascii	"_add\000"
+ 2722      00
+ 2723              	.LASF48:
+ 2724 056e 5F5F7362 		.ascii	"__sbuf\000"
+ 2724      756600
+ 2725              	.LASF92:
+ 2726 0575 5F676C75 		.ascii	"_glue\000"
+ 2726      6500
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 55
 
 
- 2725      756600
- 2726              	.LASF92:
- 2727 058d 5F676C75 		.ascii	"_glue\000"
- 2727      6500
- 2728              	.LASF88:
- 2729 0593 5F5F7367 		.ascii	"__sglue\000"
- 2729      6C756500 
- 2730              	.LASF100:
- 2731 059b 5F737472 		.ascii	"_strtok_last\000"
- 2731      746F6B5F 
- 2731      6C617374 
- 2731      00
- 2732              	.LASF107:
- 2733 05a8 5F6D6274 		.ascii	"_mbtowc_state\000"
- 2733      6F77635F 
- 2733      73746174 
- 2733      6500
- 2734              	.LASF41:
- 2735 05b6 5F666E61 		.ascii	"_fnargs\000"
- 2735      72677300 
- 2736              	.LASF0:
- 2737 05be 7369676E 		.ascii	"signed char\000"
- 2737      65642063 
- 2737      68617200 
- 2738              	.LASF68:
- 2739 05ca 5F726565 		.ascii	"_reent\000"
- 2739      6E7400
- 2740              	.LASF3:
- 2741 05d1 73686F72 		.ascii	"short unsigned int\000"
- 2741      7420756E 
- 2741      7369676E 
- 2741      65642069 
- 2741      6E7400
- 2742              	.LASF43:
- 2743 05e4 5F666E74 		.ascii	"_fntypes\000"
- 2743      79706573 
- 2743      00
- 2744              	.LASF50:
- 2745 05ed 5F73697A 		.ascii	"_size\000"
- 2745      6500
- 2746              	.LASF125:
- 2747 05f3 646F7562 		.ascii	"double\000"
- 2747      6C6500
- 2748              	.LASF14:
- 2749 05fa 5F6F6666 		.ascii	"_off_t\000"
- 2749      5F7400
- 2750              	.LASF61:
- 2751 0601 5F6E6275 		.ascii	"_nbuf\000"
- 2751      6600
- 2752              	.LASF99:
- 2753 0607 5F756E75 		.ascii	"_unused_rand\000"
- 2753      7365645F 
- 2753      72616E64 
- 2753      00
- 2754              	.LASF67:
- 2755 0614 5F666C61 		.ascii	"_flags2\000"
- 2755      67733200 
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccQcaP51.s 			page 56
+ 2727              	.LASF88:
+ 2728 057b 5F5F7367 		.ascii	"__sglue\000"
+ 2728      6C756500 
+ 2729              	.LASF100:
+ 2730 0583 5F737472 		.ascii	"_strtok_last\000"
+ 2730      746F6B5F 
+ 2730      6C617374 
+ 2730      00
+ 2731              	.LASF107:
+ 2732 0590 5F6D6274 		.ascii	"_mbtowc_state\000"
+ 2732      6F77635F 
+ 2732      73746174 
+ 2732      6500
+ 2733              	.LASF41:
+ 2734 059e 5F666E61 		.ascii	"_fnargs\000"
+ 2734      72677300 
+ 2735              	.LASF0:
+ 2736 05a6 7369676E 		.ascii	"signed char\000"
+ 2736      65642063 
+ 2736      68617200 
+ 2737              	.LASF68:
+ 2738 05b2 5F726565 		.ascii	"_reent\000"
+ 2738      6E7400
+ 2739              	.LASF3:
+ 2740 05b9 73686F72 		.ascii	"short unsigned int\000"
+ 2740      7420756E 
+ 2740      7369676E 
+ 2740      65642069 
+ 2740      6E7400
+ 2741              	.LASF43:
+ 2742 05cc 5F666E74 		.ascii	"_fntypes\000"
+ 2742      79706573 
+ 2742      00
+ 2743              	.LASF50:
+ 2744 05d5 5F73697A 		.ascii	"_size\000"
+ 2744      6500
+ 2745              	.LASF125:
+ 2746 05db 646F7562 		.ascii	"double\000"
+ 2746      6C6500
+ 2747              	.LASF14:
+ 2748 05e2 5F6F6666 		.ascii	"_off_t\000"
+ 2748      5F7400
+ 2749              	.LASF61:
+ 2750 05e9 5F6E6275 		.ascii	"_nbuf\000"
+ 2750      6600
+ 2751              	.LASF99:
+ 2752 05ef 5F756E75 		.ascii	"_unused_rand\000"
+ 2752      7365645F 
+ 2752      72616E64 
+ 2752      00
+ 2753              	.LASF67:
+ 2754 05fc 5F666C61 		.ascii	"_flags2\000"
+ 2754      67733200 
+ 2755              	.LASF44:
+ 2756 0604 5F69735F 		.ascii	"_is_cxa\000"
+ 2756      63786100 
+ 2757              	.LASF96:
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccDQpJbg.s 			page 56
 
 
- 2756              	.LASF44:
- 2757 061c 5F69735F 		.ascii	"_is_cxa\000"
- 2757      63786100 
- 2758              	.LASF96:
- 2759 0624 5F736565 		.ascii	"_seed\000"
- 2759      6400
- 2760              	.LASF104:
- 2761 062a 5F72616E 		.ascii	"_rand_next\000"
- 2761      645F6E65 
- 2761      787400
- 2762              	.LASF58:
- 2763 0635 5F736565 		.ascii	"_seek\000"
- 2763      6B00
- 2764              	.LASF72:
- 2765 063b 5F737464 		.ascii	"_stderr\000"
- 2765      65727200 
- 2766              	.LASF119:
- 2767 0643 5F6E6D61 		.ascii	"_nmalloc\000"
- 2767      6C6C6F63 
- 2767      00
- 2768              	.LASF60:
- 2769 064c 5F756275 		.ascii	"_ubuf\000"
- 2769      6600
- 2770              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 2758 060c 5F736565 		.ascii	"_seed\000"
+ 2758      6400
+ 2759              	.LASF104:
+ 2760 0612 5F72616E 		.ascii	"_rand_next\000"
+ 2760      645F6E65 
+ 2760      787400
+ 2761              	.LASF58:
+ 2762 061d 5F736565 		.ascii	"_seek\000"
+ 2762      6B00
+ 2763              	.LASF72:
+ 2764 0623 5F737464 		.ascii	"_stderr\000"
+ 2764      65727200 
+ 2765              	.LASF119:
+ 2766 062b 5F6E6D61 		.ascii	"_nmalloc\000"
+ 2766      6C6C6F63 
+ 2766      00
+ 2767              	.LASF60:
+ 2768 0634 5F756275 		.ascii	"_ubuf\000"
+ 2768      6600
+ 2769              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

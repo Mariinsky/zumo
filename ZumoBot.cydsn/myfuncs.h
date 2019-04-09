@@ -3,6 +3,9 @@
 #include "task.h"
 #include "LSM303D.h"
 #include "Motor.h"
+#include "Reflectance.h"
+#include "IR.h"
+#include "Beep.h"
 #include <stdlib.h>
 
 
@@ -129,11 +132,11 @@ void bumperCar () {
 void motor_hardTurn(int direction,uint8 l_speed, uint8 r_speed, uint32 delay)
 {
     switch (direction) {
-        case '1': 
+        case '0': 
         MotorDirLeft_Write(1);     
         MotorDirRight_Write(0);
         break;
-        case '2':
+        case '1':
         MotorDirLeft_Write(0);     
         MotorDirRight_Write(1);
         break;
@@ -142,6 +145,92 @@ void motor_hardTurn(int direction,uint8 l_speed, uint8 r_speed, uint32 delay)
     PWM_WriteCompare2(r_speed); 
     vTaskDelay(delay);
 }
+
+int ReflectorValue() {
+    struct sensors_ dig;
+    reflectance_digital(&dig);
+    // Middle
+    if (dig.l3 == 0 && dig.l2 == 0 && dig.l1 == 1 && dig.r1 == 1 && dig.r2 == 0 && dig.r3 == 0) {return 0;};
+    // Right side turn
+    if (dig.l3 == 0 && dig.l2 == 0 && dig.l1 == 0 && dig.r1 == 1 && dig.r2 == 1 && dig.r3 == 0) {return 1;}; // mild right
+    if (dig.l3 == 0 && dig.l2 == 0 && dig.l1 == 0 && dig.r1 == 0 && dig.r2 == 1 && dig.r3 == 1) {return 2;}; // medium right
+    if (dig.l3 == 0 && dig.l2 == 0 && dig.l1 == 0 && dig.r1 == 0 && dig.r2 == 0 && dig.r3 == 1) {return 3;}; // hard right
+    // Left side turn
+    if (dig.l3 == 0 && dig.l2 == 1 && dig.l1 == 1 && dig.r1 == 0 && dig.r2 == 0 && dig.r3 == 0) {return -1;}; // mild left
+    if (dig.l3 == 1 && dig.l2 == 1 && dig.l1 == 0 && dig.r1 == 0 && dig.r2 == 0 && dig.r3 == 0) {return -2;}; // medium left
+    if (dig.l3 == 1 && dig.l2 == 0 && dig.l1 == 0 && dig.r1 == 0 && dig.r2 == 0 && dig.r3 == 0) {return -3;}; // hard left
+    // no reflection on all sensonrs
+    if (dig.l3 == 1 && dig.l2 == 1 && dig.l1 == 1 && dig.r1 == 1 && dig.r2 == 1 && dig.r3 == 1) {return 6;};
+    // max reflection
+    return -6;
+}
+void FunkyMoves() {
+    //forward
+    if(ReflectorValue() == 0){motor_forward(0,0); motor_turn(100,95,0);};
+    //right turns
+    if(ReflectorValue() == 1){motor_forward(0,0); motor_turn(100,70,0);};
+    if(ReflectorValue() == 2){motor_forward(0,0); motor_turn(100,50,0);};
+    if(ReflectorValue() == 3){motor_forward(0,0); motor_turn(100,0,0);};
+    //left turns
+    if(ReflectorValue() == -1){motor_forward(0,0); motor_turn(70,100,0);};
+    if(ReflectorValue() == -2){motor_forward(0,0); motor_turn(50,100,0);};
+    if(ReflectorValue() == -3){motor_forward(0,0); motor_turn(0,100,0);};
+    // Lost path move back
+    if(ReflectorValue() == -6) {motor_backward(50,0);};
     
+}
+
+
+// reflector
+
+int reflectorStop () {
+    struct sensors_ dig;
+    reflectance_digital(&dig); 
+    
+    if (dig.l1 == 1 && dig.l2 == 1 && dig.l3 == 1 && dig.r1 == 1 && dig.r2 == 1 && dig.r3 == 1){
+        return 1;
+    } 
+    
+    return 0;
+}
+
+void assigment3 (){
+    
+    reflectance_start();
+    reflectance_set_threshold(9000, 9000, 11000, 11000, 9000, 9000); // set center sensor threshold to 11000 and others to 9000
+    IR_Start();
+    IR_flush();
+    motor_start();
+    Beep(1000, 150);
+    
+    
+    while (1) {
+        
+        if (SW1_Read()==0) {
+            Beep(1000, 150);
+            vTaskDelay(100);           
+            motor_forward(0,0);
+            
+            motor_forward(100,0);
+            if (reflectorStop() == 1) {
+                //int x = 0;
+                motor_forward(0,0);
+                IR_wait();
+               /* while (x < 2) {
+                 motor_forward(100,0);
+                if (reflectorStop() == 0){
+                    if (reflectorStop() == 1) {
+                        Beep(100, 100);
+                        x++;
+                    };
+                }
+                }*/
+                
+            }
+        }
+    }
+    motor_stop();
+}
+
 
 

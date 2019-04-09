@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 1
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccd9Qika.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 1
   33              		.cfi_def_cfa_offset 8
   34              		.cfi_offset 3, -8
   35              		.cfi_offset 14, -4
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 2
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccd9Qika.s 			page 2
 
 
   23:ZumoLibrary/LSM303D.c ****     
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 1
   74              		.type	LSM303D_Read_Acc, %function
   75              	LSM303D_Read_Acc:
   76              	.LFB69:
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 3
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccd9Qika.s 			page 3
 
 
   39:ZumoLibrary/LSM303D.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 1
  118              	.LFE69:
  119              		.size	LSM303D_Read_Acc, .-LSM303D_Read_Acc
  120              		.text
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 4
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccd9Qika.s 			page 4
 
 
  121              	.Letext0:
@@ -196,10 +196,10 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 1
  133 0006 00000000 		.4byte	.Ldebug_abbrev0
  134 000a 04       		.byte	0x4
  135 000b 01       		.uleb128 0x1
- 136 000c AA000000 		.4byte	.LASF28
+ 136 000c 70000000 		.4byte	.LASF28
  137 0010 0C       		.byte	0xc
- 138 0011 C3010000 		.4byte	.LASF29
- 139 0015 35000000 		.4byte	.LASF30
+ 138 0011 89010000 		.4byte	.LASF29
+ 139 0015 BF010000 		.4byte	.LASF30
  140 0019 00000000 		.4byte	.Ldebug_ranges0+0
  141 001d 00000000 		.4byte	0
  142 0021 00000000 		.4byte	.Ldebug_line0
@@ -210,7 +210,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 1
  147 002c 03       		.uleb128 0x3
  148 002d 04       		.byte	0x4
  149 002e 07       		.byte	0x7
- 150 002f 8F010000 		.4byte	.LASF0
+ 150 002f 55010000 		.4byte	.LASF0
  151 0033 03       		.uleb128 0x3
  152 0034 08       		.byte	0x8
  153 0035 05       		.byte	0x5
@@ -218,11 +218,11 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 1
  155 003a 03       		.uleb128 0x3
  156 003b 08       		.byte	0x8
  157 003c 04       		.byte	0x4
- 158 003d 14020000 		.4byte	.LASF2
+ 158 003d FC010000 		.4byte	.LASF2
  159 0041 03       		.uleb128 0x3
  160 0042 01       		.byte	0x1
  161 0043 06       		.byte	0x6
- 162 0044 20020000 		.4byte	.LASF3
+ 162 0044 08020000 		.4byte	.LASF3
  163 0048 04       		.uleb128 0x4
  164 0049 17000000 		.4byte	.LASF5
  165 004d 02       		.byte	0x2
@@ -231,23 +231,23 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 1
  168 0053 03       		.uleb128 0x3
  169 0054 01       		.byte	0x1
  170 0055 08       		.byte	0x8
- 171 0056 70010000 		.4byte	.LASF4
+ 171 0056 36010000 		.4byte	.LASF4
  172 005a 04       		.uleb128 0x4
  173 005b 21000000 		.4byte	.LASF6
  174 005f 02       		.byte	0x2
  175 0060 29       		.byte	0x29
  176 0061 65000000 		.4byte	0x65
  177 0065 03       		.uleb128 0x3
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 5
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccd9Qika.s 			page 5
 
 
  178 0066 02       		.byte	0x2
  179 0067 05       		.byte	0x5
- 180 0068 EF010000 		.4byte	.LASF7
+ 180 0068 B5010000 		.4byte	.LASF7
  181 006c 03       		.uleb128 0x3
  182 006d 02       		.byte	0x2
  183 006e 07       		.byte	0x7
- 184 006f 50010000 		.4byte	.LASF8
+ 184 006f 16010000 		.4byte	.LASF8
  185 0073 04       		.uleb128 0x4
  186 0074 2B000000 		.4byte	.LASF9
  187 0078 02       		.byte	0x2
@@ -256,81 +256,81 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 1
  190 007e 03       		.uleb128 0x3
  191 007f 04       		.byte	0x4
  192 0080 05       		.byte	0x5
- 193 0081 0B020000 		.4byte	.LASF10
+ 193 0081 F3010000 		.4byte	.LASF10
  194 0085 03       		.uleb128 0x3
  195 0086 04       		.byte	0x4
  196 0087 07       		.byte	0x7
- 197 0088 3E010000 		.4byte	.LASF11
+ 197 0088 04010000 		.4byte	.LASF11
  198 008c 03       		.uleb128 0x3
  199 008d 08       		.byte	0x8
  200 008e 07       		.byte	0x7
- 201 008f 9C010000 		.4byte	.LASF12
+ 201 008f 62010000 		.4byte	.LASF12
  202 0093 04       		.uleb128 0x4
- 203 0094 B3010000 		.4byte	.LASF13
+ 203 0094 79010000 		.4byte	.LASF13
  204 0098 03       		.byte	0x3
  205 0099 18       		.byte	0x18
  206 009a 48000000 		.4byte	0x48
  207 009e 04       		.uleb128 0x4
- 208 009f BB010000 		.4byte	.LASF14
+ 208 009f 81010000 		.4byte	.LASF14
  209 00a3 03       		.byte	0x3
  210 00a4 20       		.byte	0x20
  211 00a5 5A000000 		.4byte	0x5a
  212 00a9 04       		.uleb128 0x4
- 213 00aa D9010000 		.4byte	.LASF15
+ 213 00aa 9F010000 		.4byte	.LASF15
  214 00ae 03       		.byte	0x3
  215 00af 2C       		.byte	0x2c
  216 00b0 73000000 		.4byte	0x73
  217 00b4 05       		.uleb128 0x5
- 218 00b5 38010000 		.4byte	.LASF16
+ 218 00b5 FE000000 		.4byte	.LASF16
  219 00b9 04       		.byte	0x4
  220 00ba E801     		.2byte	0x1e8
  221 00bc 65000000 		.4byte	0x65
  222 00c0 03       		.uleb128 0x3
  223 00c1 04       		.byte	0x4
  224 00c2 04       		.byte	0x4
- 225 00c3 82000000 		.4byte	.LASF17
+ 225 00c3 48000000 		.4byte	.LASF17
  226 00c7 03       		.uleb128 0x3
  227 00c8 08       		.byte	0x8
  228 00c9 04       		.byte	0x4
- 229 00ca 7E010000 		.4byte	.LASF18
+ 229 00ca 44010000 		.4byte	.LASF18
  230 00ce 03       		.uleb128 0x3
  231 00cf 01       		.byte	0x1
  232 00d0 08       		.byte	0x8
- 233 00d1 EA010000 		.4byte	.LASF19
+ 233 00d1 B0010000 		.4byte	.LASF19
  234 00d5 03       		.uleb128 0x3
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 6
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccd9Qika.s 			page 6
 
 
  235 00d6 04       		.byte	0x4
  236 00d7 07       		.byte	0x7
- 237 00d8 E1010000 		.4byte	.LASF20
+ 237 00d8 A7010000 		.4byte	.LASF20
  238 00dc 06       		.uleb128 0x6
- 239 00dd 6F000000 		.4byte	.LASF31
+ 239 00dd 35000000 		.4byte	.LASF31
  240 00e1 06       		.byte	0x6
  241 00e2 05       		.byte	0x5
  242 00e3 47       		.byte	0x47
  243 00e4 0D010000 		.4byte	0x10d
  244 00e8 07       		.uleb128 0x7
- 245 00e9 9B000000 		.4byte	.LASF21
+ 245 00e9 61000000 		.4byte	.LASF21
  246 00ed 05       		.byte	0x5
  247 00ee 49       		.byte	0x49
  248 00ef 9E000000 		.4byte	0x9e
  249 00f3 00       		.byte	0
  250 00f4 07       		.uleb128 0x7
- 251 00f5 A0000000 		.4byte	.LASF22
+ 251 00f5 66000000 		.4byte	.LASF22
  252 00f9 05       		.byte	0x5
  253 00fa 4A       		.byte	0x4a
  254 00fb 9E000000 		.4byte	0x9e
  255 00ff 02       		.byte	0x2
  256 0100 07       		.uleb128 0x7
- 257 0101 A5000000 		.4byte	.LASF23
+ 257 0101 6B000000 		.4byte	.LASF23
  258 0105 05       		.byte	0x5
  259 0106 4B       		.byte	0x4b
  260 0107 9E000000 		.4byte	0x9e
  261 010b 04       		.byte	0x4
  262 010c 00       		.byte	0
  263 010d 08       		.uleb128 0x8
- 264 010e 8D000000 		.4byte	.LASF32
+ 264 010e 53000000 		.4byte	.LASF32
  265 0112 01       		.byte	0x1
  266 0113 16       		.byte	0x16
  267 0114 93000000 		.4byte	0x93
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 1
  289 0145 08       		.byte	0x8
  290 0146 20       		.byte	0x20
  291 0147 0B       		.uleb128 0xb
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 7
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccd9Qika.s 			page 7
 
 
  292 0148 01       		.uleb128 0x1
@@ -405,7 +405,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 1
  333 0180 00       		.byte	0
  334 0181 00       		.byte	0
  335 0182 0D       		.uleb128 0xd
- 336 0183 2C020000 		.4byte	.LASF33
+ 336 0183 14020000 		.4byte	.LASF33
  337 0187 01       		.byte	0x1
  338 0188 2A       		.byte	0x2a
  339 0189 00000000 		.4byte	.LFB69
@@ -414,11 +414,11 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 1
  342 0192 9C       		.byte	0x9c
  343 0193 D5010000 		.4byte	0x1d5
  344 0197 0E       		.uleb128 0xe
- 345 0198 88000000 		.4byte	.LASF34
+ 345 0198 4E000000 		.4byte	.LASF34
  346 019c 01       		.byte	0x1
  347 019d 2A       		.byte	0x2a
  348 019e D5010000 		.4byte	0x1d5
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 8
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccd9Qika.s 			page 8
 
 
  349 01a2 00000000 		.4byte	.LLST0
@@ -468,23 +468,23 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 1
  393 01e9 05       		.byte	0x5
  394 01ea 00       		.byte	0
  395 01eb 13       		.uleb128 0x13
- 396 01ec 63010000 		.4byte	.LASF35
+ 396 01ec 29010000 		.4byte	.LASF35
  397 01f0 08       		.byte	0x8
  398 01f1 1207     		.2byte	0x712
  399 01f3 F7010000 		.4byte	0x1f7
  400 01f7 14       		.uleb128 0x14
  401 01f8 A9000000 		.4byte	0xa9
  402 01fc 15       		.uleb128 0x15
- 403 01fd 78000000 		.4byte	.LASF24
- 404 0201 78000000 		.4byte	.LASF24
+ 403 01fd 3E000000 		.4byte	.LASF24
+ 404 0201 3E000000 		.4byte	.LASF24
  405 0205 06       		.byte	0x6
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 9
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccd9Qika.s 			page 9
 
 
  406 0206 93       		.byte	0x93
  407 0207 15       		.uleb128 0x15
- 408 0208 85010000 		.4byte	.LASF25
- 409 020c 85010000 		.4byte	.LASF25
+ 408 0208 4B010000 		.4byte	.LASF25
+ 409 020c 4B010000 		.4byte	.LASF25
  410 0210 07       		.byte	0x7
  411 0211 09       		.byte	0x9
  412 0212 15       		.uleb128 0x15
@@ -493,8 +493,8 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 1
  415 021b 07       		.byte	0x7
  416 021c 0A       		.byte	0xa
  417 021d 15       		.uleb128 0x15
- 418 021e F9010000 		.4byte	.LASF27
- 419 0222 F9010000 		.4byte	.LASF27
+ 418 021e E1010000 		.4byte	.LASF27
+ 419 0222 E1010000 		.4byte	.LASF27
  420 0226 07       		.byte	0x7
  421 0227 0B       		.byte	0xb
  422 0228 00       		.byte	0
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 1
  460 0023 3E       		.uleb128 0x3e
  461 0024 0B       		.uleb128 0xb
  462 0025 03       		.uleb128 0x3
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 10
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccd9Qika.s 			page 10
 
 
  463 0026 0E       		.uleb128 0xe
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 1
  517 005c 13       		.uleb128 0x13
  518 005d 38       		.uleb128 0x38
  519 005e 0B       		.uleb128 0xb
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 11
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccd9Qika.s 			page 11
 
 
  520 005f 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 1
  574 009c 9142     		.uleb128 0x2111
  575 009e 18       		.uleb128 0x18
  576 009f 00       		.byte	0
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 12
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccd9Qika.s 			page 12
 
 
  577 00a0 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 1
  631 00d9 08       		.uleb128 0x8
  632 00da 3A       		.uleb128 0x3a
  633 00db 0B       		.uleb128 0xb
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 13
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccd9Qika.s 			page 13
 
 
  634 00dc 3B       		.uleb128 0x3b
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 1
  688 0112 00       		.byte	0
  689 0113 49       		.uleb128 0x49
  690 0114 13       		.uleb128 0x13
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 14
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccd9Qika.s 			page 14
 
 
  691 0115 00       		.byte	0
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 1
  745 0014 00000000 		.4byte	0
  746              		.section	.debug_line,"",%progbits
  747              	.Ldebug_line0:
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 15
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccd9Qika.s 			page 15
 
 
  748 0000 B1010000 		.section	.debug_str,"MS",%progbits,1
@@ -867,160 +867,153 @@ ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 1
  758 002b 5F5F696E 		.ascii	"__int32_t\000"
  758      7433325F 
  758      7400
- 759              	.LASF30:
- 760 0035 433A5C55 		.ascii	"C:\\Users\\enar\\OneDrive\\robootti\\clooni\\Zumo\\"
- 760      73657273 
- 760      5C656E61 
- 760      725C4F6E 
- 760      65447269 
- 761 0061 5A756D6F 		.ascii	"ZumoBot.cydsn\000"
- 761      426F742E 
- 761      63796473 
- 761      6E00
- 762              	.LASF31:
- 763 006f 61636344 		.ascii	"accData_\000"
- 763      6174615F 
- 763      00
- 764              	.LASF24:
- 765 0078 4932435F 		.ascii	"I2C_Start\000"
- 765      53746172 
- 765      7400
- 766              	.LASF17:
- 767 0082 666C6F61 		.ascii	"float\000"
- 767      7400
- 768              	.LASF34:
- 769 0088 64617461 		.ascii	"data\000"
- 769      00
- 770              	.LASF32:
- 771 008d 4C534D33 		.ascii	"LSM303D_Start\000"
- 771      3033445F 
- 771      53746172 
- 771      7400
- 772              	.LASF21:
- 773 009b 61636358 		.ascii	"accX\000"
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 16
+ 759              	.LASF31:
+ 760 0035 61636344 		.ascii	"accData_\000"
+ 760      6174615F 
+ 760      00
+ 761              	.LASF24:
+ 762 003e 4932435F 		.ascii	"I2C_Start\000"
+ 762      53746172 
+ 762      7400
+ 763              	.LASF17:
+ 764 0048 666C6F61 		.ascii	"float\000"
+ 764      7400
+ 765              	.LASF34:
+ 766 004e 64617461 		.ascii	"data\000"
+ 766      00
+ 767              	.LASF32:
+ 768 0053 4C534D33 		.ascii	"LSM303D_Start\000"
+ 768      3033445F 
+ 768      53746172 
+ 768      7400
+ 769              	.LASF21:
+ 770 0061 61636358 		.ascii	"accX\000"
+ 770      00
+ 771              	.LASF22:
+ 772 0066 61636359 		.ascii	"accY\000"
+ 772      00
+ 773              	.LASF23:
+ 774 006b 6163635A 		.ascii	"accZ\000"
+ 774      00
+ 775              	.LASF28:
+ 776 0070 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 776      43313120 
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccd9Qika.s 			page 16
 
 
- 773      00
- 774              	.LASF22:
- 775 00a0 61636359 		.ascii	"accY\000"
- 775      00
- 776              	.LASF23:
- 777 00a5 6163635A 		.ascii	"accZ\000"
- 777      00
- 778              	.LASF28:
- 779 00aa 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
- 779      43313120 
- 779      352E342E 
- 779      31203230 
- 779      31363036 
- 780 00dd 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
- 780      20726576 
- 780      6973696F 
- 780      6E203233 
- 780      37373135 
- 781 0110 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
- 781      66756E63 
- 781      74696F6E 
- 781      2D736563 
- 781      74696F6E 
- 782              	.LASF16:
- 783 0138 696E7431 		.ascii	"int16\000"
- 783      3600
- 784              	.LASF11:
- 785 013e 6C6F6E67 		.ascii	"long unsigned int\000"
- 785      20756E73 
- 785      69676E65 
- 785      6420696E 
- 785      7400
- 786              	.LASF8:
- 787 0150 73686F72 		.ascii	"short unsigned int\000"
- 787      7420756E 
- 787      7369676E 
- 787      65642069 
- 787      6E7400
- 788              	.LASF35:
- 789 0163 49544D5F 		.ascii	"ITM_RxBuffer\000"
- 789      52784275 
- 789      66666572 
- 789      00
- 790              	.LASF4:
- 791 0170 756E7369 		.ascii	"unsigned char\000"
- 791      676E6564 
- 791      20636861 
- 791      7200
- 792              	.LASF18:
- 793 017e 646F7562 		.ascii	"double\000"
- 793      6C6500
- 794              	.LASF25:
- 795 0185 4932435F 		.ascii	"I2C_Write\000"
- 795      57726974 
- 795      6500
- 796              	.LASF0:
- 797 018f 756E7369 		.ascii	"unsigned int\000"
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 17
+ 776      352E342E 
+ 776      31203230 
+ 776      31363036 
+ 777 00a3 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m3 -mthumb -g -O"
+ 777      20726576 
+ 777      6973696F 
+ 777      6E203233 
+ 777      37373135 
+ 778 00d6 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 778      66756E63 
+ 778      74696F6E 
+ 778      2D736563 
+ 778      74696F6E 
+ 779              	.LASF16:
+ 780 00fe 696E7431 		.ascii	"int16\000"
+ 780      3600
+ 781              	.LASF11:
+ 782 0104 6C6F6E67 		.ascii	"long unsigned int\000"
+ 782      20756E73 
+ 782      69676E65 
+ 782      6420696E 
+ 782      7400
+ 783              	.LASF8:
+ 784 0116 73686F72 		.ascii	"short unsigned int\000"
+ 784      7420756E 
+ 784      7369676E 
+ 784      65642069 
+ 784      6E7400
+ 785              	.LASF35:
+ 786 0129 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 786      52784275 
+ 786      66666572 
+ 786      00
+ 787              	.LASF4:
+ 788 0136 756E7369 		.ascii	"unsigned char\000"
+ 788      676E6564 
+ 788      20636861 
+ 788      7200
+ 789              	.LASF18:
+ 790 0144 646F7562 		.ascii	"double\000"
+ 790      6C6500
+ 791              	.LASF25:
+ 792 014b 4932435F 		.ascii	"I2C_Write\000"
+ 792      57726974 
+ 792      6500
+ 793              	.LASF0:
+ 794 0155 756E7369 		.ascii	"unsigned int\000"
+ 794      676E6564 
+ 794      20696E74 
+ 794      00
+ 795              	.LASF12:
+ 796 0162 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 796      206C6F6E 
+ 796      6720756E 
+ 796      7369676E 
+ 796      65642069 
+ 797              	.LASF13:
+ARM GAS  C:\Users\ENARMA~1\AppData\Local\Temp\ccd9Qika.s 			page 17
 
 
- 797      676E6564 
- 797      20696E74 
- 797      00
- 798              	.LASF12:
- 799 019c 6C6F6E67 		.ascii	"long long unsigned int\000"
- 799      206C6F6E 
- 799      6720756E 
- 799      7369676E 
- 799      65642069 
- 800              	.LASF13:
- 801 01b3 75696E74 		.ascii	"uint8_t\000"
- 801      385F7400 
- 802              	.LASF14:
- 803 01bb 696E7431 		.ascii	"int16_t\000"
- 803      365F7400 
- 804              	.LASF29:
- 805 01c3 5A756D6F 		.ascii	"ZumoLibrary\\LSM303D.c\000"
- 805      4C696272 
- 805      6172795C 
- 805      4C534D33 
- 805      3033442E 
- 806              	.LASF15:
- 807 01d9 696E7433 		.ascii	"int32_t\000"
- 807      325F7400 
- 808              	.LASF20:
- 809 01e1 73697A65 		.ascii	"sizetype\000"
- 809      74797065 
- 809      00
- 810              	.LASF19:
- 811 01ea 63686172 		.ascii	"char\000"
- 811      00
- 812              	.LASF7:
- 813 01ef 73686F72 		.ascii	"short int\000"
- 813      7420696E 
- 813      7400
- 814              	.LASF27:
- 815 01f9 4932435F 		.ascii	"I2C_Read_Multiple\000"
- 815      52656164 
- 815      5F4D756C 
- 815      7469706C 
- 815      6500
- 816              	.LASF10:
- 817 020b 6C6F6E67 		.ascii	"long int\000"
- 817      20696E74 
- 817      00
- 818              	.LASF2:
- 819 0214 6C6F6E67 		.ascii	"long double\000"
- 819      20646F75 
- 819      626C6500 
- 820              	.LASF3:
- 821 0220 7369676E 		.ascii	"signed char\000"
- 821      65642063 
- 821      68617200 
- 822              	.LASF33:
- 823 022c 4C534D33 		.ascii	"LSM303D_Read_Acc\000"
- 823      3033445F 
- 823      52656164 
-ARM GAS  C:\Users\enar\AppData\Local\Temp\ccCBt8ji.s 			page 18
-
-
- 823      5F416363 
- 823      00
- 824              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
+ 798 0179 75696E74 		.ascii	"uint8_t\000"
+ 798      385F7400 
+ 799              	.LASF14:
+ 800 0181 696E7431 		.ascii	"int16_t\000"
+ 800      365F7400 
+ 801              	.LASF29:
+ 802 0189 5A756D6F 		.ascii	"ZumoLibrary\\LSM303D.c\000"
+ 802      4C696272 
+ 802      6172795C 
+ 802      4C534D33 
+ 802      3033442E 
+ 803              	.LASF15:
+ 804 019f 696E7433 		.ascii	"int32_t\000"
+ 804      325F7400 
+ 805              	.LASF20:
+ 806 01a7 73697A65 		.ascii	"sizetype\000"
+ 806      74797065 
+ 806      00
+ 807              	.LASF19:
+ 808 01b0 63686172 		.ascii	"char\000"
+ 808      00
+ 809              	.LASF7:
+ 810 01b5 73686F72 		.ascii	"short int\000"
+ 810      7420696E 
+ 810      7400
+ 811              	.LASF30:
+ 812 01bf 5A3A5C73 		.ascii	"Z:\\shared\\zumo\\zumo\\ZumoBot.cydsn\000"
+ 812      68617265 
+ 812      645C7A75 
+ 812      6D6F5C7A 
+ 812      756D6F5C 
+ 813              	.LASF27:
+ 814 01e1 4932435F 		.ascii	"I2C_Read_Multiple\000"
+ 814      52656164 
+ 814      5F4D756C 
+ 814      7469706C 
+ 814      6500
+ 815              	.LASF10:
+ 816 01f3 6C6F6E67 		.ascii	"long int\000"
+ 816      20696E74 
+ 816      00
+ 817              	.LASF2:
+ 818 01fc 6C6F6E67 		.ascii	"long double\000"
+ 818      20646F75 
+ 818      626C6500 
+ 819              	.LASF3:
+ 820 0208 7369676E 		.ascii	"signed char\000"
+ 820      65642063 
+ 820      68617200 
+ 821              	.LASF33:
+ 822 0214 4C534D33 		.ascii	"LSM303D_Read_Acc\000"
+ 822      3033445F 
+ 822      52656164 
+ 822      5F416363 
+ 822      00
+ 823              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran
