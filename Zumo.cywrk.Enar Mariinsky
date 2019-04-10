@@ -457,6 +457,7 @@
 <OpenDocs>
 <name v=".\ZumoBot.cydsn\myfuncs.h" />
 <name v=".\ZumoBot.cydsn\main.c" />
+<name v=".\ZumoBot.cydsn\ZumoBot.cydwr" />
 </OpenDocs>
 <OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
 
@@ -464,7 +465,7 @@
   Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
   http://www.actiprosoftware.com
 
---><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1234, 493" SelectedTabbedMdiWindow="4b031ee6-e254-4f17-b356-40c5484b0a56"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="862f85a9-2a9a-4518-a2b5-20bfd8b74b52" /><DocumentWindow Key="Z:\shared\zumo\zumo\ZumoBot.cydsn\myfuncs.h" Guid="4b031ee6-e254-4f17-b356-40c5484b0a56" /><DocumentWindow Key="Z:\shared\zumo\zumo\ZumoBot.cydsn\main.c" Guid="4a281d23-994d-4351-a5d7-b657548b3f66" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1437, 605" SelectedTabbedMdiWindow="4b031ee6-e254-4f17-b356-40c5484b0a56"><ToolWindow Key="Start Page:bd4649ab-da6b-4d04-a663-c722b8bf99db:Start Page" Guid="862f85a9-2a9a-4518-a2b5-20bfd8b74b52" /><DocumentWindow Key="Z:\shared\zumo\zumo\ZumoBot.cydsn\myfuncs.h" Guid="4b031ee6-e254-4f17-b356-40c5484b0a56" /><DocumentWindow Key="Z:\shared\zumo\zumo\ZumoBot.cydsn\main.c" Guid="4a281d23-994d-4351-a5d7-b657548b3f66" /><DocumentWindow Key="Z:\shared\zumo\zumo\ZumoBot.cydsn\ZumoBot.cydwr" Guid="0ccf94e1-3c60-4934-bf7a-d4a74a1d40e3" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
 <config v="" />
 <AutoUpdate v="true" />
 </CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>

@@ -132,11 +132,11 @@ void bumperCar () {
 void motor_hardTurn(int direction,uint8 l_speed, uint8 r_speed, uint32 delay)
 {
     switch (direction) {
-        case '0': 
+        case 0: 
         MotorDirLeft_Write(1);     
         MotorDirRight_Write(0);
         break;
-        case '1':
+        case 1:
         MotorDirLeft_Write(0);     
         MotorDirRight_Write(1);
         break;
@@ -176,7 +176,7 @@ void FunkyMoves() {
     if(ReflectorValue() == -2){motor_forward(0,0); motor_turn(50,100,0);};
     if(ReflectorValue() == -3){motor_forward(0,0); motor_turn(0,100,0);};
     // Lost path move back
-    if(ReflectorValue() == -6) {motor_backward(50,0);};
+    //if(ReflectorValue() == 6) {motor_backward(50,0);};
     
 }
 

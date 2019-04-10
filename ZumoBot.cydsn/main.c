@@ -54,6 +54,52 @@
  * @brief   
  * @details  ** Enable global interrupt since Zumo library uses interrupts. **<br>&nbsp;&nbsp;&nbsp;CyGlobalIntEnable;<br>
 */
+#if 1
+void zmain(void) {
+    uint afterLine = 200;
+    uint leftMotor = 100;
+    uint rightMotor = 95;
+    reflectance_start();
+    reflectance_set_threshold(11000,11000,11000,11000,11000,11000);
+    motor_start();
+    motor_forward(0,0);
+    Beep(200,180);
+
+    while(SW1_Read() == 1){}  // Whaiting for button to start program
+    vTaskDelay(2000);
+    Beep(200,180);
+    while(1) {
+         FunkyMoves();
+         if(ReflectorValue == 6) {
+             break;
+         }
+    }
+    vTaskDelay(1000);
+    Beep(200,180);
+    while(1){
+        motor_turn(leftMotor,rightMotor,afterLine);
+        motor_hardTurn(1,100,100,500);
+        while(1) {
+            FunkyMoves();
+            if (ReflectorValue() == 6) {break;}
+        }
+    }
+    vTaskDelay(1000);
+    Beep(200,180);
+    while(1) {
+        motor_turn(leftMotor,rightMotor,afterLine);
+        motor_hardTurn(0,100,100,500);
+        while(1) {
+            FunkyMoves();
+            if (ReflectorValue() == 6) {break;}
+        }
+    }
+
+    while(1){}
+}
+#endif
+
+
 #if 0
 // reflector assigment1
 void zmain(void)
