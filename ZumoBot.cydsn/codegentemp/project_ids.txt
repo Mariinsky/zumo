@@ -1,6 +1,6 @@
-Z:\shared\zumo\zumo\ZumoBot.cydsn\ZumoBot.cyprj|4a95c752-6edd-4421-9569-c6aad0c73890
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|4903fc59-2a99-4284-8f72-93f4df282697
-C:\Users\Enar Mariinsky\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|c43f8474-c70d-4358-b1b5-ee3abd18209d
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|58c34b24-f03c-4625-8d93-70cf08e73380
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|b73bda83-a202-424a-a07b-04cb4e06f84a
-C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|1a1e5a8e-c2b0-4f7e-a138-cfdae928b23b
+Z:\shared\zumo\zumo\ZumoBot.cydsn\ZumoBot.cyprj|127f9a03-d0a0-4d6a-97ea-108fd162ddda
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|1ca5f19d-b30c-4632-9c38-f0a6933916c1
+C:\Users\Enar Mariinsky\Documents\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|ee4d6bae-cebf-4fe5-863d-258619a2960a
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|22449889-f92e-461f-8685-e9e3fa4a0daa
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|5706fbd2-1f0b-496e-8aa4-f0b92633b2a1
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|171d0ffd-3cc2-46be-b207-4b5fa6185d42

@@ -3,7 +3,7 @@ ARM GAS  Generated_Source\PSoC5\CyBootAsmGnu.s 			page 1
 
    1              	/***************************************************************************//**
    2              	* \file CyBootAsmGnu.s
-   3              	* \version 5.70
+   3              	* \version 5.80
    4              	*
    5              	*  \brief
    6              	*   Assembly routines for GNU as.

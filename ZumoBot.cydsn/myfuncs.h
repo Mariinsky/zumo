@@ -144,6 +144,7 @@ void motor_hardTurn(int direction,uint8 l_speed, uint8 r_speed, uint32 delay)
     PWM_WriteCompare1(l_speed); 
     PWM_WriteCompare2(r_speed); 
     vTaskDelay(delay);
+   
 }
 
 int ReflectorValue() {
@@ -162,19 +163,23 @@ int ReflectorValue() {
     // no reflection on all sensonrs
     if (dig.l3 == 1 && dig.l2 == 1 && dig.l1 == 1 && dig.r1 == 1 && dig.r2 == 1 && dig.r3 == 1) {return 6;};
     // max reflection
+    
+    if (dig.l1 == 0 && dig.r1 == 0) {return 10;};
     return -6;
 }
 void FunkyMoves() {
     //forward
-    if(ReflectorValue() == 0){motor_forward(0,0); motor_turn(100,95,0);};
+    motor_forward(0,0);
+   
+    if(ReflectorValue() == 0){motor_turn(100,95,0);};
     //right turns
-    if(ReflectorValue() == 1){motor_forward(0,0); motor_turn(100,70,0);};
-    if(ReflectorValue() == 2){motor_forward(0,0); motor_turn(100,50,0);};
-    if(ReflectorValue() == 3){motor_forward(0,0); motor_turn(100,0,0);};
+    if(ReflectorValue() == 1){motor_turn(100,0,0);};
+    if(ReflectorValue() == 2){motor_turn(150,0,0);};
+  //  if(ReflectorValue() == 3){motor_turn(100,0,0);};
     //left turns
-    if(ReflectorValue() == -1){motor_forward(0,0); motor_turn(70,100,0);};
-    if(ReflectorValue() == -2){motor_forward(0,0); motor_turn(50,100,0);};
-    if(ReflectorValue() == -3){motor_forward(0,0); motor_turn(0,100,0);};
+    if(ReflectorValue() == -1){motor_turn(0,100,0);};
+    if(ReflectorValue() == -2){motor_turn(0,150,0);};
+   // if(ReflectorValue() == -3){motor_turn(0,200,0);};
     // Lost path move back
     //if(ReflectorValue() == 6) {motor_backward(50,0);};
     

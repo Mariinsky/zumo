@@ -25,7 +25,7 @@
       <Tool Name="postbuild" Command="" Options="" />
     </Toolchain>
   </Toolchains>
-  <Project Name="ZumoBot" Path="Z:\shared\zumo\zumo\ZumoBot.cydsn" Version="5.70" Type="Normal">
+  <Project Name="ZumoBot" Path="Z:\shared\zumo\zumo\ZumoBot.cydsn" Version="5.80" Type="Normal">
     <CMSIS_SVD_File>ZumoBot.svd</CMSIS_SVD_File>
     <Datasheet />
     <LinkerFiles>

@@ -102,6 +102,7 @@
 #include "ADC_Battery_Bypass_aliases.h"
 #include "ADC_Battery_Bypass.h"
 #include "UART_2_IntClock.h"
+#include "cy_em_eeprom.h"
 #include "core_cm3_psoc5.h"
 #include "CyDmac.h"
 #include "CyFlash.h"
@@ -110,7 +111,6 @@
 #include "cyPm.h"
 #include "CySpc.h"
 #include "cytypes.h"
-#include "cy_em_eeprom.h"
 
 /*[]*/
 

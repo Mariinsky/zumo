@@ -56,7 +56,7 @@
 */
 #if 1
 void zmain(void) {
-    uint afterLine = 200;
+    uint afterLine = 350;
     uint leftMotor = 100;
     uint rightMotor = 95;
     reflectance_start();
@@ -66,31 +66,75 @@ void zmain(void) {
     Beep(200,180);
 
     while(SW1_Read() == 1){}  // Whaiting for button to start program
-    vTaskDelay(2000);
+    vTaskDelay(1000);
     Beep(200,180);
+    motor_turn(leftMotor, rightMotor, 500);
     while(1) {
-         FunkyMoves();
-         if(ReflectorValue == 6) {
+         motor_turn(100,95,0);
+         if(ReflectorValue() == 6) {
              break;
          }
     }
+    motor_forward(0,0);
     vTaskDelay(1000);
     Beep(200,180);
     motor_turn(leftMotor,rightMotor,afterLine);
-    motor_hardTurn(1,100,100,500);
+    while(1){
+    motor_hardTurn(0,100,100,0);
+    if (ReflectorValue() == 0){
+        break;
+        }
+    }
+    motor_forward(0,0);
     while(1) {
-            FunkyMoves();
+            motor_turn(100,95,0);
             if (ReflectorValue() == 6) {break;}
     }
-    vTaskDelay(1000);
-    Beep(200,180);
-    motor_turn(leftMotor,rightMotor,afterLine);
-    motor_hardTurn(0,100,100,500);
-    while(1) {
-            FunkyMoves();
-            if (ReflectorValue() == 6) {break;}
+        motor_forward(0,0);
+        vTaskDelay(1000);
+        Beep(200,180);
+        motor_turn(leftMotor,rightMotor,afterLine);
+        while(1) {
+            motor_hardTurn(1,100,100,0);
+            if (ReflectorValue() == 10) {
+                break;}
+        }
+        while(1) {
+            motor_hardTurn(1,100,100,0);
+            if (ReflectorValue() == 0) {break;}
+        }
+        motor_forward(0,0);
+        while(1) {
+                motor_turn(100,95,0);
+                if (ReflectorValue() == 6) {break;}
+        }
+       
+    motor_forward(0,0);
+        vTaskDelay(1000);
+        Beep(200,180);
+        motor_turn(leftMotor,rightMotor,afterLine);
+        while(1) {
+            motor_hardTurn(1,100,100,0);
+            if (ReflectorValue() == 10) {
+                break;}
+        }
+        while(1) {
+            motor_hardTurn(1,100,100,0);
+            if (ReflectorValue() == 0) {break;}
+        }
+        motor_forward(0,0);
+        while(1) {
+                motor_turn(100,95,0);
+                if (ReflectorValue() == 6) {break;}
+        }
+        vTaskDelay(500);
+    motor_hardTurn(1,150,150,2000);
+    for (int i = 0; i < 3; i++) {
+        Beep(500,200);
+        vTaskDelay(100);
     }
-    
+    motor_forward(0,0);
+    motor_stop();
     while (1) {}
     
 }
