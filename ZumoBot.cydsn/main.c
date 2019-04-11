@@ -76,26 +76,23 @@ void zmain(void) {
     }
     vTaskDelay(1000);
     Beep(200,180);
-    while(1){
-        motor_turn(leftMotor,rightMotor,afterLine);
-        motor_hardTurn(1,100,100,500);
-        while(1) {
+    motor_turn(leftMotor,rightMotor,afterLine);
+    motor_hardTurn(1,100,100,500);
+    while(1) {
             FunkyMoves();
             if (ReflectorValue() == 6) {break;}
-        }
     }
     vTaskDelay(1000);
     Beep(200,180);
+    motor_turn(leftMotor,rightMotor,afterLine);
+    motor_hardTurn(0,100,100,500);
     while(1) {
-        motor_turn(leftMotor,rightMotor,afterLine);
-        motor_hardTurn(0,100,100,500);
-        while(1) {
             FunkyMoves();
             if (ReflectorValue() == 6) {break;}
-        }
     }
-
-    while(1){}
+    
+    while (1) {}
+    
 }
 #endif
 
